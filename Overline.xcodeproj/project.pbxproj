@@ -15,6 +15,10 @@
 		B9BEB6E91669B27100A1D26D /* libOverline.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BEB6D01669B27100A1D26D /* libOverline.a */; };
 		B9BEB6EF1669B27100A1D26D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9BEB6ED1669B27100A1D26D /* InfoPlist.strings */; };
 		B9BEB6F21669B27100A1D26D /* OverlineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BEB6F11669B27100A1D26D /* OverlineTests.m */; };
+		B9BEB7031669C07200A1D26D /* NSArray+Selector.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BEB7021669C07200A1D26D /* NSArray+Selector.m */; };
+		B9BEB7041669C07200A1D26D /* NSArray+Selector.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BEB7021669C07200A1D26D /* NSArray+Selector.m */; };
+		CB0CFE4EA05B4D7AAE248AE8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2F2C3B42004E7080F20EB9 /* libPods.a */; };
+		D0424883F914BB76335CE4D6 /* NSArray+SelectorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D042476B75CA238FE3ABF31E /* NSArray+SelectorTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +45,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		776CEF8582F049128B505AAB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		B9BEB6D01669B27100A1D26D /* libOverline.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOverline.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9BEB6D31669B27100A1D26D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B9BEB6D31669B27100A1D26D /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B9BEB6D71669B27100A1D26D /* Overline-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Overline-Prefix.pch"; sourceTree = "<group>"; };
 		B9BEB6D81669B27100A1D26D /* Overline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Overline.h; sourceTree = "<group>"; };
 		B9BEB6E11669B27100A1D26D /* OverlineTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OverlineTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +57,11 @@
 		B9BEB6EE1669B27100A1D26D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B9BEB6F01669B27100A1D26D /* OverlineTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlineTests.h; sourceTree = "<group>"; };
 		B9BEB6F11669B27100A1D26D /* OverlineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlineTests.m; sourceTree = "<group>"; };
+		B9BEB7011669C07200A1D26D /* NSArray+Selector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Selector.h"; sourceTree = "<group>"; };
+		B9BEB7021669C07200A1D26D /* NSArray+Selector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Selector.m"; sourceTree = "<group>"; };
+		BF2F2C3B42004E7080F20EB9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D042476B75CA238FE3ABF31E /* NSArray+SelectorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SelectorTest.m"; sourceTree = "<group>"; };
+		D0424AE1384A236BD492DF88 /* NSArray+SelectorTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SelectorTest.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9BEB6D41669B27100A1D26D /* Foundation.framework in Frameworks */,
+				CB0CFE4EA05B4D7AAE248AE8 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +95,7 @@
 				B9BEB6EA1669B27100A1D26D /* OverlineTests */,
 				B9BEB6D21669B27100A1D26D /* Frameworks */,
 				B9BEB6D11669B27100A1D26D /* Products */,
+				776CEF8582F049128B505AAB /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +114,7 @@
 				B9BEB6D31669B27100A1D26D /* Foundation.framework */,
 				B9BEB6E21669B27100A1D26D /* SenTestingKit.framework */,
 				B9BEB6E41669B27100A1D26D /* UIKit.framework */,
+				BF2F2C3B42004E7080F20EB9 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,6 +124,7 @@
 			children = (
 				B9BEB6D81669B27100A1D26D /* Overline.h */,
 				B9BEB6D61669B27100A1D26D /* Supporting Files */,
+				D0424FB1D971E6A98096F238 /* NSArray */,
 			);
 			path = Overline;
 			sourceTree = "<group>";
@@ -129,6 +143,7 @@
 				B9BEB6F01669B27100A1D26D /* OverlineTests.h */,
 				B9BEB6F11669B27100A1D26D /* OverlineTests.m */,
 				B9BEB6EB1669B27100A1D26D /* Supporting Files */,
+				D042452C7E55E6A6DA33DC2B /* NSArray */,
 			);
 			path = OverlineTests;
 			sourceTree = "<group>";
@@ -142,6 +157,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D042452C7E55E6A6DA33DC2B /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				D042476B75CA238FE3ABF31E /* NSArray+SelectorTest.m */,
+				D0424AE1384A236BD492DF88 /* NSArray+SelectorTest.h */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		D0424FB1D971E6A98096F238 /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				B9BEB7021669C07200A1D26D /* NSArray+Selector.m */,
+				B9BEB7011669C07200A1D26D /* NSArray+Selector.h */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,6 +185,7 @@
 				B9BEB6CC1669B27100A1D26D /* Sources */,
 				B9BEB6CD1669B27100A1D26D /* Frameworks */,
 				B9BEB6CE1669B27100A1D26D /* CopyFiles */,
+				2C222678A89B47EAAB5605F7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,6 +254,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2C222678A89B47EAAB5605F7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
 		B9BEB6DF1669B27100A1D26D /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -240,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9BEB7031669C07200A1D26D /* NSArray+Selector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +297,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9BEB6F21669B27100A1D26D /* OverlineTests.m in Sources */,
+				B9BEB7041669C07200A1D26D /* NSArray+Selector.m in Sources */,
+				D0424883F914BB76335CE4D6 /* NSArray+SelectorTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +372,7 @@
 		};
 		B9BEB6F61669B27100A1D26D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 776CEF8582F049128B505AAB /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/Overline.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -333,6 +385,7 @@
 		};
 		B9BEB6F71669B27100A1D26D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 776CEF8582F049128B505AAB /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/Overline.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -352,7 +405,9 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Overline/Overline-Prefix.pch";
+				HEADER_SEARCH_PATHS = "${PODS_HEADERS_SEARCH_PATHS}";
 				INFOPLIST_FILE = "OverlineTests/OverlineTests-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -367,7 +422,9 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Overline/Overline-Prefix.pch";
+				HEADER_SEARCH_PATHS = "${PODS_HEADERS_SEARCH_PATHS}";
 				INFOPLIST_FILE = "OverlineTests/OverlineTests-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};

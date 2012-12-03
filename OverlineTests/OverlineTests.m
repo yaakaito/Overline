@@ -26,7 +26,18 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in OverlineTests");
+    NSArray *array = @[@"a", @"b", @"c"];
+    
+    [array enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        NSLog(@"%@", obj);
+        obj = @"ddd";
+    }];
+    
+    [array enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        NSLog(@"%@", obj);
+    }];
+    
+    STFail(@"hoge");
 }
 
 @end
