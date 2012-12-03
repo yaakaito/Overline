@@ -14,10 +14,13 @@
 		B9BEB6E61669B27100A1D26D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BEB6D31669B27100A1D26D /* Foundation.framework */; };
 		B9BEB6E91669B27100A1D26D /* libOverline.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BEB6D01669B27100A1D26D /* libOverline.a */; };
 		B9BEB6EF1669B27100A1D26D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9BEB6ED1669B27100A1D26D /* InfoPlist.strings */; };
-		B9BEB6F21669B27100A1D26D /* OverlineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BEB6F11669B27100A1D26D /* OverlineTests.m */; };
 		B9BEB7031669C07200A1D26D /* NSArray+Selector.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BEB7021669C07200A1D26D /* NSArray+Selector.m */; };
 		B9BEB7041669C07200A1D26D /* NSArray+Selector.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BEB7021669C07200A1D26D /* NSArray+Selector.m */; };
 		CB0CFE4EA05B4D7AAE248AE8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2F2C3B42004E7080F20EB9 /* libPods.a */; };
+		D04240BF44A1B015C2C8EE38 /* NSArray+Enumeration.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D04240B671F8B400D574A288 /* NSArray+Enumeration.h */; };
+		D04243E123619AFA41C2410B /* NSArray+Enumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = D04242F8E35BB29D8678757D /* NSArray+Enumeration.m */; };
+		D0424633DCDAA5BC42744258 /* NSArray+Enumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424BBED038E00A6A4DDA29 /* NSArray+Enumeration.m */; };
+		D04246CF41A391A4438D0AC9 /* NSArray+Enumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424BBED038E00A6A4DDA29 /* NSArray+Enumeration.m */; };
 		D0424883F914BB76335CE4D6 /* NSArray+SelectorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D042476B75CA238FE3ABF31E /* NSArray+SelectorTest.m */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +42,7 @@
 			dstSubfolderSpec = 16;
 			files = (
 				B9BEB6D91669B27100A1D26D /* Overline.h in CopyFiles */,
+				D04240BF44A1B015C2C8EE38 /* NSArray+Enumeration.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,13 +59,13 @@
 		B9BEB6E41669B27100A1D26D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		B9BEB6EC1669B27100A1D26D /* OverlineTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OverlineTests-Info.plist"; sourceTree = "<group>"; };
 		B9BEB6EE1669B27100A1D26D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B9BEB6F01669B27100A1D26D /* OverlineTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlineTests.h; sourceTree = "<group>"; };
-		B9BEB6F11669B27100A1D26D /* OverlineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlineTests.m; sourceTree = "<group>"; };
 		B9BEB7011669C07200A1D26D /* NSArray+Selector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Selector.h"; sourceTree = "<group>"; };
 		B9BEB7021669C07200A1D26D /* NSArray+Selector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Selector.m"; sourceTree = "<group>"; };
 		BF2F2C3B42004E7080F20EB9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D04240B671F8B400D574A288 /* NSArray+Enumeration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Enumeration.h"; sourceTree = "<group>"; };
+		D04242F8E35BB29D8678757D /* NSArray+Enumeration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Enumeration.m"; sourceTree = "<group>"; };
 		D042476B75CA238FE3ABF31E /* NSArray+SelectorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SelectorTest.m"; sourceTree = "<group>"; };
-		D0424AE1384A236BD492DF88 /* NSArray+SelectorTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SelectorTest.h"; sourceTree = "<group>"; };
+		D0424BBED038E00A6A4DDA29 /* NSArray+Enumeration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Enumeration.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,8 +144,6 @@
 		B9BEB6EA1669B27100A1D26D /* OverlineTests */ = {
 			isa = PBXGroup;
 			children = (
-				B9BEB6F01669B27100A1D26D /* OverlineTests.h */,
-				B9BEB6F11669B27100A1D26D /* OverlineTests.m */,
 				B9BEB6EB1669B27100A1D26D /* Supporting Files */,
 				D042452C7E55E6A6DA33DC2B /* NSArray */,
 			);
@@ -161,7 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				D042476B75CA238FE3ABF31E /* NSArray+SelectorTest.m */,
-				D0424AE1384A236BD492DF88 /* NSArray+SelectorTest.h */,
+				D04242F8E35BB29D8678757D /* NSArray+Enumeration.m */,
 			);
 			path = NSArray;
 			sourceTree = "<group>";
@@ -171,6 +173,8 @@
 			children = (
 				B9BEB7021669C07200A1D26D /* NSArray+Selector.m */,
 				B9BEB7011669C07200A1D26D /* NSArray+Selector.h */,
+				D0424BBED038E00A6A4DDA29 /* NSArray+Enumeration.m */,
+				D04240B671F8B400D574A288 /* NSArray+Enumeration.h */,
 			);
 			path = NSArray;
 			sourceTree = "<group>";
@@ -289,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9BEB7031669C07200A1D26D /* NSArray+Selector.m in Sources */,
+				D04246CF41A391A4438D0AC9 /* NSArray+Enumeration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,9 +301,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9BEB6F21669B27100A1D26D /* OverlineTests.m in Sources */,
 				B9BEB7041669C07200A1D26D /* NSArray+Selector.m in Sources */,
 				D0424883F914BB76335CE4D6 /* NSArray+SelectorTest.m in Sources */,
+				D0424633DCDAA5BC42744258 /* NSArray+Enumeration.m in Sources */,
+				D04243E123619AFA41C2410B /* NSArray+Enumeration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +414,10 @@
 				HEADER_SEARCH_PATHS = "${PODS_HEADERS_SEARCH_PATHS}";
 				INFOPLIST_FILE = "OverlineTests/OverlineTests-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
+				PODS_BUILD_HEADERS_SEARCH_PATHS = "\"${PODS_ROOT}/BuildHeaders\" \"${PODS_ROOT}/BuildHeaders/OCHamcrest\"";
+				PODS_HEADERS_SEARCH_PATHS = "${PODS_PUBLIC_HEADERS_SEARCH_PATHS}";
+				PODS_PUBLIC_HEADERS_SEARCH_PATHS = "\"${PODS_ROOT}/Headers\" \"${PODS_ROOT}/Headers/OCHamcrest\"";
+				PODS_ROOT = "${SRCROOT}/Pods";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -425,6 +435,10 @@
 				HEADER_SEARCH_PATHS = "${PODS_HEADERS_SEARCH_PATHS}";
 				INFOPLIST_FILE = "OverlineTests/OverlineTests-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
+				PODS_BUILD_HEADERS_SEARCH_PATHS = "\"${PODS_ROOT}/BuildHeaders\" \"${PODS_ROOT}/BuildHeaders/OCHamcrest\"";
+				PODS_HEADERS_SEARCH_PATHS = "${PODS_PUBLIC_HEADERS_SEARCH_PATHS}";
+				PODS_PUBLIC_HEADERS_SEARCH_PATHS = "\"${PODS_ROOT}/Headers\" \"${PODS_ROOT}/Headers/OCHamcrest\"";
+				PODS_ROOT = "${SRCROOT}/Pods";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
