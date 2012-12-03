@@ -8,6 +8,8 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 #import "NSArray+Selector.h"
+#define HC_SHORTHAND
+#import <OCHamcrest/OCHamcrest.h>
 
 @interface NSArray_SelectorTest : SenTestCase
 
@@ -16,6 +18,9 @@
 @implementation NSArray_SelectorTest
 
 - (void)testFirstObject {
-
+    assertThat([@[@"a"] firstObject], equalTo(@"a"));
+    assertThat(([@[@"b", @"c", @"d"] firstObject]), equalTo(@"b"));
+    assertThat(([@[@[@"a",@"b"], @[@"c", @"d"], @[@"e", @"f"]] firstObject]), equalTo(@[@"a", @"b"]));
 }
+
 @end
