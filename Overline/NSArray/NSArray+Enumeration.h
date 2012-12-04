@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 
 @interface NSArray (Enumeration)
-//#ifdef OV_SHORTHAND
 - (void)each:(void (^)(id obj, NSUInteger idx))block;
-//#endif
+- (NSArray *)map:(id (^)(id obj, NSUInteger idx))block;
+- (NSArray *)mappedArrayUsingBlock:(id (^)(id obj, NSUInteger idx))block;
 @end

@@ -30,4 +30,25 @@
     assertThat(@(lastIdx), equalTo(@2));
 }
 
+- (void)testMap
+{
+    NSArray *mapped = [@[@1,@2,@3,@4,@5,@6] map:^id(id obj, NSUInteger idx) {
+        if ([obj integerValue] % 2 == 0) {
+            return obj;
+        }
+        return nil;
+    }];
+    assertThat(mapped, equalTo(@[@2,@4,@6]));
+}
+
+- (void)testMappedArrayUsingBlock
+{
+    NSArray *mapped = [@[@1,@2,@3,@4,@5,@6] mappedArrayUsingBlock:^id(id obj, NSUInteger idx) {
+        if ([obj integerValue] % 2 == 0) {
+            return obj;
+        }
+        return nil;
+    }];
+    assertThat(mapped, equalTo(@[@2,@4,@6]));
+}
 @end
