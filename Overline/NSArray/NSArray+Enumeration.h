@@ -11,4 +11,6 @@
 - (void)each:(void (^)(id obj, NSUInteger idx))block;
 - (NSArray *)map:(id (^)(id obj, NSUInteger idx))block;
 - (NSArray *)mappedArrayUsingBlock:(id (^)(id obj, NSUInteger idx))block;
+- (id)reduce:(id (^)(id memo, id obj))block memo:(id)memo;
+- (id)reducedObjectByBlock:(id (^)(id memo, id obj))block memo:(id)memo;
 @end

@@ -29,4 +29,16 @@
     }];
     return mappedArray;
 }
+
+- (id)reduce:(id (^)(id, id))block memo:(id)memo {
+    return [self reducedObjectByBlock:block memo:memo];
+}
+
+- (id)reducedObjectByBlock:(id (^)(id, id))block memo:(id)memo {
+    __block id reducedObject = memo;
+    [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        reducedObject = block(reducedObject, obj);
+    }];
+    return reducedObject;
+}
 @end

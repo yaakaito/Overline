@@ -23,8 +23,8 @@
 - (void)testEach
 {
     __block NSUInteger lastIdx;
-    [@[@"a", @"b", @"c"] each:^(id obj, NSUInteger idx) {
-        assertThat(obj, equalTo([@[@"a", @"b", @"c"] objectAtIndex:idx]));
+    [@[@1, @2, @3] each:^(id obj, NSUInteger idx) {
+        assertThat(obj, equalTo([@[@1, @2, @3] objectAtIndex:idx]));
         lastIdx = idx;
     }];
     assertThat(@(lastIdx), equalTo(@2));
@@ -51,4 +51,19 @@
     }];
     assertThat(mapped, equalTo(@[@2,@4,@6]));
 }
+
+- (void)testReduce
+{
+    id obj = [@[@1,@2,@3] reduce:^id(id memo, id obj) {
+        return @([memo integerValue] + [obj integerValue]);
+    } memo:@0];
+    assertThat(obj, equalTo(@6));
+}
+
+- (void)reducedObjectByBlock
+{
+    id obj = [@[@1,@2,@3] reducedObjectByBlock:^id(id memo, id obj) {
+        return @([memo integerValue] + [obj integerValue]);
+    } memo:@0];
+    assertThat(obj, equalTo(@6));}
 @end
