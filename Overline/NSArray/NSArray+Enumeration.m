@@ -6,6 +6,7 @@
 
 
 #import "NSArray+Enumeration.h"
+#import "NSArray+Selector.h"
 
 
 @implementation NSArray (Enumeration)
@@ -40,5 +41,28 @@
         reducedObject = block(reducedObject, obj);
     }];
     return reducedObject;
+}
+
+- (id)find:(BOOL (^)(id, NSUInteger))block {
+    return [self objectUsingBlock:block];
+}
+
+- (id)objectUsingBlock:(BOOL (^)(id, NSUInteger))block {
+    return [[self filteredArrayUsingBlock:block] firstObject];
+}
+
+- (NSArray *)filter:(BOOL (^)(id, NSUInteger))block {
+    return [self filteredArrayUsingBlock:block];
+}
+
+- (NSArray *)filteredArrayUsingBlock:(BOOL (^)(id, NSUInteger))block {
+    NSMutableArray *filteredArray = [NSMutableArray array];
+    [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        BOOL r = block(obj, idx);
+        if (r) {
+            [filteredArray addObject:obj];
+        }
+    }];
+    return filteredArray;
 }
 @end

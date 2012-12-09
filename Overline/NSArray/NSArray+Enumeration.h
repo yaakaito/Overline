@@ -13,4 +13,8 @@
 - (NSArray *)mappedArrayUsingBlock:(id (^)(id obj, NSUInteger idx))block;
 - (id)reduce:(id (^)(id memo, id obj))block memo:(id)memo;
 - (id)reducedObjectByBlock:(id (^)(id memo, id obj))block memo:(id)memo;
+- (id)find:(BOOL (^)(id obj, NSUInteger idx))block;
+- (id)objectUsingBlock:(BOOL (^)(id obj, NSUInteger idx))block;
+- (NSArray *)filter:(BOOL (^)(id obj, NSUInteger idx))block;
+- (NSArray *)filteredArrayUsingBlock:(BOOL (^)(id obj, NSUInteger idx))block;
 @end

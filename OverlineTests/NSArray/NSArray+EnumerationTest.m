@@ -65,5 +65,38 @@
     id obj = [@[@1,@2,@3] reducedObjectByBlock:^id(id memo, id obj) {
         return @([memo integerValue] + [obj integerValue]);
     } memo:@0];
-    assertThat(obj, equalTo(@6));}
+    assertThat(obj, equalTo(@6));
+}
+
+- (void)testFind
+{
+    id obj = [@[@1,@2,@3,@4,@5,@6] find:^BOOL(id obj, NSUInteger idx) {
+        return [obj integerValue] % 2 == 0;
+    }];
+    assertThat(obj, equalTo(@2));
+}
+
+- (void)testObjectUsingBlock
+{
+    id obj = [@[@1,@2,@3,@4,@5,@6] objectUsingBlock:^BOOL(id obj, NSUInteger idx) {
+        return [obj integerValue] % 2 == 0;
+    }];
+    assertThat(obj, equalTo(@2));
+}
+
+- (void)testFilter {
+
+    id obj = [@[@1,@2,@3,@4,@5,@6] filter:^BOOL(id obj, NSUInteger idx) {
+        return [obj integerValue] % 2 == 0;
+    }];
+    assertThat(obj, equalTo(@[@2,@4,@6]));
+}
+
+- (void)testFilteredArrayUsingBlock {
+
+    id obj = [@[@1,@2,@3,@4,@5,@6] filteredArrayUsingBlock:^BOOL(id obj, NSUInteger idx) {
+        return [obj integerValue] % 2 == 0;
+    }];
+    assertThat(obj, equalTo(@[@2,@4,@6]));
+}
 @end
