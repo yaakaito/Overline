@@ -99,4 +99,20 @@
     }];
     assertThat(obj, equalTo(@[@2,@4,@6]));
 }
+
+- (void)testReject {
+    NSArray *rejected = [@[@1,@2,@3,@4,@5,@6] reject:^BOOL(id obj, NSUInteger idx) {
+        return [obj integerValue] % 2 == 0;
+    }];
+    assertThat(rejected, equalTo(@[@1,@3,@5]));
+}
+
+- (void)testRejectedArrayUsingBlock {
+    NSArray *rejected = [@[@1,@2,@3,@4,@5,@6] rejectedArrayUsingBlock:^BOOL(id obj, NSUInteger idx) {
+        return [obj integerValue] % 2 == 0;
+    }];
+    assertThat(rejected, equalTo(@[@1,@3,@5]));
+}
+
+//sorted array
 @end

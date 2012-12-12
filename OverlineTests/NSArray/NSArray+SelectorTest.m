@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <SenTestingKit/SenTestingKit.h>samsa
 #import "NSArray+Selector.h"
 #define HC_SHORTHAND
 #import <OCHamcrest/OCHamcrest.h>

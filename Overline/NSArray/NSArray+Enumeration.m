@@ -65,4 +65,18 @@
     }];
     return filteredArray;
 }
+
+- (NSArray *)reject:(BOOL (^)(id, NSUInteger))block {
+    return [self rejectedArrayUsingBlock:block];
+}
+
+- (NSArray *)rejectedArrayUsingBlock:(BOOL (^)(id, NSUInteger))block {
+    NSMutableArray *rejectedArray = [NSMutableArray array];
+    [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        BOOL r = block(obj, idx);
+        if (!r) {
+            [rejectedArray addObject:obj];
+        }
+    }];
+}
 @end

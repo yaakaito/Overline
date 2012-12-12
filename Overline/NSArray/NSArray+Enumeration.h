@@ -17,4 +17,7 @@
 - (id)objectUsingBlock:(BOOL (^)(id obj, NSUInteger idx))block;
 - (NSArray *)filter:(BOOL (^)(id obj, NSUInteger idx))block;
 - (NSArray *)filteredArrayUsingBlock:(BOOL (^)(id obj, NSUInteger idx))block;
+- (NSArray *)reject:(BOOL (^)(id obj, NSUInteger idx))block;
+- (NSArray *)rejectedArrayUsingBlock:(BOOL (^)(id obj, NSUInteger idx))block;
+
 @end
