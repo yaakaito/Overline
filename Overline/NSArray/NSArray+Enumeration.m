@@ -51,19 +51,23 @@
     return [[self filteredArrayUsingBlock:block] firstObject];
 }
 
+- (NSArray *)filteredArrayUsingBlock:(BOOL (^)(id, NSUInteger))block opposite:(BOOL)opposite{
+ NSMutableArray *filteredArray = [NSMutableArray array];
+    [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        BOOL r = block(obj, idx);
+        if (r == !opposite) {
+            [filteredArray addObject:obj];
+        }
+    }];
+    return filteredArray;
+}
+
 - (NSArray *)filter:(BOOL (^)(id, NSUInteger))block {
     return [self filteredArrayUsingBlock:block];
 }
 
 - (NSArray *)filteredArrayUsingBlock:(BOOL (^)(id, NSUInteger))block {
-    NSMutableArray *filteredArray = [NSMutableArray array];
-    [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        BOOL r = block(obj, idx);
-        if (r) {
-            [filteredArray addObject:obj];
-        }
-    }];
-    return filteredArray;
+    return [self filteredArrayUsingBlock:block opposite:NO];
 }
 
 - (NSArray *)reject:(BOOL (^)(id, NSUInteger))block {
@@ -71,12 +75,6 @@
 }
 
 - (NSArray *)rejectedArrayUsingBlock:(BOOL (^)(id, NSUInteger))block {
-    NSMutableArray *rejectedArray = [NSMutableArray array];
-    [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        BOOL r = block(obj, idx);
-        if (!r) {
-            [rejectedArray addObject:obj];
-        }
-    }];
+    return [self filteredArrayUsingBlock:block opposite:YES];
 }
 @end
