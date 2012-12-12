@@ -114,5 +114,15 @@
     assertThat(rejected, equalTo(@[@1,@3,@5]));
 }
 
-//sorted array
+- (void)testShuffle {
+    NSArray *shuffled = [@[@1,@2,@3,@4,@5,@6] shuffle];
+    assertThat(@([shuffled count]), equalTo(@6));
+    [SenTestLog testLogWithFormat:[NSString stringWithFormat:@"%@", shuffled]];
+}
+
+- (void)testShuffledArray {
+    NSArray *shuffled = [@[@1,@2,@3,@4,@5,@6] shuffledArray];
+    assertThat(@([shuffled count]), equalTo(@6));
+    [SenTestLog testLogWithFormat:[NSString stringWithFormat:@"%@", shuffled]];
+}
 @end
