@@ -1,9 +1,7 @@
 //
-//  NSArray+Selector.h
-//  Overline
+// Created by yaakaito on 2012/12/.
 //
-//  Created by yaakaito on 12/12/01.
-//  Copyright (c) 2012年 yaakaito. All rights reserved.
+// To change the template use AppCode | Preferences | File Templates.
 //
 
 #import <Foundation/Foundation.h>
