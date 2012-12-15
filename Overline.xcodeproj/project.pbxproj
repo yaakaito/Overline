@@ -17,15 +17,11 @@
 		B9BEB7031669C07200A1D26D /* NSArray+Selector.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BEB7021669C07200A1D26D /* NSArray+Selector.m */; };
 		B9BEB7041669C07200A1D26D /* NSArray+Selector.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BEB7021669C07200A1D26D /* NSArray+Selector.m */; };
 		CB0CFE4EA05B4D7AAE248AE8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2F2C3B42004E7080F20EB9 /* libPods.a */; };
-		D04240F00D06D584CC7AEA34 /* NSMutableArray+EnumerationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424C9205C8ACD6F1D0C4C9 /* NSMutableArray+EnumerationTest.m */; };
 		D04241F82BB443837E3ADB68 /* NSArray+Enumeration.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0424EC9DC3ECC15B5464904 /* NSArray+Enumeration.h */; };
 		D04243E123619AFA41C2410B /* NSArray+EnumerationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D04242F8E35BB29D8678757D /* NSArray+EnumerationTest.m */; };
-		D04245F7F8E27314722D1444 /* NSMutableArray+Enumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = D04245E45579C81AF86081BB /* NSMutableArray+Enumeration.m */; };
 		D0424633DCDAA5BC42744258 /* NSArray+Enumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424BBED038E00A6A4DDA29 /* NSArray+Enumeration.m */; };
 		D04246CF41A391A4438D0AC9 /* NSArray+Enumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424BBED038E00A6A4DDA29 /* NSArray+Enumeration.m */; };
 		D0424883F914BB76335CE4D6 /* NSArray+SelectorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D042476B75CA238FE3ABF31E /* NSArray+SelectorTest.m */; };
-		D04248860D0BFAB18671594D /* NSMutableArray+Enumeration.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D042433D86A6BE92F06A45CF /* NSMutableArray+Enumeration.h */; };
-		D0424F4988ED587A20F77B75 /* NSMutableArray+Enumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = D04245E45579C81AF86081BB /* NSMutableArray+Enumeration.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +42,6 @@
 			dstSubfolderSpec = 16;
 			files = (
 				B9BEB6D91669B27100A1D26D /* Overline.h in CopyFiles */,
-				D04248860D0BFAB18671594D /* NSMutableArray+Enumeration.h in CopyFiles */,
 				D04241F82BB443837E3ADB68 /* NSArray+Enumeration.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,11 +63,8 @@
 		B9BEB7021669C07200A1D26D /* NSArray+Selector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Selector.m"; sourceTree = "<group>"; };
 		BF2F2C3B42004E7080F20EB9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D04242F8E35BB29D8678757D /* NSArray+EnumerationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+EnumerationTest.m"; sourceTree = "<group>"; };
-		D042433D86A6BE92F06A45CF /* NSMutableArray+Enumeration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Enumeration.h"; sourceTree = "<group>"; };
-		D04245E45579C81AF86081BB /* NSMutableArray+Enumeration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Enumeration.m"; sourceTree = "<group>"; };
 		D042476B75CA238FE3ABF31E /* NSArray+SelectorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SelectorTest.m"; sourceTree = "<group>"; };
 		D0424BBED038E00A6A4DDA29 /* NSArray+Enumeration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Enumeration.m"; sourceTree = "<group>"; };
-		D0424C9205C8ACD6F1D0C4C9 /* NSMutableArray+EnumerationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+EnumerationTest.m"; sourceTree = "<group>"; };
 		D0424EC9DC3ECC15B5464904 /* NSArray+Enumeration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Enumeration.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,18 +164,8 @@
 			children = (
 				D042476B75CA238FE3ABF31E /* NSArray+SelectorTest.m */,
 				D04242F8E35BB29D8678757D /* NSArray+EnumerationTest.m */,
-				D0424C9205C8ACD6F1D0C4C9 /* NSMutableArray+EnumerationTest.m */,
 			);
 			path = NSArray;
-			sourceTree = "<group>";
-		};
-		D0424803BFCEAC773E14BBFD /* Mutable */ = {
-			isa = PBXGroup;
-			children = (
-				D04245E45579C81AF86081BB /* NSMutableArray+Enumeration.m */,
-				D042433D86A6BE92F06A45CF /* NSMutableArray+Enumeration.h */,
-			);
-			path = Mutable;
 			sourceTree = "<group>";
 		};
 		D0424FB1D971E6A98096F238 /* NSArray */ = {
@@ -192,7 +174,6 @@
 				B9BEB7021669C07200A1D26D /* NSArray+Selector.m */,
 				B9BEB7011669C07200A1D26D /* NSArray+Selector.h */,
 				D0424BBED038E00A6A4DDA29 /* NSArray+Enumeration.m */,
-				D0424803BFCEAC773E14BBFD /* Mutable */,
 				D0424EC9DC3ECC15B5464904 /* NSArray+Enumeration.h */,
 			);
 			path = NSArray;
@@ -313,7 +294,6 @@
 			files = (
 				B9BEB7031669C07200A1D26D /* NSArray+Selector.m in Sources */,
 				D04246CF41A391A4438D0AC9 /* NSArray+Enumeration.m in Sources */,
-				D0424F4988ED587A20F77B75 /* NSMutableArray+Enumeration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,8 +305,6 @@
 				D0424883F914BB76335CE4D6 /* NSArray+SelectorTest.m in Sources */,
 				D0424633DCDAA5BC42744258 /* NSArray+Enumeration.m in Sources */,
 				D04243E123619AFA41C2410B /* NSArray+EnumerationTest.m in Sources */,
-				D04245F7F8E27314722D1444 /* NSMutableArray+Enumeration.m in Sources */,
-				D04240F00D06D584CC7AEA34 /* NSMutableArray+EnumerationTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
