@@ -19,8 +19,6 @@
 - (NSArray *)filteredArrayUsingBlock:(BOOL (^)(id obj, NSUInteger idx))block;
 - (NSArray *)reject:(BOOL (^)(id obj, NSUInteger idx))block;
 - (NSArray *)rejectedArrayUsingBlock:(BOOL (^)(id obj, NSUInteger idx))block;
-- (NSArray *)sort:(NSInteger (^)(id left, id right))block;
-- (NSArray *)sortedArrayUsingBlock:(NSInteger (^)(id left, id right))block;
-- (NSArray *)shuffle;
+- (NSArray *)shuffle
 - (NSArray *)shuffledArray;
 @end
