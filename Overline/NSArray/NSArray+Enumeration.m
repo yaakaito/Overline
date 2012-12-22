@@ -78,17 +78,4 @@
     return [self filteredArrayUsingBlock:block opposite:YES];
 }
 
-- (NSArray *)shuffle {
-    return [self shuffledArray];
-}
-
-- (NSArray *)shuffledArray {
-    NSMutableArray *shuffled = [self mutableCopy];
-    for (NSInteger i = [shuffled count] - 1; i > 0; i--) {
-        [shuffled exchangeObjectAtIndex:arc4random() % (i + 1)
-                    withObjectAtIndex:i];
-    }
-    return shuffled;
-}
-
 @end
