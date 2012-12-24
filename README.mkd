@@ -1,0 +1,129 @@
+# Overline
+
+Objective-C utilities and shorthands.
+
+## Usage
+
+setup with cocoapods.
+```
+pod 'Overline'
+```
+
+import `Overline.h`
+```objective-c
+#import "Overline.h"
+```
+
+
+## Features
+
+### NSArray
+
+#### NSArray+Enumeration
+
+```objective-c
+NSArray *mapped = [@[@1,@2,@3,@4,@5,@6] mappedArrayUsingBlock:^id(id obj, NSUInteger idx) {
+    if ([obj integerValue] % 2 == 0) {
+        return obj;
+    }
+    return nil;
+}];
+// @[@2,@4,@6]
+```
+
+* `each`
+* `map` `mappedArrayUsingBlock`
+* `reduce` `reducedobjectByBlock`
+* `find` `objectUsingBlock`
+* `filter` `filteredArrayUsingBlock`
+* `reject` `rejectedArrayUsingBlock`
+
+#### NSArray+Random
+
+```objective-c
+NSArray *shuffled = [@[@1,@2,@3,@4,@5,@6] shuffledArray];
+```
+
+* `shuffle` `shuffledArray`
+* `anyObject`
+
+#### NSArray+Selector
+
+* `firstObject`
+
+### NSDictionary
+
+#### NSDicionary+Enumeration
+
+```objective-c
+NSDictionary *dic = @{
+        @"a" : @1,
+        @"b" : @2,
+        @"c" : @3,
+        @"d" : @4
+};
+
+NSDictionary *filtered = [dic dictionaryFilteredByKeyUsingBlock:^BOOL(NSString *key) {
+    return [key isEqualToString:@"a"];
+}]; // @{@"a":@1}
+ ```
+
+* `each:`
+* `map` `mappedDictionaryUsingBlock`
+* `filterKey` `dictionaryFilteredByKeyUsingBlock`
+* `rejectKey` `dictionaryRejectedByKeyUsingBlock`
+* `filterObject` `dictionaryFilteredByObjectUsingBlock`
+* `rejectObject` `dictionaryRejectedByObjectUsingBlock`
+* `merge` `dictionaryByMergingDictionary`
+
+### NSString 
+
+#### NSString+Components
+
+```objective-c
+[@"hoge=fuga&piyo=foo" componentsSeparatedByInnerString:@"=" andOuterString:@"&"];
+/* 
+@{
+    @"hoge" : @"fuga",
+    @"piyo" : @"foo"
+};
+*/
+```
+
+* `componentsSeparatedByInnerString:andOuterString:`
+
+#### NSString+RegularExpression
+
+```objective-c
+[@"https?" testInString:urlString];
+```
+* `rangeOfFirstMatchInString:`
+* `rangeOfFirstMatchInString:options:`
+* `matchesInString:`
+* `matchesInString:options:`
+* `testInString:`
+* `testInString:options:`
+
+#### NSString+Hash
+
+```objective-c
+[@"hoge" md5]; // @"ea703e7aa1efda0064eaa507d9e8ab7e"
+```
+
+* `sha256`
+* `stringByHashingSha256`
+* `md5`
+* `stringByHashingMD5`
+
+#### NSString+Shorthand
+* `trim`
+
+### NSURL
+
+#### NSURL+Components
+* `queryComponents`
+
+### NSBundle
+
+#### NSBundle+Shorthand
+* `JSONForResourceName`
