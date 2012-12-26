@@ -130,3 +130,12 @@ NSDictionary *filtered = [dic dictionaryFilteredByKeyUsingBlock:^BOOL(NSString *
 
 #### NSBundle+Shorthand
 * `JSONForResourceName`
+
+## For contributers
+
+Thanks contributes Overline.
+
+### Coding rules
+
+* Write tests.
+* Natural Objective-C style.
