@@ -170,6 +170,12 @@ NSDictionary *dic = @{
 [[dic objectForKey:@"null-key"] objectForKey:@"empty"]; // nil
 ```
 
+※ This feature disable on default. Define `OV_USE_NATURAL_NULL`, if use this feature.
+```objective-c
+#define OV_USE_NATURAL_NULL
+#import "Overline.h"
+```
+
 ## For contributers
 
 Thanks contributes Overline.
