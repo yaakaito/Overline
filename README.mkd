@@ -131,6 +131,25 @@ NSDictionary *filtered = [dic dictionaryFilteredByKeyUsingBlock:^BOOL(NSString *
 #### NSBundle+Shorthand
 * `JSONForResourceName`
 
+### NSNumber 
+
+#### NSNumber+Equals
+
+```objective-c
+[@1 isEqualToInteger:1];
+```
+
+* `isEqualToInt:`
+* `isEqualToInteger:`
+* `isEqualToUnsignedInt:`
+* `isEqualToUnsignedInteger:`
+* `isEqualToLong:`
+* `isEqualToLongLogn:`
+* `isEqualToUnsignedLong:`
+* `isEqualToUnsignedLongLong:`
+* `isEqualToDouble:`
+* `isEqualToFloat:`
+
 ## For contributers
 
 Thanks contributes Overline.

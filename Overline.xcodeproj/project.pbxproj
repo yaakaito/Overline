@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C3D52633B221E980CA9C81F /* NSNumber+EqualsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D50C558446172F7840F53 /* NSNumber+EqualsTest.m */; };
+		1C3D57C92971EC66332AFE0D /* NSNumber+Equals.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C3D5C2A8701578816D42723 /* NSNumber+Equals.h */; };
+		1C3D580DDF7D5A95E0DCA353 /* NSNumber+Equals.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D54D5537C4413E0502D2F /* NSNumber+Equals.m */; };
+		1C3D5F0A27F57ADF06139F00 /* NSNumber+Equals.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D54D5537C4413E0502D2F /* NSNumber+Equals.m */; };
 		B9BEB6D41669B27100A1D26D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BEB6D31669B27100A1D26D /* Foundation.framework */; };
 		B9BEB6D91669B27100A1D26D /* Overline.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B9BEB6D81669B27100A1D26D /* Overline.h */; };
 		B9BEB6E31669B27100A1D26D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BEB6E21669B27100A1D26D /* SenTestingKit.framework */; };
@@ -84,12 +88,16 @@
 				D04245E33C01D74C8910CFCE /* NSString+Shorthand.h in CopyFiles */,
 				D0424E813D805AD1239A5419 /* NSBundle+Shorthand.h in CopyFiles */,
 				D0424E7AC5DB40966FBD89CF /* NSString+Hash.h in CopyFiles */,
+				1C3D57C92971EC66332AFE0D /* NSNumber+Equals.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1C3D50C558446172F7840F53 /* NSNumber+EqualsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+EqualsTest.m"; sourceTree = "<group>"; };
+		1C3D54D5537C4413E0502D2F /* NSNumber+Equals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Equals.m"; sourceTree = "<group>"; };
+		1C3D5C2A8701578816D42723 /* NSNumber+Equals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Equals.h"; sourceTree = "<group>"; };
 		776CEF8582F049128B505AAB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		B9BEB6D01669B27100A1D26D /* libOverline.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOverline.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9BEB6D31669B27100A1D26D /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -158,6 +166,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C3D544F300191F3B5DF12F1 /* NSNumber */ = {
+			isa = PBXGroup;
+			children = (
+				1C3D54D5537C4413E0502D2F /* NSNumber+Equals.m */,
+				1C3D5C2A8701578816D42723 /* NSNumber+Equals.h */,
+			);
+			lastKnownFileType = text;
+			path = NSNumber;
+			sourceTree = "<group>";
+		};
+		1C3D5F17D5CE6F3A127451E7 /* NSNumber */ = {
+			isa = PBXGroup;
+			children = (
+				1C3D50C558446172F7840F53 /* NSNumber+EqualsTest.m */,
+			);
+			path = NSNumber;
+			sourceTree = "<group>";
+		};
 		B9BEB6C51669B27100A1D26D = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +225,7 @@
 				D0424195E7522DE4B2216520 /* NSString */,
 				D04247700ECF60C7F485D1A4 /* NSDictionary */,
 				D0424DD087AA431AF6A022CB /* NSBundle */,
+				1C3D544F300191F3B5DF12F1 /* NSNumber */,
 			);
 			path = Overline;
 			sourceTree = "<group>";
@@ -221,6 +248,7 @@
 				D0424FE4BE4B436801557582 /* NSDictionary */,
 				D042424532E79F74FC5C19A0 /* NSBundle */,
 				D04249B037D915E7C43676E3 /* test_json.json */,
+				1C3D5F17D5CE6F3A127451E7 /* NSNumber */,
 			);
 			path = OverlineTests;
 			sourceTree = "<group>";
@@ -458,6 +486,7 @@
 				D0424DE6E09A09EB939A8C49 /* NSString+Shorthand.m in Sources */,
 				D04249F45841041179A10E90 /* NSBundle+Shorthand.m in Sources */,
 				D04240965190FC32F8AA609A /* NSString+Hash.m in Sources */,
+				1C3D580DDF7D5A95E0DCA353 /* NSNumber+Equals.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +514,8 @@
 				D042470D3FBFE9B52210353C /* NSBundle+ShorthandTest.m in Sources */,
 				D0424FB247A71588928CDC17 /* NSString+Hash.m in Sources */,
 				D0424F87E4C59ABD7F913299 /* NSString+HashTest.m in Sources */,
+				1C3D5F0A27F57ADF06139F00 /* NSNumber+Equals.m in Sources */,
+				1C3D52633B221E980CA9C81F /* NSNumber+EqualsTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
