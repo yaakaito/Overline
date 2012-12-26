@@ -150,6 +150,26 @@ NSDictionary *filtered = [dic dictionaryFilteredByKeyUsingBlock:^BOOL(NSString *
 * `isEqualToDouble:`
 * `isEqualToFloat:`
 
+### NSObject
+
+#### NSObject+Equals
+```objective-c
+[[NSNull null] isNullObject]; // YES
+[[NSArray array] isNullObject]; // NO
+```
+* `isNullObject`
+
+### NSNull
+
+#### NSNull+Natural
+Provide `NSNull` like `nil`
+```objective-c
+NSDictionary *dic = @{
+        @"null-key" : [NSNull null]
+};
+[[dic objectForKey:@"null-key"] objectForKey:@"empty"]; // nil
+```
+
 ## For contributers
 
 Thanks contributes Overline.
