@@ -138,5 +138,5 @@ Thanks contributes Overline.
 ### Coding rules
 
 * Write tests.
-* Natural Objective-C style naming.
+* Objective-C style naming.
   * and shorthands.
