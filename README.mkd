@@ -144,7 +144,7 @@ NSDictionary *filtered = [dic dictionaryFilteredByKeyUsingBlock:^BOOL(NSString *
 * `isEqualToUnsignedInt:`
 * `isEqualToUnsignedInteger:`
 * `isEqualToLong:`
-* `isEqualToLongLogn:`
+* `isEqualToLongLong:`
 * `isEqualToUnsignedLong:`
 * `isEqualToUnsignedLongLong:`
 * `isEqualToDouble:`
