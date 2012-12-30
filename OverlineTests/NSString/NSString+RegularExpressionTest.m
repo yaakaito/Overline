@@ -47,7 +47,7 @@
     assertThatInteger(range.location, equalToInteger(NSNotFound));
 }
 
-- (void)testMacthesInString
+- (void)testMatchesInString
 {
     NSArray *matches = [@"hoge" matchesInString:@"hoge-fuga-hoge"];
     assertThatInteger([matches count], equalToInteger(2));
@@ -61,7 +61,7 @@
     assertThatInteger([matches count], equalToInteger(0));
 }
 
-- (void)testMacthesInStringOptions
+- (void)testMatchesInStringOptions
 {
     NSArray *matches = [@"hoge" matchesInString:@"hoge-fuga-hoge" options:NSRegularExpressionSearch];
     assertThatInteger([matches count], equalToInteger(2));
