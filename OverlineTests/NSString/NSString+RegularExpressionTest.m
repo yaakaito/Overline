@@ -82,6 +82,9 @@
 
     assertThatBool([@"h[0-9]ge" testInString:@"fuga-h0ge-fuga"], equalToBool(YES));
     assertThatBool([@"h[A-Z]ge" testInString:@"fuga-hoge-fuga"], equalToBool(NO));
+
+    assertThatBool([@"https?" testInString:@"http://example.com"], equalToBool(YES));
+    assertThatBool([@"https?" testInString:@"https://example.com"], equalToBool(YES));
 }
 
 - (void)testTestInStringOptions
