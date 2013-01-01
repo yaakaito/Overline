@@ -118,6 +118,12 @@ NSDictionary *filtered = [dic dictionaryFilteredByKeyUsingBlock:^BOOL(NSString *
 * `md5`
 * `stringByHashingMD5`
 
+#### NSString+URLEncode
+* `URLEncode`
+* `stringByEncodingURL`
+* `URLDecode`
+* `stringByDecodingURL`
+
 #### NSString+Shorthand
 * `trim`
 
