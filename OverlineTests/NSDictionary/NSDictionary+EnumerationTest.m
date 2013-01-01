@@ -11,6 +11,7 @@
 
 #import "NSDictionary+Enumeration.h"
 
+#import "Overline.h"
 @interface NSDictionary_EnumerationTest : SenTestCase
 {
     
@@ -202,4 +203,63 @@
     assertThat([left dictionaryByMergingDictionary:right], equalTo(expect));
 }
 
+- (void)testReduce {
+    NSDictionary *dic = @{
+            @"k1" : @"v1",
+            @"k2" : @"k2"
+    };
+
+    NSString *actual = [dic reduce:^id(id memo, id obj, NSString *key) {
+        return [memo stringByAppendingFormat:@"%@=%@", key, obj];
+    } memo:@"hoge"];
+
+    assertThat(actual, containsString(@"k1=v1"));
+    assertThat(actual, containsString(@"k2=k2"));
+
+    assertThatBool([@"hoge.{2}=.{2}.{2}=.{2}" testInString:actual], equalToBool(YES));
+}
+
+- (void)testReducedObjectUsingBlock {
+    NSDictionary *dic = @{
+            @"k1" : @"v1",
+            @"k2" : @"k2"
+    };
+
+    NSString *actual = [dic reducedObjectUsingBlock:^id(id memo, id obj, NSString *key) {
+        return [memo stringByAppendingFormat:@"%@=%@", key, obj];
+    } memo:@"hoge"];
+
+    assertThat(actual, containsString(@"k1=v1"));
+    assertThat(actual, containsString(@"k2=k2"));
+
+    assertThatBool([@"hoge.{2}=.{2}.{2}=.{2}" testInString:actual], equalToBool(YES));
+}
+
+- (void)testQueryString {
+    NSDictionary *dic = @{
+            @"k1" : @"v1",
+            @"k2" : @"k2"
+    };
+
+    NSString *actual = [dic queryString];
+
+    assertThat(actual, containsString(@"k1=v1"));
+    assertThat(actual, containsString(@"k2=k2"));
+
+    assertThatBool([@".{2}=.{2}&.{2}=.{2}" testInString:actual], equalToBool(YES));
+}
+
+- (void)testStringByFormattingQuery {
+    NSDictionary *dic = @{
+            @"k1" : @"v1",
+            @"k2" : @"k2"
+    };
+
+    NSString *actual = [dic stringByFormattingQuery];
+
+    assertThat(actual, containsString(@"k1=v1"));
+    assertThat(actual, containsString(@"k2=k2"));
+
+    assertThatBool([@".{2}=.{2}&.{2}=.{2}" testInString:actual], equalToBool(YES));
+}
 @end

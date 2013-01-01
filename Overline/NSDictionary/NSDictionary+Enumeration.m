@@ -6,7 +6,7 @@
 
 
 #import "NSDictionary+Enumeration.h"
-
+#import "NSString+URLEncode.h"
 
 @implementation NSDictionary (Enumeration)
 
@@ -92,5 +92,30 @@
         [that setValue:obj forKey:key];
     }];
     return that;
+}
+
+- (id)reduce:(id (^)(id, id, NSString *))block memo:(id)memo {
+    return [self reducedObjectUsingBlock:block memo:memo];
+}
+
+- (id)reducedObjectUsingBlock:(id (^)(id, id, NSString *))block memo:(id)memo {
+    __block id reduceObject = memo;
+    [self enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+        reduceObject = block(reduceObject, obj, key);
+    }];
+    return reduceObject;
+}
+
+- (NSString *)queryString {
+    return [self stringByFormattingQuery];
+}
+
+- (NSString *)stringByFormattingQuery {
+    return [self reducedObjectUsingBlock:^id(id memo, id obj, NSString *key) {
+        if ([memo length] > 0) {
+            return [memo stringByAppendingString:[NSString stringWithFormat:@"&%@=%@", key, obj]];
+        }
+        return [memo stringByAppendingString:[NSString stringWithFormat:@"%@=%@", key, obj]];
+    } memo:@""];
 }
 @end

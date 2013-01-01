@@ -21,4 +21,8 @@
 - (NSDictionary *)dictionaryRejectedByObjectUsingBlock:(BOOL (^)(id obj))block;
 - (NSDictionary *)merge:(NSDictionary *)dictionary;
 - (NSDictionary *)dictionaryByMergingDictionary:(NSDictionary *)dictionary;
+- (id)reduce:(id (^)(id memo, id obj, NSString *key))block memo:(id)memo;
+- (id)reducedObjectUsingBlock:(id (^)(id memo, id obj, NSString *key))block memo:(id)memo;
+- (NSString *)queryString;
+- (NSString *)stringByFormattingQuery;
 @end
