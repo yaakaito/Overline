@@ -30,4 +30,42 @@
     }];
     return result;
 }
+
+- (id)reduce:(id (^)(id, id))block memo:(id)memo {
+    return [self reducedObjectByBlock:block memo:memo];
+}
+
+- (id)reducedObjectByBlock:(id (^)(id, id))block memo:(id)memo {
+    __block id reducedObject = memo;
+    [self enumerateObjectsUsingBlock:^(id obj, BOOL *stop) {
+        reducedObject = block(reducedObject, obj);
+    }];
+    return reducedObject;
+}
+
+- (NSSet *)filteredSetUsingBlock:(BOOL (^)(id))block opposite:(BOOL)opposite {
+    NSMutableSet *filteredSet = [NSMutableSet set];
+    [self enumerateObjectsUsingBlock:^(id obj, BOOL *stop) {
+        BOOL r = block(obj);
+        if (r == !opposite) {
+            [filteredSet addObject:obj];
+        }
+    }];
+    return filteredSet;
+}
+- (NSSet *)filter:(BOOL (^)(id))block {
+    return [self filteredSetUsingBlock:block];
+}
+
+- (NSSet *)filteredSetUsingBlock:(BOOL (^)(id))block {
+    return [self filteredSetUsingBlock:block opposite:NO];
+}
+
+- (NSSet *)reject:(BOOL (^)(id))block {
+    return [self rejectedSetUsingBlock:block];
+}
+
+- (NSSet *)rejectedSetUsingBlock:(BOOL (^)(id))block {
+    return [self filteredSetUsingBlock:block opposite:YES];
+}
 @end

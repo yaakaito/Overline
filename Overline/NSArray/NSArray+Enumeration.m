@@ -52,7 +52,7 @@
 }
 
 - (NSArray *)filteredArrayUsingBlock:(BOOL (^)(id, NSUInteger))block opposite:(BOOL)opposite{
- NSMutableArray *filteredArray = [NSMutableArray array];
+    NSMutableArray *filteredArray = [NSMutableArray array];
     [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         BOOL r = block(obj, idx);
         if (r == !opposite) {

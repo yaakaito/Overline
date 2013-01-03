@@ -64,34 +64,67 @@
 }
 
 - (void)testReduce {
-
+    NSSet *set = [NSSet setWithArray:@[@1,@2,@3]];
+    id obj = [set reduce:^id(id memo, id obj) {
+        return @([memo integerValue] + [obj integerValue]);
+    } memo:@0];
+    assertThat(obj, equalTo(@6));
 }
 
 - (void)testReducedObjectByBlock {
-
-}
-
-- (void)testFind {
-
-}
-
-- (void)testObjectUsingBlock {
-
+    NSSet *set = [NSSet setWithArray:@[@1,@2,@3]];
+    id obj = [set reducedObjectByBlock:^id(id memo, id obj) {
+        return @([memo integerValue] + [obj integerValue]);
+    } memo:@0];
+    assertThat(obj, equalTo(@6));
 }
 
 - (void)testFilter {
+    NSSet *set = [NSSet setWithArray:@[@1, @2, @3, @4, @5, @6]];
+    NSSet *filtered = [set filter:^BOOL(id obj) {
+        return [obj integerValue] % 2 == 0;
+    }];
+    NSArray *ary = [[filtered allObjects] sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+        return (NSComparisonResult)([obj1 integerValue] - [obj2 integerValue]);
+    }];
 
+    assertThat(ary, equalTo(@[@2,@4,@6]));
 }
 
 - (void)testFilteredSetUsingBlock {
+    NSSet *set = [NSSet setWithArray:@[@1, @2, @3, @4, @5, @6]];
+    NSSet *filtered = [set filteredSetUsingBlock:^BOOL(id obj) {
+        return [obj integerValue] % 2 == 0;
+    }];
+    NSArray *ary = [[filtered allObjects] sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+        return (NSComparisonResult)([obj1 integerValue] - [obj2 integerValue]);
+    }];
+
+    assertThat(ary, equalTo(@[@2,@4,@6]));
 
 }
 
 - (void)testReject {
+    NSSet *set = [NSSet setWithArray:@[@1, @2, @3, @4, @5, @6]];
+    NSSet *rejected = [set reject:^BOOL(id obj) {
+        return [obj integerValue] % 2 == 0;
+    }];
+    NSArray *ary = [[rejected allObjects] sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+        return (NSComparisonResult)([obj1 integerValue] - [obj2 integerValue]);
+    }];
 
+    assertThat(ary, equalTo(@[@1,@3,@5]));
 }
 
 - (void)testRejectedSetUsingBlock {
+    NSSet *set = [NSSet setWithArray:@[@1, @2, @3, @4, @5, @6]];
+    NSSet *rejected = [set rejectedSetUsingBlock:^BOOL(id obj) {
+        return [obj integerValue] % 2 == 0;
+    }];
+    NSArray *ary = [[rejected allObjects] sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+        return (NSComparisonResult)([obj1 integerValue] - [obj2 integerValue]);
+    }];
 
+    assertThat(ary, equalTo(@[@1,@3,@5]));
 }
 @end

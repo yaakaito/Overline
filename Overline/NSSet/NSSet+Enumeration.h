@@ -13,8 +13,6 @@
 - (NSSet *)mappedSetUsingBlock:(id (^)(id obj))block;
 - (id)reduce:(id (^)(id memo, id obj))block memo:(id)memo;
 - (id)reducedObjectByBlock:(id (^)(id memo, id obj))block memo:(id)memo;
-- (id)find:(BOOL (^)(id obj))block;
-- (id)objectUsingBlock:(BOOL (^)(id obj))block;
 - (NSSet *)filter:(BOOL (^)(id obj))block;
 - (NSSet *)filteredSetUsingBlock:(BOOL (^)(id obj))block;
 - (NSSet *)reject:(BOOL (^)(id obj))block;
