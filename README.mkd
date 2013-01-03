@@ -129,6 +129,13 @@ NSDictionary *filtered = [dic dictionaryFilteredByKeyUsingBlock:^BOOL(NSString *
 #### NSString+Shorthand
 * `trim`
 
+#### NSString+JSON
+```objective-c
+NSString *JSONString = @"{\"hoge\" : \"fuga\" }";
+id json = [JSONString jsonObject];
+```
+* `JSON` `jsonObject`
+
 ### NSURL
 
 #### NSURL+Components

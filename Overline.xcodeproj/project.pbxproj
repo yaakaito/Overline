@@ -46,13 +46,17 @@
 		D04245EE2307B6B8EA473A07 /* NSDictionary+Enumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = D04248F1904B080C0383AA2A /* NSDictionary+Enumeration.m */; };
 		D0424633DCDAA5BC42744258 /* NSArray+Enumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424BBED038E00A6A4DDA29 /* NSArray+Enumeration.m */; };
 		D04246CF41A391A4438D0AC9 /* NSArray+Enumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424BBED038E00A6A4DDA29 /* NSArray+Enumeration.m */; };
+		D04246D079A45E94BDA61F06 /* NSString+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424AAE6B635E2FECB283FA /* NSString+JSON.m */; };
 		D0424708CB0CDBB30346B8AC /* NSString+URLEncodeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D04247AD1611453237486D1F /* NSString+URLEncodeTest.m */; };
 		D042470D3FBFE9B52210353C /* NSBundle+ShorthandTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424766886F554380AE5591 /* NSBundle+ShorthandTest.m */; };
 		D0424740992AE7DA344F11F1 /* NSArray+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = D042404CB3F6EF36C7E4B4A6 /* NSArray+Random.m */; };
+		D042477435C381B8D19CDC71 /* NSString+JSON.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0424ACAA24EA2A319043B56 /* NSString+JSON.h */; };
 		D0424785E56A4876708DA2D7 /* NSDictionary+Enumeration.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0424ECAA6E126B8202E3CCD /* NSDictionary+Enumeration.h */; };
 		D0424883F914BB76335CE4D6 /* NSArray+SelectorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D042476B75CA238FE3ABF31E /* NSArray+SelectorTest.m */; };
 		D04248F7483193F35405AB02 /* NSArray+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = D042404CB3F6EF36C7E4B4A6 /* NSArray+Random.m */; };
+		D042494A91DCFFEEE863C4E7 /* NSString+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424AAE6B635E2FECB283FA /* NSString+JSON.m */; };
 		D042497F446D91BF81D3351A /* NSDictionary+EnumerationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D04241DAD3B1E577CF535057 /* NSDictionary+EnumerationTest.m */; };
+		D0424993D2C2DB96971B20DC /* NSString+JSONTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D042426ABEBF61458E6D6532 /* NSString+JSONTest.m */; };
 		D04249F45841041179A10E90 /* NSBundle+Shorthand.m in Sources */ = {isa = PBXBuildFile; fileRef = D042477EF6E2D7443DD541C1 /* NSBundle+Shorthand.m */; };
 		D0424AE1AA67C575EA1269C7 /* NSString+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424D1AD40B6C47B786288B /* NSString+Components.m */; };
 		D0424BEF4E84BFE0D37D595C /* NSURL+ComponentsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D042468B375A7E6202FAEB7A /* NSURL+ComponentsTest.m */; };
@@ -104,6 +108,7 @@
 				1C3D545321D7F661EEB2B9CD /* NSObject+Equals.h in CopyFiles */,
 				1C3D5E013AE3E667133E97DC /* NSNull+Natural.h in CopyFiles */,
 				D0424D75FD812EAD1B06A257 /* NSString+URLEncode.h in CopyFiles */,
+				D042477435C381B8D19CDC71 /* NSString+JSON.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +140,7 @@
 		D042404CB3F6EF36C7E4B4A6 /* NSArray+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Random.m"; sourceTree = "<group>"; };
 		D04240A24254FAAECA38EE4A /* NSString+HashTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HashTest.m"; sourceTree = "<group>"; };
 		D04241DAD3B1E577CF535057 /* NSDictionary+EnumerationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+EnumerationTest.m"; sourceTree = "<group>"; };
+		D042426ABEBF61458E6D6532 /* NSString+JSONTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSONTest.m"; sourceTree = "<group>"; };
 		D04242F8E35BB29D8678757D /* NSArray+EnumerationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+EnumerationTest.m"; sourceTree = "<group>"; };
 		D0424426C03EA111BD75A196 /* NSArray+RandomTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+RandomTest.m"; sourceTree = "<group>"; };
 		D0424441B9980FB9900DD9FE /* NSString+URLEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncode.h"; sourceTree = "<group>"; };
@@ -152,7 +158,9 @@
 		D04249B037D915E7C43676E3 /* test_json.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = test_json.json; sourceTree = "<group>"; };
 		D04249B77ED1BB9283B8229E /* NSString+URLEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncode.m"; sourceTree = "<group>"; };
 		D0424A73C79C6BB38EA0D8AB /* NSString+ComponentsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ComponentsTest.m"; sourceTree = "<group>"; };
+		D0424AAE6B635E2FECB283FA /* NSString+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSON.m"; sourceTree = "<group>"; };
 		D0424AB2DA89561B971106D1 /* NSString+Shorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Shorthand.h"; sourceTree = "<group>"; };
+		D0424ACAA24EA2A319043B56 /* NSString+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JSON.h"; sourceTree = "<group>"; };
 		D0424B85BDDCB546B0595A36 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
 		D0424BBED038E00A6A4DDA29 /* NSArray+Enumeration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Enumeration.m"; sourceTree = "<group>"; };
 		D0424BEC84CB51AA690ECFBC /* NSBundle+Shorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Shorthand.h"; sourceTree = "<group>"; };
@@ -346,6 +354,8 @@
 				D0424B85BDDCB546B0595A36 /* NSString+Hash.h */,
 				D04249B77ED1BB9283B8229E /* NSString+URLEncode.m */,
 				D0424441B9980FB9900DD9FE /* NSString+URLEncode.h */,
+				D0424AAE6B635E2FECB283FA /* NSString+JSON.m */,
+				D0424ACAA24EA2A319043B56 /* NSString+JSON.h */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -376,6 +386,7 @@
 				D042458B093499E4CAB6522C /* NSString+ShorthandTest.m */,
 				D04240A24254FAAECA38EE4A /* NSString+HashTest.m */,
 				D04247AD1611453237486D1F /* NSString+URLEncodeTest.m */,
+				D042426ABEBF61458E6D6532 /* NSString+JSONTest.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -555,6 +566,7 @@
 				1C3D5425CC777CDC9AFB56A8 /* NSObject+Equals.m in Sources */,
 				1C3D5614747B8260D633A8E6 /* NSNull+Natural.m in Sources */,
 				D042437C23563ED8FDA8B150 /* NSString+URLEncode.m in Sources */,
+				D042494A91DCFFEEE863C4E7 /* NSString+JSON.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,6 +602,8 @@
 				1C3D53FD2743FE3D77502EA5 /* NSNull+NaturalTest.m in Sources */,
 				D0424C783EEB4C888C664287 /* NSString+URLEncode.m in Sources */,
 				D0424708CB0CDBB30346B8AC /* NSString+URLEncodeTest.m in Sources */,
+				D04246D079A45E94BDA61F06 /* NSString+JSON.m in Sources */,
+				D0424993D2C2DB96971B20DC /* NSString+JSONTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
