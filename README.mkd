@@ -82,7 +82,8 @@ NSDictionary *filtered = [dic dictionaryFilteredByKeyUsingBlock:^BOOL(NSString *
 * `queryString` `stringByFormattingQuery`
 
 
-#### NSArray+Enumeration
+### NSSet
+#### NSSet+Enumeration
 
 ```objective-c
 NSSet *set = [NSSet setWithArray:@[@1,@2,@3,@4,@5,@6]];
@@ -94,8 +95,6 @@ NSSet *mapped = [set mappedSetUsingBlock:^id(id obj, NSUInteger idx) {
 }];
 ```
 
-### NSSet
-#### NSSet+Enumeration
 * `each`
 * `map` `mappedSetUsingBlock`
 * `reduce` `reducedObjectByBlock`
