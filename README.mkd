@@ -36,7 +36,7 @@ NSArray *mapped = [@[@1,@2,@3,@4,@5,@6] mappedArrayUsingBlock:^id(id obj, NSUInt
 
 * `each`
 * `map` `mappedArrayUsingBlock`
-* `reduce` `reducedobjectByBlock`
+* `reduce` `reducedObjectByBlock`
 * `find` `objectUsingBlock`
 * `filter` `filteredArrayUsingBlock`
 * `reject` `rejectedArrayUsingBlock`
@@ -94,6 +94,8 @@ NSSet *mapped = [set mappedSetUsingBlock:^id(id obj, NSUInteger idx) {
 }];
 ```
 
+### NSSet
+#### NSSet+Enumeration
 * `each`
 * `map` `mappedSetUsingBlock`
 * `reduce` `reducedObjectByBlock`
