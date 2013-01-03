@@ -81,6 +81,25 @@ NSDictionary *filtered = [dic dictionaryFilteredByKeyUsingBlock:^BOOL(NSString *
 * `reduce:` `reducedObjectUsingBlock:memo:`
 * `queryString` `stringByFormattingQuery`
 
+
+#### NSArray+Enumeration
+
+```objective-c
+NSSet *set = [NSSet setWithArray:@[@1,@2,@3,@4,@5,@6]];
+NSSet *mapped = [set mappedSetUsingBlock:^id(id obj, NSUInteger idx) {
+    if ([obj integerValue] % 2 == 0) {
+        return obj;
+    }
+    return nil;
+}];
+```
+
+* `each`
+* `map` `mappedSetUsingBlock`
+* `reduce` `reducedObjectByBlock`
+* `filter` `filteredSetUsingBlock`
+* `reject` `rejectedSetUsingBlock`
+
 ### NSString 
 
 #### NSString+Components
