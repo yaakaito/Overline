@@ -54,6 +54,16 @@ NSArray *shuffled = [@[@1,@2,@3,@4,@5,@6] shuffledArray];
 
 * `firstObject`
 
+### NSMutableArray
+#### NSMutableArray+Shorthands
+
+```objective-c
+NSMutableArray *marray = [NSMutableArray arrayWithArray:@[@1,@2,@3]];
+[marray insertObjects:@[@4,@5,@6] atIndex:1];
+```
+
+* `insertObjects:atIndex:`
+
 ### NSDictionary
 
 #### NSDicionary+Enumeration
