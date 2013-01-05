@@ -156,6 +156,21 @@ id json = [JSONString jsonObject];
 ```
 * `JSON` `jsonObject`
 
+#### NSString+Base64Encode
+```objective-c
+[@"a" stringByEncodingBase64]; // @"YQ=="
+[@"YQ==" stringByDecodingBase64]; // @"a"
+```
+
+* `encodeBase64` `stringByEncodingBase64`
+* `decodeBase64` `stringByDecodingBase64`
+* `dataUsingDecodingBase64`
+
+### NSData
+#### NSData+Base64Encode
+
+* `base64Encode` `stringUsingEncodingBase64`
+
 ### NSURL
 
 #### NSURL+Components
