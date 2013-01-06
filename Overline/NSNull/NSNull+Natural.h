@@ -7,6 +7,8 @@
 
 #import <Foundation/Foundation.h>
 
+// http://stackoverflow.com/questions/2060741/does-objective-c-use-short-circuit-evaluation
+
 @interface NSNull (Natural)
 - (void)forwardInvocation:(NSInvocation *)anInvocation;
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector;
