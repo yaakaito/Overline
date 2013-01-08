@@ -9,4 +9,9 @@
 
 @interface NSObject (Equals)
 - (BOOL)isNullObject;
+- (BOOL)isArray;
+- (BOOL)isDictionary;
+- (BOOL)isSet;
+- (BOOL)isString;
+- (BOOL)isNumber;
 @end
