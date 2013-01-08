@@ -64,6 +64,7 @@ NSMutableArray *marray = [NSMutableArray arrayWithArray:@[@1,@2,@3]];
 
 * `insertObjects:atIndex:`
 
+
 ### NSDictionary
 
 #### NSDicionary+Enumeration
@@ -218,6 +219,11 @@ id json = [JSONString jsonObject];
 [[NSArray array] isNullObject]; // NO
 ```
 * `isNullObject`
+* `isArray`
+* `isDictionary`
+* `isSet`
+* `isString`
+* `isNumber`
 
 ### NSNull
 
