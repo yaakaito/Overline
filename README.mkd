@@ -58,7 +58,7 @@ NSArray *shuffled = [@[@1,@2,@3,@4,@5,@6] shuffledArray];
 
 * `subarrayFromIndex:`
 * `subarrayFromIndex:length:`
-* `subarrayTo:`
+* `subarrayToIndex:`
 
 ### NSMutableArray
 #### NSMutableArray+Shorthands
@@ -102,6 +102,13 @@ NSDictionary *filtered = [dic dictionaryFilteredByKeyUsingBlock:^BOOL(NSString *
 #### NSDictionary+Path
 
 ```objective-c
+/*
+@{
+    @"error" : @{
+        @"message" : @"msg"
+    }
+}
+*/
 NSString *s = [dic objectForPath:@"error.message"];
 ```
 
