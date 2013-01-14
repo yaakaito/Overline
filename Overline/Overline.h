@@ -8,16 +8,26 @@
 
 #import <Foundation/Foundation.h>
 
+#import "NSMutableArray+Shorthand.h"
 #import "NSArray+Enumeration.h"
 #import "NSArray+Random.h"
 #import "NSArray+Selector.h"
+#import "NSArray+SubArray.h"
 
 #import "NSDictionary+Enumeration.h"
+#import "NSDictionary+Path.h"
 
 #import "NSString+Hash.h"
 #import "NSString+Shorthand.h"
 #import "NSString+Components.h"
 #import "NSString+RegularExpression.h"
+#import "NSString+URLEncode.h"
+#import "NSString+Base64Encode.h"
+#import "NSString+JSON.h"
+
+#import "NSSet+Enumeration.h"
+
+#import "NSData+Base64Encode.h"
 
 #import "NSBundle+Shorthand.h"
 
