@@ -22,6 +22,19 @@ import `Overline.h`
 
 ### NSArray
 
+#### NSArray+Initialize
+
+```objective-c
+NSArray *array = [NSArray arrayWithRangeFrom:0 to:10];
+// @[@0, @1, @2, @3, @4, @5, @6, @7, @8, @9]
+
+NSArray *array2 = [NSArray arrayWithRangeFrom:0 to:-10 step:2];
+// @[@0, @-2, @-4, @-6, @-8]
+```
+
+* `arrayWithRangeFrom:to:`
+* `arrayWithRangeFrom:to:step:`
+
 #### NSArray+Enumeration
 
 ```objective-c
@@ -49,6 +62,15 @@ NSArray *shuffled = [@[@1,@2,@3,@4,@5,@6] shuffledArray];
 
 * `shuffle` `shuffledArray`
 * `anyObject`
+
+#### NSArray+Reverse
+
+```objective-c
+NSArray *reversed = [@[@1,@2,@3,@4,@5,@6] reversedArray]; 
+// @[@6,@5,@4,@3,@2,@1]
+```
+
+* `reverse` `reversedArray`
 
 #### NSArray+Selector
 
