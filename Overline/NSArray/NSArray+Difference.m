@@ -21,4 +21,14 @@
     [all minusOrderedSet:dup];
     return [all array];
 }
+
+- (NSArray *)unionise:(NSArray *)array {
+    return [self arrayByUnionisingArray:array];
+}
+
+- (NSArray *)arrayByUnionisingArray:(NSArray *)array {
+    NSMutableOrderedSet *base = [NSMutableOrderedSet orderedSetWithArray:self];
+    [base unionOrderedSet:[NSOrderedSet orderedSetWithArray:array]];
+    return [base array];
+}
 @end

@@ -10,4 +10,6 @@
 @interface NSArray (Difference)
 - (NSArray *)difference:(NSArray *)array;
 - (NSArray *)arrayDifferenceWithArray:(NSArray *)array;
+- (NSArray *)unionise:(NSArray *)array;
+- (NSArray *)arrayByUnionisingArray:(NSArray *)array;
 @end

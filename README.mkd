@@ -85,6 +85,7 @@ NSArray *reversed = [@[@1,@2,@3,@4,@5,@6] reversedArray];
 #### NSArray+Difference
 
 * `difference` `arrayDifferenceWithArray`
+* `unionised` `arrayByUnionisingArray`
 
 #### NSArray+Shorthand
 
