@@ -11,4 +11,5 @@
 - (NSArray *)subarrayFromIndex:(NSUInteger)index;
 - (NSArray *)subarrayFromIndex:(NSUInteger)index length:(NSUInteger)length;
 - (NSArray *)subarrayToIndex:(NSUInteger)index;
+- (NSArray *)uniqueObjects;
 @end

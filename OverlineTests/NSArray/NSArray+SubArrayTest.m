@@ -34,4 +34,9 @@
     NSArray *sub = [@[@1,@2,@3,@4,@5,@6] subarrayToIndex:3];
     assertThat(sub, equalTo(@[@1,@2,@3,@4]));
 }
+
+- (void)testUniqueObjects {
+    NSArray *uniqueObjects = [@[@1, @2, @3, @1, @3, @4, @5] uniqueObjects];
+    assertThat(uniqueObjects, equalTo(@[@1, @2, @3, @4, @5]));
+}
 @end

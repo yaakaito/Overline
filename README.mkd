@@ -81,6 +81,7 @@ NSArray *reversed = [@[@1,@2,@3,@4,@5,@6] reversedArray];
 * `subarrayFromIndex:`
 * `subarrayFromIndex:length:`
 * `subarrayToIndex:`
+* `uniqueObjects`
 
 #### NSArray+Difference
 

@@ -22,4 +22,8 @@
     return [self subarrayWithRange:NSMakeRange(0, index+1)];
 }
 
+- (NSArray *)uniqueObjects {
+    return [[NSOrderedSet orderedSetWithArray:self] array];
+}
+
 @end
