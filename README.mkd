@@ -82,6 +82,10 @@ NSArray *reversed = [@[@1,@2,@3,@4,@5,@6] reversedArray];
 * `subarrayFromIndex:length:`
 * `subarrayToIndex:`
 
+#### NSArray+Difference
+
+* `difference` `arrayDifferenceWithArray`
+
 #### NSArray+Shorthand
 
 * `isEmpty`

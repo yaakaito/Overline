@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C3D52573BEB52AA63491EFA /* NSArray+DifferenceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D50091C39ACD095454A34 /* NSArray+DifferenceTest.m */; };
 		1C3D52633B221E980CA9C81F /* NSNumber+EqualsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D50C558446172F7840F53 /* NSNumber+EqualsTest.m */; };
 		1C3D531C4A5B4BF7E2EF5721 /* NSArray+Reverse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D5C0A7317BB1F501617C0 /* NSArray+Reverse.m */; };
 		1C3D53FD2743FE3D77502EA5 /* NSNull+NaturalTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D5636F7A6FA6860983442 /* NSNull+NaturalTest.m */; };
@@ -21,8 +22,10 @@
 		1C3D596A1F9B4039992A0B6C /* NSObject+Equals.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D5E7AD9EFEC2E5FA77964 /* NSObject+Equals.m */; };
 		1C3D597D7DB91993DDD04091 /* NSArray+ShorthandTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D5ECFDDEF57613AB979D3 /* NSArray+ShorthandTest.m */; };
 		1C3D5A33911D175CF9BDF317 /* NSNull+Natural.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D53E60B5563E7C638AE7C /* NSNull+Natural.m */; };
+		1C3D5B3586E402CE3D6745B5 /* NSArray+Difference.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C3D5028B6CFE43A14E0B49E /* NSArray+Difference.h */; };
 		1C3D5BDFBF98915E1C83DDCC /* NSArray+InitializeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D57FABE27CD27B350BF01 /* NSArray+InitializeTest.m */; };
 		1C3D5E013AE3E667133E97DC /* NSNull+Natural.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C3D51561B6E8A7617FF4F01 /* NSNull+Natural.h */; };
+		1C3D5E651C13C058710F1A35 /* NSArray+Difference.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D562D9231467E3E443B56 /* NSArray+Difference.m */; };
 		1C3D5F0A27F57ADF06139F00 /* NSNumber+Equals.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D54D5537C4413E0502D2F /* NSNumber+Equals.m */; };
 		1C3D5F14013A290175157FDE /* NSObject+EqualsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D57AC4CB25E57ACD8F8A1 /* NSObject+EqualsTest.m */; };
 		1C3D5F5E48AFF9CF197759F4 /* NSArray+Reverse.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C3D59D37876233B24521DFF /* NSArray+Reverse.h */; };
@@ -153,17 +156,21 @@
 				1C3D5FE6FF33A0FFB061ECCB /* NSArray+Initialize.h in CopyFiles */,
 				1C3D5F5E48AFF9CF197759F4 /* NSArray+Reverse.h in CopyFiles */,
 				1C3D55B91C9987181AE77A64 /* NSArray+Shorthand.h in CopyFiles */,
+				1C3D5B3586E402CE3D6745B5 /* NSArray+Difference.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1C3D50091C39ACD095454A34 /* NSArray+DifferenceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+DifferenceTest.m"; sourceTree = "<group>"; };
+		1C3D5028B6CFE43A14E0B49E /* NSArray+Difference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Difference.h"; sourceTree = "<group>"; };
 		1C3D50C558446172F7840F53 /* NSNumber+EqualsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+EqualsTest.m"; sourceTree = "<group>"; };
 		1C3D51561B6E8A7617FF4F01 /* NSNull+Natural.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+Natural.h"; sourceTree = "<group>"; };
 		1C3D53E60B5563E7C638AE7C /* NSNull+Natural.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+Natural.m"; sourceTree = "<group>"; };
 		1C3D54D5537C4413E0502D2F /* NSNumber+Equals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Equals.m"; sourceTree = "<group>"; };
 		1C3D5588E57C59BFA1609E58 /* NSArray+Shorthand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Shorthand.m"; sourceTree = "<group>"; };
+		1C3D562D9231467E3E443B56 /* NSArray+Difference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Difference.m"; sourceTree = "<group>"; };
 		1C3D5636F7A6FA6860983442 /* NSNull+NaturalTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+NaturalTest.m"; sourceTree = "<group>"; };
 		1C3D564AF68B0AF84B1D2AC9 /* NSArray+ReverseTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ReverseTest.m"; sourceTree = "<group>"; };
 		1C3D57AC4CB25E57ACD8F8A1 /* NSObject+EqualsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+EqualsTest.m"; sourceTree = "<group>"; };
@@ -475,6 +482,7 @@
 				1C3D564AF68B0AF84B1D2AC9 /* NSArray+ReverseTest.m */,
 				1C3D57FABE27CD27B350BF01 /* NSArray+InitializeTest.m */,
 				1C3D5ECFDDEF57613AB979D3 /* NSArray+ShorthandTest.m */,
+				1C3D50091C39ACD095454A34 /* NSArray+DifferenceTest.m */,
 			);
 			path = NSArray;
 			sourceTree = "<group>";
@@ -564,6 +572,8 @@
 				1C3D59D37876233B24521DFF /* NSArray+Reverse.h */,
 				1C3D5588E57C59BFA1609E58 /* NSArray+Shorthand.m */,
 				1C3D5D893D537EEDB69D89D1 /* NSArray+Shorthand.h */,
+				1C3D562D9231467E3E443B56 /* NSArray+Difference.m */,
+				1C3D5028B6CFE43A14E0B49E /* NSArray+Difference.h */,
 			);
 			path = NSArray;
 			sourceTree = "<group>";
@@ -724,6 +734,7 @@
 				1C3D54297E81622B86BB80FD /* NSArray+Initialize.m in Sources */,
 				1C3D531C4A5B4BF7E2EF5721 /* NSArray+Reverse.m in Sources */,
 				1C3D556369CAA68BFAAD5848 /* NSArray+Shorthand.m in Sources */,
+				1C3D5E651C13C058710F1A35 /* NSArray+Difference.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -776,6 +787,7 @@
 				1C3D5F80D8C652BB5F5DA930 /* NSArray+ReverseTest.m in Sources */,
 				1C3D5BDFBF98915E1C83DDCC /* NSArray+InitializeTest.m in Sources */,
 				1C3D597D7DB91993DDD04091 /* NSArray+ShorthandTest.m in Sources */,
+				1C3D52573BEB52AA63491EFA /* NSArray+DifferenceTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
