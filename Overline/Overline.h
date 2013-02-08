@@ -13,6 +13,9 @@
 #import "NSArray+Random.h"
 #import "NSArray+Selector.h"
 #import "NSArray+SubArray.h"
+#import "NSArray+Difference.h"
+#import "NSArray+Initialize.h"
+#import "NSArray+Reverse.h"
 
 #import "NSDictionary+Enumeration.h"
 #import "NSDictionary+Path.h"
