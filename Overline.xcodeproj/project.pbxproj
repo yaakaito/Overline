@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		1C3D52633B221E980CA9C81F /* NSNumber+EqualsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D50C558446172F7840F53 /* NSNumber+EqualsTest.m */; };
+		1C3D531C4A5B4BF7E2EF5721 /* NSArray+Reverse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D5C0A7317BB1F501617C0 /* NSArray+Reverse.m */; };
 		1C3D53FD2743FE3D77502EA5 /* NSNull+NaturalTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D5636F7A6FA6860983442 /* NSNull+NaturalTest.m */; };
 		1C3D5425CC777CDC9AFB56A8 /* NSObject+Equals.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D5E7AD9EFEC2E5FA77964 /* NSObject+Equals.m */; };
+		1C3D54297E81622B86BB80FD /* NSArray+Initialize.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D595FF7BD873137120E6D /* NSArray+Initialize.m */; };
 		1C3D545321D7F661EEB2B9CD /* NSObject+Equals.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C3D59B37273B283EDE81626 /* NSObject+Equals.h */; };
 		1C3D5614747B8260D633A8E6 /* NSNull+Natural.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D53E60B5563E7C638AE7C /* NSNull+Natural.m */; };
 		1C3D57C92971EC66332AFE0D /* NSNumber+Equals.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C3D5C2A8701578816D42723 /* NSNumber+Equals.h */; };
 		1C3D580DDF7D5A95E0DCA353 /* NSNumber+Equals.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D54D5537C4413E0502D2F /* NSNumber+Equals.m */; };
 		1C3D596A1F9B4039992A0B6C /* NSObject+Equals.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D5E7AD9EFEC2E5FA77964 /* NSObject+Equals.m */; };
 		1C3D5A33911D175CF9BDF317 /* NSNull+Natural.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D53E60B5563E7C638AE7C /* NSNull+Natural.m */; };
+		1C3D5BDFBF98915E1C83DDCC /* NSArray+InitializeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D57FABE27CD27B350BF01 /* NSArray+InitializeTest.m */; };
 		1C3D5E013AE3E667133E97DC /* NSNull+Natural.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C3D51561B6E8A7617FF4F01 /* NSNull+Natural.h */; };
 		1C3D5F0A27F57ADF06139F00 /* NSNumber+Equals.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D54D5537C4413E0502D2F /* NSNumber+Equals.m */; };
 		1C3D5F14013A290175157FDE /* NSObject+EqualsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D57AC4CB25E57ACD8F8A1 /* NSObject+EqualsTest.m */; };
+		1C3D5F5E48AFF9CF197759F4 /* NSArray+Reverse.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C3D59D37876233B24521DFF /* NSArray+Reverse.h */; };
+		1C3D5F80D8C652BB5F5DA930 /* NSArray+ReverseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D564AF68B0AF84B1D2AC9 /* NSArray+ReverseTest.m */; };
+		1C3D5FE6FF33A0FFB061ECCB /* NSArray+Initialize.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C3D5A245E9A2E2E86489A41 /* NSArray+Initialize.h */; };
 		B9BEB6D41669B27100A1D26D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BEB6D31669B27100A1D26D /* Foundation.framework */; };
 		B9BEB6D91669B27100A1D26D /* Overline.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B9BEB6D81669B27100A1D26D /* Overline.h */; };
 		B9BEB6E31669B27100A1D26D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BEB6E21669B27100A1D26D /* SenTestingKit.framework */; };
@@ -141,6 +147,8 @@
 				D0424EBB83A5F3F2CBE70C23 /* NSMutableArray+Shorthand.h in CopyFiles */,
 				D0424F455103E0936342D4FF /* NSDictionary+Path.h in CopyFiles */,
 				D042453504B80B71078D3631 /* NSArray+SubArray.h in CopyFiles */,
+				1C3D5FE6FF33A0FFB061ECCB /* NSArray+Initialize.h in CopyFiles */,
+				1C3D5F5E48AFF9CF197759F4 /* NSArray+Reverse.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,8 +160,14 @@
 		1C3D53E60B5563E7C638AE7C /* NSNull+Natural.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+Natural.m"; sourceTree = "<group>"; };
 		1C3D54D5537C4413E0502D2F /* NSNumber+Equals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Equals.m"; sourceTree = "<group>"; };
 		1C3D5636F7A6FA6860983442 /* NSNull+NaturalTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+NaturalTest.m"; sourceTree = "<group>"; };
+		1C3D564AF68B0AF84B1D2AC9 /* NSArray+ReverseTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ReverseTest.m"; sourceTree = "<group>"; };
 		1C3D57AC4CB25E57ACD8F8A1 /* NSObject+EqualsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+EqualsTest.m"; sourceTree = "<group>"; };
+		1C3D57FABE27CD27B350BF01 /* NSArray+InitializeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+InitializeTest.m"; sourceTree = "<group>"; };
+		1C3D595FF7BD873137120E6D /* NSArray+Initialize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Initialize.m"; sourceTree = "<group>"; };
 		1C3D59B37273B283EDE81626 /* NSObject+Equals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Equals.h"; sourceTree = "<group>"; };
+		1C3D59D37876233B24521DFF /* NSArray+Reverse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Reverse.h"; sourceTree = "<group>"; };
+		1C3D5A245E9A2E2E86489A41 /* NSArray+Initialize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Initialize.h"; sourceTree = "<group>"; };
+		1C3D5C0A7317BB1F501617C0 /* NSArray+Reverse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Reverse.m"; sourceTree = "<group>"; };
 		1C3D5C2A8701578816D42723 /* NSNumber+Equals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Equals.h"; sourceTree = "<group>"; };
 		1C3D5E7AD9EFEC2E5FA77964 /* NSObject+Equals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Equals.m"; sourceTree = "<group>"; };
 		776CEF8582F049128B505AAB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -451,6 +465,8 @@
 				D0424426C03EA111BD75A196 /* NSArray+RandomTest.m */,
 				D042442AC6E064F1E91EF892 /* NSMutableArray */,
 				D0424894673E704C67F15986 /* NSArray+SubArrayTest.m */,
+				1C3D564AF68B0AF84B1D2AC9 /* NSArray+ReverseTest.m */,
+				1C3D57FABE27CD27B350BF01 /* NSArray+InitializeTest.m */,
 			);
 			path = NSArray;
 			sourceTree = "<group>";
@@ -534,6 +550,10 @@
 				D0424FD703E41AF87D1F6143 /* NSMutableArray */,
 				D0424374B8973BC560227F42 /* NSArray+SubArray.m */,
 				D0424B50CB8834D764B1162D /* NSArray+SubArray.h */,
+				1C3D595FF7BD873137120E6D /* NSArray+Initialize.m */,
+				1C3D5A245E9A2E2E86489A41 /* NSArray+Initialize.h */,
+				1C3D5C0A7317BB1F501617C0 /* NSArray+Reverse.m */,
+				1C3D59D37876233B24521DFF /* NSArray+Reverse.h */,
 			);
 			path = NSArray;
 			sourceTree = "<group>";
@@ -691,6 +711,8 @@
 				D04244235101061612F10C56 /* NSMutableArray+Shorthand.m in Sources */,
 				D04243C0066C25F3AD7DF56D /* NSDictionary+Path.m in Sources */,
 				D0424CBC6D52E36A105E9C5A /* NSArray+SubArray.m in Sources */,
+				1C3D54297E81622B86BB80FD /* NSArray+Initialize.m in Sources */,
+				1C3D531C4A5B4BF7E2EF5721 /* NSArray+Reverse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -740,6 +762,8 @@
 				D04248ACF9843D225230A4D4 /* NSArray+SubArray.m in Sources */,
 				D0424554AF00FFFF6A618953 /* NSDictionary+PathTest.m in Sources */,
 				D042463D1665156E36063B3C /* NSArray+SubArrayTest.m in Sources */,
+				1C3D5F80D8C652BB5F5DA930 /* NSArray+ReverseTest.m in Sources */,
+				1C3D5BDFBF98915E1C83DDCC /* NSArray+InitializeTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
