@@ -23,7 +23,6 @@
     assertThatBool([(@[]) isEmpty], equalToBool(YES));
     assertThatBool([[NSArray array] isEmpty], equalToBool(YES));
     assertThatBool([(@[@1, @2]) isEmpty], equalToBool(NO));
-
 }
 
 @end
