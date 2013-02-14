@@ -22,4 +22,8 @@
     }
     return [NSArray arrayWithArray:array];
 }
+
+- (NSArray *)objectAtReversedIndex:(NSUInteger)index {
+    return [[self reversedArray] objectAtIndex:index];
+}
 @end

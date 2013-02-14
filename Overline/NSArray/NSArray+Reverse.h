@@ -10,4 +10,5 @@
 @interface NSArray (Reverse)
 - (NSArray *)reverse;
 - (NSArray *)reversedArray;
+- (NSArray *)objectAtReversedIndex:(NSUInteger)index;
 @end
