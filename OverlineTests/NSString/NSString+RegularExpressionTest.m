@@ -95,4 +95,61 @@
     assertThatBool([@"h[0-9]ge" testInString:@"fuga-h0ge-fuga" options:NSRegularExpressionSearch], equalToBool(YES));
     assertThatBool([@"h[A-Z]ge" testInString:@"fuga-hoge-fuga" options:NSRegularExpressionSearch], equalToBool(NO));
 }
+
+- (void)testReplaceNewString
+{
+    assertThat([@"hoge" replace:@"ho" newString:@"fu"], equalTo(@"fuge"));
+    assertThat([@"hoge" replace:@"h[a-z]" newString:@"fu"], equalTo(@"fuge"));
+}
+
+- (void)testStringByReplacingOccurrenceOfRegExpWithString
+{
+    assertThat([@"hoge" stringByReplacingOccurrencesOfRegExp:@"ho" withString:@"fu"], equalTo(@"fuge"));
+    assertThat([@"hoge" stringByReplacingOccurrencesOfRegExp:@"h[a-z]" withString:@"fu"], equalTo(@"fuge"));
+    assertThat([@"hoge fuga" stringByReplacingOccurrencesOfRegExp:@"hoge" withString:@"fuga"], equalTo(@"fuge fuga"));
+    assertThat([@"hoge and hoge" stringByReplacingOccurrencesOfRegExp:@"hoge" withString:@"fuga"], equalTo(@"fuga and fuga"));
+}
+
+- (void)testReplaceNewStringOptions
+{
+    assertThat([@"HOGE" replace:@"ho" newString:@"fu" options:NSRegularExpressionCaseInsensitive], equalTo(@"fuGE"));
+    assertThat([@"HOGE" replace:@"h[A-Z]" newString:@"fu" options:NSRegularExpressionCaseInsensitive], equalTo(@"fuGE"));
+}
+
+- (void)testStringByReplacingOccurrenceOfRegExpWithStringOptions
+{
+    assertThat([@"HOGE" stringByReplacingOccurrencesOfRegExp:@"ho" withString:@"fu" options:NSRegularExpressionCaseInsensitive], equalTo(@"fuGE"));
+    assertThat([@"HOGE" stringByReplacingOccurrencesOfRegExp:@"h[A-Z]" withString:@"fu" options:NSRegularExpressionCaseInsensitive], equalTo(@"fuGE"));
+    assertThat([@"hoGE fuga" stringByReplacingOccurrencesOfRegExp:@"hoge" withString:@"fuga" options:NSRegularExpressionCaseInsensitive], equalTo(@"fuge fuga"));
+    assertThat([@"HOGE and hoge" stringByReplacingOccurrencesOfRegExp:@"hoge" withString:@"fuga" options:NSRegularExpressionCaseInsensitive], equalTo(@"fuga and fuga"));
+}
+
+- (void)testReplaceTemplate
+{
+    assertThat([@"hoge" replace:@"ho" template:@"$1"], equalTo(@"ho"));
+    assertThat([@"hoge" replace:@"h[a-z]" template:@"$1"], equalTo(@"ho"));
+}
+
+- (void)testStringByReplacingOccurrenceOfRegExpWithTemplate
+{
+    assertThat([@"hoge" stringByReplacingOccurrencesOfRegExp:@"ho" withTemplate:@"$1"], equalTo(@"ho"));
+    assertThat([@"hoge" stringByReplacingOccurrencesOfRegExp:@"h[a-z]" withTemplate:@"$1"], equalTo(@"ho"));
+    assertThat([@"hoge fuga" stringByReplacingOccurrencesOfRegExp:@"(hoge) (fuga)" withTemplate:@"$2 $1"], equalTo(@"fuga hoge"));
+    assertThat([@"hoge and hoge" stringByReplacingOccurrencesOfRegExp:@"(.+) and (.+)" withTemplate:@"$1 $2"], equalTo(@"hoge hoge"));
+}
+
+- (void)testReplaceTemplateOptions
+{
+    assertThat([@"HOGE" replace:@"ho" template:@"$1" options:NSRegularExpressionCaseInsensitive], equalTo(@"HO"));
+    assertThat([@"HOGE" replace:@"h[A-Z]" template:@"$1" options:NSRegularExpressionCaseInsensitive], equalTo(@"HO"));
+}
+
+- (void)testStringByReplacingOccurrenceOfRegExpWithTemplateOptions
+{
+    assertThat([@"hoge" stringByReplacingOccurrencesOfRegExp:@"HO" withTemplate:@"$1" options:NSRegularExpressionCaseInsensitive], equalTo(@"ho"));
+    assertThat([@"hoge" stringByReplacingOccurrencesOfRegExp:@"H[A-Z]" withTemplate:@"$1" options:NSRegularExpressionCaseInsensitive], equalTo(@"ho"));
+    assertThat([@"hoge fuga" stringByReplacingOccurrencesOfRegExp:@"(HOGE) (HOGE)" withTemplate:@"$2 $1" options:NSRegularExpressionCaseInsensitive], equalTo(@"fuga hoge"));
+    assertThat([@"hoge and hoge" stringByReplacingOccurrencesOfRegExp:@"(.+) and (.+)" withTemplate:@"$1 $2" options:NSRegularExpressionCaseInsensitive], equalTo(@"hoge hoge"));
+}
+
 @end
