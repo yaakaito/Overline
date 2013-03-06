@@ -42,4 +42,5 @@
 - (BOOL)testInString:(NSString *)string options:(NSRegularExpressionOptions)options {
     return [self rangeOfFirstMatchInString:string options:options].location != NSNotFound;
 }
+
 @end
