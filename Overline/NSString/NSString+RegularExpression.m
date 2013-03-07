@@ -43,4 +43,43 @@
     return [self rangeOfFirstMatchInString:string options:options].location != NSNotFound;
 }
 
+- (NSString *)replace:(NSString *)regexpPattern newString:(NSString *)string {
+    return [self stringByReplacingOccurrencesOfRegExpPattern:regexpPattern withString:string];
+}
+
+- (NSString *)stringByReplacingOccurrencesOfRegExpPattern:(NSString *)regexpPattern withString:(NSString *)string {
+    return [self stringByReplacingOccurrencesOfRegExpPattern:regexpPattern withString:string options:NSRegularExpressionSearch];
+}
+
+- (NSString *)replace:(NSString *)regexpPattern newString:(NSString *)string options:(NSRegularExpressionOptions)options {
+    return [self stringByReplacingOccurrencesOfRegExpPattern:regexpPattern withString:string options:options];
+}
+
+- (NSString *)stringByReplacingOccurrencesOfRegExpPattern:(NSString *)regexpPattern withString:(NSString *)string options:(NSRegularExpressionOptions)options {
+    NSError *error = nil;
+    NSRegularExpression *regexp = [NSRegularExpression regularExpressionWithPattern:regexpPattern
+                                                                            options:options
+                                                                              error:&error];
+    NSString *replaced = [regexp stringByReplacingMatchesInString:self
+                                                          options:NSMatchingReportProgress
+                                                            range:NSMakeRange(0, self.length)
+                                                     withTemplate:string];
+    return replaced;
+}
+
+- (NSString *)replace:(NSString *)regexpPattern template:(NSString *)template {
+    return [self stringByReplacingOccurrencesOfRegExpPattern:regexpPattern withTemplate:template];
+}
+
+- (NSString *)stringByReplacingOccurrencesOfRegExpPattern:(NSString *)regexpPattern withTemplate:(NSString *)template {
+    return [self stringByReplacingOccurrencesOfRegExpPattern:regexpPattern withTemplate:template options:NSRegularExpressionSearch];
+}
+
+- (NSString *)replace:(NSString *)regexpPattern template:(NSString *)template options:(NSRegularExpressionOptions)options {
+    return [self stringByReplacingOccurrencesOfRegExpPattern:regexpPattern withTemplate:template options:options];
+}
+
+- (NSString *)stringByReplacingOccurrencesOfRegExpPattern:(NSString *)regexpPattern withTemplate:(NSString *)template options:(NSRegularExpressionOptions)options {
+    return [self stringByReplacingOccurrencesOfRegExpPattern:regexpPattern withString:template options:options];
+}
 @end

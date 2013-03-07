@@ -15,13 +15,13 @@
 - (NSArray *)matchesInString:(NSString *)string options:(NSRegularExpressionOptions)options;
 - (BOOL)testInString:(NSString *)string;
 - (BOOL)testInString:(NSString *)string options:(NSRegularExpressionOptions)options;
-- (NSString *)replace:(NSString *)regexpString newString:(NSString *)string;
-- (NSString *)replace:(NSString *)regexpString newString:(NSString *)string options:(NSRegularExpressionOptions)options;
-- (NSString *)stringByReplacingOccurrencesOfRegExp:(NSString *)regexpString withString:(NSString *)string;
-- (NSString *)stringByReplacingOccurrencesOfRegExp:(NSString *)regexpString withString:(NSString *)string options:(NSRegularExpressionOptions)options;
-- (NSString *)replace:(NSString *)regexpString template:(NSString *)template;
-- (NSString *)replace:(NSString *)regexpString template:(NSString *)template options:(NSRegularExpressionOptions)options;
-- (NSString *)stringByReplacingOccurrencesOfRegExp:(NSString *)regexpString withTemplate:(NSString *)template;
-- (NSString *)stringByReplacingOccurrencesOfRegExp:(NSString *)regexpString withTemplate:(NSString *)template options:(NSRegularExpressionOptions)options;
+- (NSString *)replace:(NSString *)regexpPattern newString:(NSString *)string;
+- (NSString *)replace:(NSString *)regexpPattern newString:(NSString *)string options:(NSRegularExpressionOptions)options;
+- (NSString *)stringByReplacingOccurrencesOfRegExpPattern:(NSString *)regexpPattern withString:(NSString *)string;
+- (NSString *)stringByReplacingOccurrencesOfRegExpPattern:(NSString *)regexpPattern withString:(NSString *)string options:(NSRegularExpressionOptions)options;
+- (NSString *)replace:(NSString *)regexpPattern template:(NSString *)template;
+- (NSString *)replace:(NSString *)regexpPattern template:(NSString *)template options:(NSRegularExpressionOptions)options;
+- (NSString *)stringByReplacingOccurrencesOfRegExpPattern:(NSString *)regexpPattern withTemplate:(NSString *)template;
+- (NSString *)stringByReplacingOccurrencesOfRegExpPattern:(NSString *)regexpPattern withTemplate:(NSString *)template options:(NSRegularExpressionOptions)options;
 
 @end
