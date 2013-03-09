@@ -193,6 +193,10 @@ NSSet *mapped = [set mappedSetUsingBlock:^id(id obj, NSUInteger idx) {
 * `matchesInString:options:`
 * `testInString:`
 * `testInString:options:`
+* `replace:newString:` `stringByReplacingOccurrencesOfRegExpPattern:withString`
+* `replace:newString:options:` `stringByReplacingOccurrencesOfRegExpPattern:withString:options:`
+* `replace:template:` `stringByReplacingOccurrencesOfRegExpPattern:withTemplate:`
+* `replace:template:options:` `stringByReplacingOccurrencesOfRegExpPattern:withTemplate:options:`
 
 #### NSString+Hash
 
