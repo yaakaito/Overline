@@ -283,7 +283,6 @@
 				1C3D54D5537C4413E0502D2F /* NSNumber+Equals.m */,
 				1C3D5C2A8701578816D42723 /* NSNumber+Equals.h */,
 			);
-			lastKnownFileType = text;
 			path = NSNumber;
 			sourceTree = "<group>";
 		};
