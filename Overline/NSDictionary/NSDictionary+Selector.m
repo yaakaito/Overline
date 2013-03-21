@@ -13,4 +13,60 @@
 - (id)objectForKey:(id)aKey transformBlock:(id (^)(id))block {
     return block([self objectForKey:aKey]);
 }
+
+- (NSNumber *)numberForKey:(id)aKey {
+    return (NSNumber *)[self objectForKey:aKey];
+}
+
+- (NSString *)stringForKey:(id)aKey {
+    return (NSString *)[self objectForKey:aKey];
+}
+
+- (NSArray *)arrayForKey:(id)aKey {
+    return (NSArray *)[self objectForKey:aKey];
+}
+
+- (NSDictionary *)dictionaryForKey:(id)aKey {
+    return (NSDictionary *)[self objectForKey:aKey];
+}
+
+- (int)intForKey:(id)aKey {
+    return [[self objectForKey:aKey] intValue];
+}
+
+- (NSInteger)integerForKey:(id)aKey {
+    return [[self objectForKey:aKey] integerValue];
+}
+
+- (unsigned int)unsignedIntForKey:(id)aKey {
+    return [[self objectForKey:aKey] unsignedIntValue];
+}
+
+- (NSUInteger)unsignedIntegerForKey:(id)aKey {
+    return [[self objectForKey:aKey] unsignedIntegerValue];
+}
+
+- (long)longForKey:(id)aKey {
+    return [[self objectForKey:aKey] longValue];
+}
+
+- (unsigned long)unsignedLongForKey:(id)aKey {
+    return [[self objectForKey:aKey] unsignedLongValue];
+}
+
+- (long long)longLongForKey:(id)aKey {
+    return [[self objectForKey:aKey] longLongValue];
+}
+
+- (unsigned long long int)unsignedLongLongForKey:(id)aKey {
+    return [[self objectForKey:aKey] unsignedLongLongValue];
+}
+
+- (double)doubleForKey:(id)aKey {
+    return [[self objectForKey:aKey] doubleValue];
+}
+
+- (float)floatForKey:(id)aKey {
+    return [[self objectForKey:aKey] floatValue];
+}
 @end

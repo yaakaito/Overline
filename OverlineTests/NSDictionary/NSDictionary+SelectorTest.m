@@ -57,4 +57,56 @@ static NSString *Dic_SelectorJSONString = @"{  \"number\" : 1,  \"string\" : \"s
     assertThatLongLong([date timeIntervalSince1970], equalToLongLong(1357010676));
 }
 
+
+- (void)testInt {
+
+    assertThatInt([@{@"k" : @2} intForKey:@"k"], equalToInt(2));
+}
+
+- (void)testInteger {
+
+    assertThatInteger([@{@"k" : @2147483647} intForKey:@"k"], equalToInteger(2147483647));
+}
+
+- (void)testUnsignedInt {
+
+    assertThatUnsignedInt([@{@"k" : @2} unsignedIntForKey:@"k"], equalToUnsignedInt(2));
+}
+
+- (void)testUnsignedInteger {
+
+    assertThatUnsignedInteger([@{@"k" : @4294967295} unsignedIntegerForKey:@"k"], equalToUnsignedInteger(4294967295));
+}
+
+- (void)testLong {
+
+    assertThatLong([@{@"k" : @2147483647} longForKey:@"k"], equalToLong(2147483647));
+}
+
+- (void)testUnsignedLong {
+
+    assertThatUnsignedLong([@{@"k" : @4294967295} unsignedLongForKey:@"k"], equalToUnsignedLong(4294967295));
+}
+
+- (void)testLongLong {
+
+    assertThatLongLong([@{@"k" : @9223372036854775807} longLongForKey:@"k"], equalToLongLong(9223372036854775807));
+}
+
+- (void)testUnsignedLongLong {
+
+    assertThatUnsignedLongLong([@{@"k" : @18446744073709551615} unsignedLongLongForKey:@"k"], equalToUnsignedLongLong(18446744073709551615));
+}
+
+- (void)testDouble {
+
+    assertThatDouble([@{@"k" : @0.5} doubleForKey:@"k"], equalToDouble(0.5));
+}
+
+- (void)testFloat {
+
+    assertThatFloat([@{@"k" : @0.5} floatForKey:@"k"], equalToFloat(0.5));
+}
+
+
 @end
