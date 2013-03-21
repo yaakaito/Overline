@@ -42,6 +42,14 @@
     }];
 }
 
+- (NSDate *)since1970DateForKey:(NSString *)aKey {
+    return [NSDate dateWithTimeIntervalSince1970:[self doubleForKey:aKey]];
+}
+
+- (NSDate *)timestampForKey:(NSString *)aKey {
+    return [self since1970DateForKey:aKey];
+}
+
 - (int)intForKey:(id)aKey {
     return [[self objectForKey:aKey] intValue];
 }
