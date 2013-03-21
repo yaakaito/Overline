@@ -12,4 +12,5 @@
 - (NSArray *)subarrayFromIndex:(NSUInteger)index length:(NSUInteger)length;
 - (NSArray *)subarrayToIndex:(NSUInteger)index;
 - (NSArray *)uniqueObjects;
+- (NSArray *)uniqueObjectsUsingEqualsBlock:(BOOL (^)(id left, id right))block;
 @end

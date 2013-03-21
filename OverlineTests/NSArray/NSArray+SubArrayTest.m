@@ -39,4 +39,43 @@
     NSArray *uniqueObjects = [@[@1, @2, @3, @1, @3, @4, @5] uniqueObjects];
     assertThat(uniqueObjects, equalTo(@[@1, @2, @3, @4, @5]));
 }
+
+- (void)testUniqueObjectsUsingEqualsBlock {
+
+    NSArray *uniqueObjects = [@[@{
+            @"name" : @"1",
+            @"value" : @"aaa"
+    }, @{
+            @"name" : @"2",
+            @"value" : @"bbb"
+    }, @{
+            @"name" : @"3",
+            @"value" : @"aaa"
+    }, @{
+            @"name" : @"4",
+            @"value" : @"ccc"
+    }, @{
+            @"name" : @"5",
+            @"value" : @"ccc"
+    }, @{
+            @"name" : @"6",
+            @"value" : @"ddd"
+    }] uniqueObjectsUsingEqualsBlock:^BOOL(id left, id right) {
+        return [[left objectForKey:@"value"] isEqual:[right objectForKey:@"value"]];
+    }];
+
+    assertThat(uniqueObjects, equalTo(@[@{
+            @"name" : @"1",
+            @"value" : @"aaa"
+    }, @{
+            @"name" : @"2",
+            @"value" : @"bbb"
+    }, @{
+            @"name" : @"4",
+            @"value" : @"ccc"
+    } , @{
+            @"name" : @"6",
+            @"value" : @"ddd"
+    }]));
+}
 @end
