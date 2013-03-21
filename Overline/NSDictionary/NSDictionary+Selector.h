@@ -13,6 +13,8 @@
 - (NSString *)stringForKey:(id)aKey;
 - (NSArray *)arrayForKey:(id)aKey;
 - (NSDictionary *)dictionaryForKey:(id)aKey;
+- (NSDate *)dateForKey:(id)aKey;
+- (NSDate *)dateForKey:(id)aKey usingFormat:(NSString *)formatString;
 - (int)intForKey:(id)aKey;
 - (NSInteger)integerForKey:(id)aKey;
 - (unsigned int)unsignedIntForKey:(id)aKey;

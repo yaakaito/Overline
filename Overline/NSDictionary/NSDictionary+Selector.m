@@ -30,6 +30,18 @@
     return (NSDictionary *)[self objectForKey:aKey];
 }
 
+- (NSDate *)dateForKey:(id)aKey {
+    return [self dateForKey:aKey usingFormat:@"yyyy/MM/dd HH:mm:ss Z"];
+}
+
+- (NSDate *)dateForKey:(id)aKey usingFormat:(NSString *)formatString {
+    return [self objectForKey:aKey transformBlock:^id(id obj) {
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateFormat:formatString];
+        return [formatter dateFromString:obj];
+    }];
+}
+
 - (int)intForKey:(id)aKey {
     return [[self objectForKey:aKey] intValue];
 }

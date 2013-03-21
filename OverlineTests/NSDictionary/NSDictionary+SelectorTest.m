@@ -77,6 +77,16 @@ static NSString *Dic_SelectorJSONString = @"{  \"number\" : 1,  \"string\" : \"s
     }));
 }
 
+- (void)testDateForKey {
+    NSDate *date = [JSON dateForKey:@"date8601"];
+    assertThatLongLong([date timeIntervalSince1970], equalToLongLong(1357010676));
+}
+
+- (void)testDateForKeyUsingFormat {
+    NSDate *date = [JSON dateForKey:@"date8601" usingFormat:@"yyyy/MM/dd HH:mm:ss Z"];
+    assertThatLongLong([date timeIntervalSince1970], equalToLongLong(1357010676));
+}
+
 - (void)testInt {
 
     assertThatInt([@{@"k" : @2} intForKey:@"k"], equalToInt(2));
