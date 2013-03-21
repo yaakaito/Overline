@@ -88,11 +88,7 @@ static NSString *Dic_SelectorJSONString = @"{  \"number\" : 1,  \"string\" : \"s
 
 - (void)testDateWithTimestampForKey {
     NSDate *date = [JSON timestampForKey:@"timestamp"];
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"yyyy/MM/dd HH:mm:ss Z"];
-    [formatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"ja_JP"]];
-    assertThat([formatter stringFromDate:date], equalTo(@"2013/02/05 02:46:40 +0900"));
-
+    assertThat(date, equalTo([NSDate dateWithTimeIntervalSince1970:1360000000]));
 }
 
 - (void)testBoolObjectWithTrueValue {
