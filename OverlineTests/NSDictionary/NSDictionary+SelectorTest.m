@@ -57,6 +57,26 @@ static NSString *Dic_SelectorJSONString = @"{  \"number\" : 1,  \"string\" : \"s
     assertThatLongLong([date timeIntervalSince1970], equalToLongLong(1357010676));
 }
 
+- (void)testStringForKey {
+
+    assertThat([JSON stringForKey:@"string"], equalTo(@"string"));
+}
+
+- (void)testNumberForKey {
+
+    assertThat([JSON numberForKey:@"number"], equalTo(@1));
+}
+
+- (void)testArrayForKey {
+
+    assertThat([JSON arrayForKey:@"array"], equalTo(@[@1,@2,@3]));
+}
+
+- (void)testDictionaryForKey {
+    assertThat([JSON dictionaryForKey:@"object"], equalTo(@{
+            @"k" : @"v"
+    }));
+}
 
 - (void)testInt {
 
