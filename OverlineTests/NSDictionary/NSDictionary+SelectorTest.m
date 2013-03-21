@@ -46,8 +46,7 @@ static NSString *Dic_SelectorJSONString = @"{  \"number\" : 1,  \"string\" : \"s
     // Run after each test method
 }
 
-- (void)testObjectForKeyTransformBlock
-{
+- (void)testObjectForKeyTransformBlock {
     NSDate *date = [JSON objectForKey:@"date8601" transformBlock:^id(id obj) {
         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
         [formatter setDateFormat:@"yyyy/MM/dd HH:mm:ss Z"];
@@ -85,7 +84,7 @@ static NSString *Dic_SelectorJSONString = @"{  \"number\" : 1,  \"string\" : \"s
 
 - (void)testInteger {
 
-    assertThatInteger([@{@"k" : @2147483647} intForKey:@"k"], equalToInteger(2147483647));
+    assertThatInteger([@{@"k" : @2147483647} integerForKey:@"k"], equalToInteger(2147483647));
 }
 
 - (void)testUnsignedInt {
