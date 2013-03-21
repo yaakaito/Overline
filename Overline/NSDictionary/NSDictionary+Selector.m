@@ -59,6 +59,10 @@
     }];
 }
 
+- (BOOL)boolForKey:(id)aKey withTureValue:(id)value {
+    return [[self boolObjectForKey:aKey withTrueValue:value] boolValue];
+}
+
 - (BOOL)boolForKey:(id)aKey {
     return [[self objectForKey:aKey] boolValue];
 }
