@@ -94,6 +94,14 @@ static NSString *Dic_SelectorJSONString = @"{  \"number\" : 1,  \"string\" : \"s
 
 }
 
+- (void)testBoolObjectWithTrueValue {
+    assertThatBool([[JSON boolObjectForKey:@"type" withTrueValue:@3] boolValue], equalToBool(YES));
+}
+
+- (void)testBool {
+    assertThatBool([@{@"k" : @YES} boolForKey:@"k"], equalToBool(YES));
+}
+
 - (void)testInt {
 
     assertThatInt([@{@"k" : @2} intForKey:@"k"], equalToInt(2));

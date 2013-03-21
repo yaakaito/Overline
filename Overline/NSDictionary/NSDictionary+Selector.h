@@ -17,6 +17,8 @@
 - (NSDate *)dateForKey:(id)aKey usingFormat:(NSString *)formatString;
 - (NSDate *)since1970DateForKey:(NSString *)aKey;
 - (NSDate *)timestampForKey:(NSString *)aKey;
+- (NSNumber *)boolObjectForKey:(NSString *)aKey withTrueValue:(id)value;
+- (BOOL)boolForKey:(id)aKey;
 - (int)intForKey:(id)aKey;
 - (NSInteger)integerForKey:(id)aKey;
 - (unsigned int)unsignedIntForKey:(id)aKey;

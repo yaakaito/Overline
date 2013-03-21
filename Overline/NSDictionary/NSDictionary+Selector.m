@@ -50,6 +50,19 @@
     return [self since1970DateForKey:aKey];
 }
 
+- (NSNumber *)boolObjectForKey:(NSString *)aKey withTrueValue:(id)value {
+    return [self objectForKey:aKey transformBlock:^id(id obj) {
+        if ([value isEqual:obj]) {
+            return [NSNumber numberWithBool:YES];
+        }
+        return [NSNumber numberWithBool:NO];
+    }];
+}
+
+- (BOOL)boolForKey:(id)aKey {
+    return [[self objectForKey:aKey] boolValue];
+}
+
 - (int)intForKey:(id)aKey {
     return [[self objectForKey:aKey] intValue];
 }
