@@ -11,4 +11,5 @@
 + (instancetype)dateFormatterWithCalendarIndetifiter:(NSString *)calendar
                                    LocaleIdentifiter:(NSString *)locale
                                 timeZoneAbbreviation:(NSString *)timeZone;
++ (instancetype)userDefaultFormatter;
 @end

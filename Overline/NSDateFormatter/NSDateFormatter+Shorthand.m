@@ -18,4 +18,8 @@
     formatter.timeZone = [NSTimeZone timeZoneWithAbbreviation:timeZone];
     return formatter;
 }
+
++ (instancetype)userDefaultFormatter {
+    return [[NSDateFormatter alloc] init];
+}
 @end
