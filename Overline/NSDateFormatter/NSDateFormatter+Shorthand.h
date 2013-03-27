@@ -8,8 +8,8 @@
 #import <Foundation/Foundation.h>
 
 @interface NSDateFormatter (Shorthand)
-+ (instancetype)dateFormatterWithCalendarIndetifiter:(NSString *)calendar
-                                   LocaleIdentifiter:(NSString *)locale
-                                timeZoneAbbreviation:(NSString *)timeZone;
++ (instancetype)dateFormatterWithCalendarIndentifiter:(NSString *)calendar
+                                    LocaleIdentifiter:(NSString *)locale
+                                 timeZoneAbbreviation:(NSString *)timeZone;
 + (instancetype)userDefaultFormatter;
 @end
