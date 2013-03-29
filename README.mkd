@@ -1,4 +1,4 @@
-# Overline
+# Overline (0.2.0)
 
 Objective-C utilities and shorthands.
 
