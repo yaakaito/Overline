@@ -66,6 +66,22 @@
     assertThat(mapped, equalTo(@{@"a":@2,@"b":@4,@"c":@6,@"d":@8}));
 }
 
+- (void)testArrayMap {
+    NSDictionary *dic = @{
+            @"a" : @1,
+            @"b" : @2,
+            @"c" : @3,
+            @"d" : @4
+    };
+
+    NSArray *mapped = [dic mappedArrayUsingBlock:^(id obj, NSString *key) {
+        return @([obj integerValue] * 2);
+    }];
+
+    assertThat([mapped sortedArrayUsingSelector:@selector(compare:)], equalTo(@[@2,@4,@6,@8]));
+}
+
+
 - (void)testFilterKey {
     NSDictionary *dic = @{
             @"a" : @1,

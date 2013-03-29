@@ -31,6 +31,21 @@
     return result;
 }
 
+- (NSArray *)arrayMap:(id (^)(id, NSString *))block {
+    return [self mappedArrayUsingBlock:block];
+}
+
+- (NSArray *)mappedArrayUsingBlock:(id (^)(id, NSString *))block {
+    NSMutableArray *result = [NSMutableArray array];
+    [self enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+        id o = block(obj, key);
+        if (o) {
+            [result addObject:o];
+        }
+    }];
+    return result;
+}
+
 - (NSDictionary *)filteredDictionaryUsingBlock:(BOOL (^)(id key, id obj))block opposite:(BOOL)opposite {
     NSMutableDictionary *result = [NSMutableDictionary dictionary];
     [self enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {

@@ -11,6 +11,8 @@
 - (void)each:(void (^)(id obj, NSString *key))block;
 - (NSDictionary *)map:(id (^)(id obj, NSString *key))block;
 - (NSDictionary *)mappedDictionaryUsingBlock:(id (^)(id obj, NSString *key))block;
+- (NSArray *)arrayMap:(id (^)(id obj, NSString *key))block;
+- (NSArray *)mappedArrayUsingBlock:(id (^)(id obj, NSString *key))block;
 - (NSDictionary *)filterKey:(BOOL (^)(NSString *key))block;
 - (NSDictionary *)dictionaryFilteredByKeyUsingBlock:(BOOL (^)(NSString *key))block;
 - (NSDictionary *)rejectKey:(BOOL (^)(NSString *key))block;
