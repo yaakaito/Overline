@@ -122,7 +122,7 @@ NSDate *date = [JSON objectForKey:@"date8601" transformBlock:^id(id obj) {
 * `arrayForKey:`
 * `dictionaryForKey:`
 * `dateForKey:`
-* `dateForKey:(id)aKey usingFormat:`
+* `dateForKey:usingFormat:`
 * `since1970DateForKey:`
 * `timestampForKey:`
 * `boolObjectForKey:withTrueValue:`
