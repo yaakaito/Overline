@@ -21,7 +21,7 @@
 }
 
 - (NSDictionary *)mappedDictionaryUsingBlock:(id (^)(id, NSString *))block {
-    NSDictionary *result = [NSMutableDictionary dictionary];
+    NSMutableDictionary *result = [NSMutableDictionary dictionary];
     [self enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
         id o = block(obj, key);
         if (o) {
