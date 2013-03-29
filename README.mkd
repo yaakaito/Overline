@@ -12,6 +12,13 @@ setup with cocoapods.
 pod 'Overline'
 ```
 
+### with BlocksKit
+
+```
+pod 'BlocksKit'
+pod 'Overline-BlocksKit'
+```
+
 import `Overline.h`
 ```objective-c
 #import "Overline.h"
