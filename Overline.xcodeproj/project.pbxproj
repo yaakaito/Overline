@@ -205,6 +205,7 @@
 		1C3D5A549376EDCFBE7B3FD9 /* NSSet+OverlineBlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+OverlineBlocksKit.h"; sourceTree = "<group>"; };
 		1C3D5AD5F494D95B08E96E9F /* NSArray+OverlineBlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+OverlineBlocksKit.m"; sourceTree = "<group>"; };
 		1C3D5C0A7317BB1F501617C0 /* NSArray+Reverse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Reverse.m"; sourceTree = "<group>"; };
+		1C3D5C230788346B81F7F0AE /* Overline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Overline.h; sourceTree = "<group>"; };
 		1C3D5C2A8701578816D42723 /* NSNumber+Equals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Equals.h"; sourceTree = "<group>"; };
 		1C3D5D893D537EEDB69D89D1 /* NSArray+Shorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Shorthand.h"; sourceTree = "<group>"; };
 		1C3D5E3AB5A5687FFD4F019D /* NSArray+OverlineBlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+OverlineBlocksKit.h"; sourceTree = "<group>"; };
@@ -354,6 +355,7 @@
 				1C3D5A549376EDCFBE7B3FD9 /* NSSet+OverlineBlocksKit.h */,
 				1C3D5F83B0CB8DD7B876F6CB /* NSDictionary+OverlineBlocksKit.m */,
 				1C3D59EFEF60C204CC6404E2 /* NSDictionary+OverlineBlocksKit.h */,
+				1C3D5C230788346B81F7F0AE /* Overline.h */,
 			);
 			path = OverlineBlocksKit;
 			sourceTree = "<group>";
@@ -383,6 +385,7 @@
 				B9BEB6D11669B27100A1D26D /* Products */,
 				776CEF8582F049128B505AAB /* Pods.xcconfig */,
 				1C3D5CDF4F31510818EA57C1 /* OverlineBlocksKit */,
+				B9BEB6D81669B27100A1D26D /* Overline.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -409,7 +412,6 @@
 		B9BEB6D51669B27100A1D26D /* Overline */ = {
 			isa = PBXGroup;
 			children = (
-				B9BEB6D81669B27100A1D26D /* Overline.h */,
 				B9BEB6D61669B27100A1D26D /* Supporting Files */,
 				D0424FB1D971E6A98096F238 /* NSArray */,
 				D0424150E2C853D0EF0D5505 /* NSURL */,
