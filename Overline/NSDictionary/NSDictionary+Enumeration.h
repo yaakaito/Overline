@@ -8,8 +8,13 @@
 #import <Foundation/Foundation.h>
 
 @interface NSDictionary (Enumeration)
+
+#ifndef OV_NO_CONFLICT_BLOCKSKIT
 - (void)each:(void (^)(id obj, NSString *key))block;
 - (NSDictionary *)map:(id (^)(id obj, NSString *key))block;
+- (id)reduce:(id (^)(id memo, id obj, NSString *key))block memo:(id)memo;
+#endif
+
 - (NSDictionary *)mappedDictionaryUsingBlock:(id (^)(id obj, NSString *key))block;
 - (NSArray *)arrayMap:(id (^)(id obj, NSString *key))block;
 - (NSArray *)mappedArrayUsingBlock:(id (^)(id obj, NSString *key))block;
@@ -23,7 +28,6 @@
 - (NSDictionary *)dictionaryRejectedByObjectUsingBlock:(BOOL (^)(id obj))block;
 - (NSDictionary *)merge:(NSDictionary *)dictionary;
 - (NSDictionary *)dictionaryByMergingDictionary:(NSDictionary *)dictionary;
-- (id)reduce:(id (^)(id memo, id obj, NSString *key))block memo:(id)memo;
 - (id)reducedObjectUsingBlock:(id (^)(id memo, id obj, NSString *key))block memo:(id)memo;
 - (NSString *)queryString;
 - (NSString *)stringByFormattingQuery;

@@ -10,6 +10,7 @@
 
 @implementation NSSet (Enumeration)
 
+#ifndef OV_NO_CONFLICT_BLOCKSKIT
 - (void)each:(void (^)(id))block {
     [self enumerateObjectsUsingBlock:^(id obj, BOOL *stop) {
         block(obj);
@@ -20,6 +21,19 @@
     return [self mappedSetUsingBlock:block];
 }
 
+- (id)reduce:(id (^)(id, id))block memo:(id)memo {
+    return [self reducedObjectByBlock:block memo:memo];
+}
+
+- (NSSet *)filter:(BOOL (^)(id))block {
+    return [self filteredSetUsingBlock:block];
+}
+
+- (NSSet *)reject:(BOOL (^)(id))block {
+    return [self rejectedSetUsingBlock:block];
+}
+#endif
+
 - (NSSet *)mappedSetUsingBlock:(id (^)(id))block {
     NSMutableSet *result = [NSMutableSet set];
     [self enumerateObjectsUsingBlock:^(id obj, BOOL *stop) {
@@ -29,10 +43,6 @@
         }
     }];
     return result;
-}
-
-- (id)reduce:(id (^)(id, id))block memo:(id)memo {
-    return [self reducedObjectByBlock:block memo:memo];
 }
 
 - (id)reducedObjectByBlock:(id (^)(id, id))block memo:(id)memo {
@@ -53,16 +63,9 @@
     }];
     return filteredSet;
 }
-- (NSSet *)filter:(BOOL (^)(id))block {
-    return [self filteredSetUsingBlock:block];
-}
 
 - (NSSet *)filteredSetUsingBlock:(BOOL (^)(id))block {
     return [self filteredSetUsingBlock:block opposite:NO];
-}
-
-- (NSSet *)reject:(BOOL (^)(id))block {
-    return [self rejectedSetUsingBlock:block];
 }
 
 - (NSSet *)rejectedSetUsingBlock:(BOOL (^)(id))block {

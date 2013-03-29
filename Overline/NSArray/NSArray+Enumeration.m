@@ -10,6 +10,9 @@
 
 
 @implementation NSArray (Enumeration)
+
+#ifndef OV_NO_CONFLICT_BLOCKSKIT
+
 - (void)each:(void (^)(id, NSUInteger))block {
     [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         block(obj, idx);
@@ -20,6 +23,20 @@
     return [self mappedArrayUsingBlock:block];
 }
 
+- (id)reduce:(id (^)(id, id))block memo:(id)memo {
+    return [self reducedObjectByBlock:block memo:memo];
+}
+
+- (NSArray *)filter:(BOOL (^)(id, NSUInteger))block {
+    return [self filteredArrayUsingBlock:block];
+}
+
+- (NSArray *)reject:(BOOL (^)(id, NSUInteger))block {
+    return [self rejectedArrayUsingBlock:block];
+}
+
+#endif
+
 - (NSArray *)mappedArrayUsingBlock:(id (^)(id, NSUInteger))block {
     NSMutableArray *mappedArray = [NSMutableArray array];
     [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
@@ -29,10 +46,6 @@
         }
     }];
     return mappedArray;
-}
-
-- (id)reduce:(id (^)(id, id))block memo:(id)memo {
-    return [self reducedObjectByBlock:block memo:memo];
 }
 
 - (id)reducedObjectByBlock:(id (^)(id, id))block memo:(id)memo {
@@ -62,17 +75,10 @@
     return filteredArray;
 }
 
-- (NSArray *)filter:(BOOL (^)(id, NSUInteger))block {
-    return [self filteredArrayUsingBlock:block];
-}
-
 - (NSArray *)filteredArrayUsingBlock:(BOOL (^)(id, NSUInteger))block {
     return [self filteredArrayUsingBlock:block opposite:NO];
 }
 
-- (NSArray *)reject:(BOOL (^)(id, NSUInteger))block {
-    return [self rejectedArrayUsingBlock:block];
-}
 
 - (NSArray *)rejectedArrayUsingBlock:(BOOL (^)(id, NSUInteger))block {
     return [self filteredArrayUsingBlock:block opposite:YES];

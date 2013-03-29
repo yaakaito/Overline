@@ -10,6 +10,8 @@
 
 @implementation NSDictionary (Enumeration)
 
+#ifndef OV_NO_CONFLICT_BLOCKSKIT
+
 - (void)each:(void (^)(id, NSString *))block {
     [self enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
         block(obj, key);
@@ -19,6 +21,12 @@
 - (NSDictionary *)map:(id (^)(id, NSString *))block {
     return [self mappedDictionaryUsingBlock:block];
 }
+
+- (id)reduce:(id (^)(id, id, NSString *))block memo:(id)memo {
+    return [self reducedObjectUsingBlock:block memo:memo];
+}
+
+#endif
 
 - (NSDictionary *)mappedDictionaryUsingBlock:(id (^)(id, NSString *))block {
     NSMutableDictionary *result = [NSMutableDictionary dictionary];
@@ -107,10 +115,6 @@
         [that setValue:obj forKey:key];
     }];
     return that;
-}
-
-- (id)reduce:(id (^)(id, id, NSString *))block memo:(id)memo {
-    return [self reducedObjectUsingBlock:block memo:memo];
 }
 
 - (id)reducedObjectUsingBlock:(id (^)(id, id, NSString *))block memo:(id)memo {
