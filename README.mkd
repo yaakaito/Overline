@@ -24,6 +24,8 @@ pod 'BlocksKit'
 pod 'Overline-BlocksKit'
 ```
 
+Ignored duplicate methods: `each` `map` `reduce` `filter` `reject`
+
 ## Features
 
 ### NSArray
