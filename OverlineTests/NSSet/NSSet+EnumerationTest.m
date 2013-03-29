@@ -11,6 +11,7 @@
 
 #import "NSSet+Enumeration.h"
 #import "NSString+RegularExpression.h"
+#import "NSSet+OverlineBlocksKit.h"
 
 @interface NSSet_EnumerationTest : SenTestCase
 {

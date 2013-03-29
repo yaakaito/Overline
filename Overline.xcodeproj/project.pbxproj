@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C3D518D726153E7507FC528 /* NSSet+OverlineBlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D57FDED0F90A6F6050C28 /* NSSet+OverlineBlocksKit.m */; };
 		1C3D51B576855B2A82A1CEF8 /* NSArray+OverlineBlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D5AD5F494D95B08E96E9F /* NSArray+OverlineBlocksKit.m */; };
 		1C3D51C5A8D1D301E6E23ECE /* NSArray+OverlineBlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D5AD5F494D95B08E96E9F /* NSArray+OverlineBlocksKit.m */; };
+		1C3D52322CA0F1976A105223 /* NSSet+OverlineBlocksKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C3D5A549376EDCFBE7B3FD9 /* NSSet+OverlineBlocksKit.h */; };
 		1C3D52573BEB52AA63491EFA /* NSArray+DifferenceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D50091C39ACD095454A34 /* NSArray+DifferenceTest.m */; };
 		1C3D52633B221E980CA9C81F /* NSNumber+EqualsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D50C558446172F7840F53 /* NSNumber+EqualsTest.m */; };
 		1C3D531C4A5B4BF7E2EF5721 /* NSArray+Reverse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D5C0A7317BB1F501617C0 /* NSArray+Reverse.m */; };
@@ -27,6 +29,7 @@
 		1C3D5A33911D175CF9BDF317 /* NSNull+Natural.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D53E60B5563E7C638AE7C /* NSNull+Natural.m */; };
 		1C3D5B3586E402CE3D6745B5 /* NSArray+Difference.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C3D5028B6CFE43A14E0B49E /* NSArray+Difference.h */; };
 		1C3D5BDFBF98915E1C83DDCC /* NSArray+InitializeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D57FABE27CD27B350BF01 /* NSArray+InitializeTest.m */; };
+		1C3D5DA77E45CC23B6F134ED /* NSSet+OverlineBlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D57FDED0F90A6F6050C28 /* NSSet+OverlineBlocksKit.m */; };
 		1C3D5E013AE3E667133E97DC /* NSNull+Natural.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C3D51561B6E8A7617FF4F01 /* NSNull+Natural.h */; };
 		1C3D5E651C13C058710F1A35 /* NSArray+Difference.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D562D9231467E3E443B56 /* NSArray+Difference.m */; };
 		1C3D5F0A27F57ADF06139F00 /* NSNumber+Equals.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D54D5537C4413E0502D2F /* NSNumber+Equals.m */; };
@@ -170,6 +173,7 @@
 				D042423A30A7BB2D6E91DB16 /* NSDictionary+Selector.h in CopyFiles */,
 				D042498424A0D3ECBB2CC9AC /* NSDateFormatter+Shorthand.h in CopyFiles */,
 				1C3D5464753C769BF6FE6941 /* NSArray+OverlineBlocksKit.h in CopyFiles */,
+				1C3D52322CA0F1976A105223 /* NSSet+OverlineBlocksKit.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,10 +192,12 @@
 		1C3D564AF68B0AF84B1D2AC9 /* NSArray+ReverseTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ReverseTest.m"; sourceTree = "<group>"; };
 		1C3D57AC4CB25E57ACD8F8A1 /* NSObject+EqualsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+EqualsTest.m"; sourceTree = "<group>"; };
 		1C3D57FABE27CD27B350BF01 /* NSArray+InitializeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+InitializeTest.m"; sourceTree = "<group>"; };
+		1C3D57FDED0F90A6F6050C28 /* NSSet+OverlineBlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+OverlineBlocksKit.m"; sourceTree = "<group>"; };
 		1C3D595FF7BD873137120E6D /* NSArray+Initialize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Initialize.m"; sourceTree = "<group>"; };
 		1C3D59B37273B283EDE81626 /* NSObject+Equals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Equals.h"; sourceTree = "<group>"; };
 		1C3D59D37876233B24521DFF /* NSArray+Reverse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Reverse.h"; sourceTree = "<group>"; };
 		1C3D5A245E9A2E2E86489A41 /* NSArray+Initialize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Initialize.h"; sourceTree = "<group>"; };
+		1C3D5A549376EDCFBE7B3FD9 /* NSSet+OverlineBlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+OverlineBlocksKit.h"; sourceTree = "<group>"; };
 		1C3D5AD5F494D95B08E96E9F /* NSArray+OverlineBlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+OverlineBlocksKit.m"; sourceTree = "<group>"; };
 		1C3D5C0A7317BB1F501617C0 /* NSArray+Reverse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Reverse.m"; sourceTree = "<group>"; };
 		1C3D5C2A8701578816D42723 /* NSNumber+Equals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Equals.h"; sourceTree = "<group>"; };
@@ -338,6 +344,8 @@
 			children = (
 				1C3D5AD5F494D95B08E96E9F /* NSArray+OverlineBlocksKit.m */,
 				1C3D5E3AB5A5687FFD4F019D /* NSArray+OverlineBlocksKit.h */,
+				1C3D57FDED0F90A6F6050C28 /* NSSet+OverlineBlocksKit.m */,
+				1C3D5A549376EDCFBE7B3FD9 /* NSSet+OverlineBlocksKit.h */,
 			);
 			path = OverlineBlocksKit;
 			sourceTree = "<group>";
@@ -790,6 +798,7 @@
 				D04247053E0679D2DC2F0346 /* NSDictionary+Selector.m in Sources */,
 				D04241D3C0E030A3837039D3 /* NSDateFormatter+Shorthand.m in Sources */,
 				1C3D51B576855B2A82A1CEF8 /* NSArray+OverlineBlocksKit.m in Sources */,
+				1C3D518D726153E7507FC528 /* NSSet+OverlineBlocksKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -847,6 +856,7 @@
 				D0424C9CDD35CE87823E65E9 /* NSDateFormatter+Shorthand.m in Sources */,
 				D0424D0280856C34440C2947 /* NSDateFormatter+ShorthandTest.m in Sources */,
 				1C3D51C5A8D1D301E6E23ECE /* NSArray+OverlineBlocksKit.m in Sources */,
+				1C3D5DA77E45CC23B6F134ED /* NSSet+OverlineBlocksKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

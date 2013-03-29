@@ -10,30 +10,6 @@
 
 @implementation NSSet (Enumeration)
 
-#ifndef OV_NO_CONFLICT_BLOCKSKIT
-- (void)each:(void (^)(id))block {
-    [self enumerateObjectsUsingBlock:^(id obj, BOOL *stop) {
-        block(obj);
-    }];
-}
-
-- (NSSet *)map:(id (^)(id))block {
-    return [self mappedSetUsingBlock:block];
-}
-
-- (id)reduce:(id (^)(id, id))block memo:(id)memo {
-    return [self reducedObjectByBlock:block memo:memo];
-}
-
-- (NSSet *)filter:(BOOL (^)(id))block {
-    return [self filteredSetUsingBlock:block];
-}
-
-- (NSSet *)reject:(BOOL (^)(id))block {
-    return [self rejectedSetUsingBlock:block];
-}
-#endif
-
 - (NSSet *)mappedSetUsingBlock:(id (^)(id))block {
     NSMutableSet *result = [NSMutableSet set];
     [self enumerateObjectsUsingBlock:^(id obj, BOOL *stop) {
