@@ -10,7 +10,7 @@
 
 @implementation NSDateFormatter (Shorthand)
 + (instancetype)dateFormatterWithCalendarIndentifiter:(NSString *)calendar
-                                    LocaleIdentifiter:(NSString *)locale
+                                    localeIdentifiter:(NSString *)locale
                                  timeZoneAbbreviation:(NSString *)timeZone {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     formatter.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:calendar];

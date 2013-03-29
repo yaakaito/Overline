@@ -9,7 +9,7 @@
 
 @interface NSDateFormatter (Shorthand)
 + (instancetype)dateFormatterWithCalendarIndentifiter:(NSString *)calendar
-                                    LocaleIdentifiter:(NSString *)locale
+                                    localeIdentifiter:(NSString *)locale
                                  timeZoneAbbreviation:(NSString *)timeZone;
 + (instancetype)userDefaultFormatter;
 @end

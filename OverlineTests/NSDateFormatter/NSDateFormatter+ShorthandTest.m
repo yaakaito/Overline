@@ -31,7 +31,7 @@
 - (void)testFormatterWithCalendarLocaleTimezone
 {
     NSDateFormatter *formatter = [NSDateFormatter dateFormatterWithCalendarIndentifiter:NSGregorianCalendar
-                                                                      LocaleIdentifiter:@"ja_JP"
+                                                                      localeIdentifiter:@"ja_JP"
                                                                    timeZoneAbbreviation:@"JST"];
     [formatter setDateFormat:@"yyyy/MM/dd HH:mm:ss Z"];
     NSDate *date = [NSDate dateWithTimeIntervalSince1970:1360000000];
