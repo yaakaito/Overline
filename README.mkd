@@ -82,6 +82,7 @@ NSArray *reversed = [@[@1,@2,@3,@4,@5,@6] reversedArray];
 * `subarrayFromIndex:length:`
 * `subarrayToIndex:`
 * `uniqueObjects`
+* `uniqueObjectsUsingEqualsBlock`
 
 #### NSArray+Difference
 
@@ -105,7 +106,40 @@ NSMutableArray *marray = [NSMutableArray arrayWithArray:@[@1,@2,@3]];
 
 ### NSDictionary
 
-#### NSDicionary+Enumeration
+#### NSDictionary+Selector
+
+```objective-c
+NSDate *date = [JSON objectForKey:@"date8601" transformBlock:^id(id obj) {
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy/MM/dd HH:mm:ss Z"];
+    return [formatter dateFromString:obj];
+}];
+```
+
+* `objectForKey:transformBlock:`
+* `numberForKey:`
+* `stringForKey:`
+* `arrayForKey:`
+* `dictionaryForKey:`
+* `dateForKey:`
+* `dateForKey:(id)aKey usingFormat:`
+* `since1970DateForKey:`
+* `timestampForKey:`
+* `boolObjectForKey:withTrueValue:`
+* `boolForKey:withTureValue:`
+* `boolForKey:`
+* `intForKey:`
+* `integerForKey:`
+* `unsignedIntForKey:`
+* `unsignedIntegerForKey:`
+* `longForKey:`
+* `unsignedLongForKey:`
+* `longLongForKey:`
+* `unsignedLongLongForKey:`
+* `doubleForKey:`
+* `floatForKey:`
+
+#### NSDictionary+Enumeration
 
 ```objective-c
 NSDictionary *dic = @{
@@ -122,6 +156,7 @@ NSDictionary *filtered = [dic dictionaryFilteredByKeyUsingBlock:^BOOL(NSString *
 
 * `each:`
 * `map` `mappedDictionaryUsingBlock`
+* `arrayMap` `mappedArrayUsingBlock`
 * `filterKey` `dictionaryFilteredByKeyUsingBlock`
 * `rejectKey` `dictionaryRejectedByKeyUsingBlock`
 * `filterObject` `dictionaryFilteredByObjectUsingBlock`
@@ -267,6 +302,13 @@ id json = [JSONString jsonObject];
 * `isEqualToUnsignedLongLong:`
 * `isEqualToDouble:`
 * `isEqualToFloat:`
+
+### NSDateFormatter
+
+#### NSDateFormatter+Shothand
+
+* `userDefaultFormatter`
+* `dateFormatterWithCalendarIndetifiter:localeIdentifiter:timeZoneAbbreviation:`
 
 ### NSObject
 
