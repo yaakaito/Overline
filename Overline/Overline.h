@@ -19,6 +19,7 @@
 
 #import "NSDictionary+Enumeration.h"
 #import "NSDictionary+Path.h"
+#import "NSDictionary+Selector.h"
 
 #import "NSString+Hash.h"
 #import "NSString+Shorthand.h"
