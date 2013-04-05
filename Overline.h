@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+#import "NSArray+Shorthand.h"
 #import "NSMutableArray+Shorthand.h"
 #import "NSArray+Enumeration.h"
 #import "NSArray+Random.h"
