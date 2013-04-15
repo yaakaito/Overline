@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSArray (OverlineBlocksKit)
+@interface NSArray (Core)
 - (void)each:(void (^)(id obj, NSUInteger idx))block;
 - (NSArray *)map:(id (^)(id obj, NSUInteger idx))block;
 - (id)reduce:(id (^)(id memo, id obj))block memo:(id)memo;

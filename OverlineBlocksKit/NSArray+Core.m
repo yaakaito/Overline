@@ -5,10 +5,10 @@
 //
 
 
-#import "NSArray+OverlineBlocksKit.h"
+#import "NSArray+Core.h"
 #import "NSArray+Enumeration.h"
 
-@implementation NSArray (OverlineBlocksKit)
+@implementation NSArray (Core)
 
 - (void)each:(void (^)(id, NSUInteger))block {
     [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {

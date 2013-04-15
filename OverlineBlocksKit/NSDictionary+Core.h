@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSDictionary (OverlineBlocksKit)
+@interface NSDictionary (Core)
 - (void)each:(void (^)(id obj, NSString *key))block;
 - (NSDictionary *)map:(id (^)(id obj, NSString *key))block;
 - (id)reduce:(id (^)(id memo, id obj, NSString *key))block memo:(id)memo;

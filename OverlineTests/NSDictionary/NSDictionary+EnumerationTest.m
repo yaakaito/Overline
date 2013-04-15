@@ -10,7 +10,7 @@
 #import <OCHamcrest/OCHamcrest.h>
 
 #import "NSDictionary+Enumeration.h"
-#import "NSDictionary+OverlineBlocksKit.h"
+#import "NSDictionary+Core.h"
 
 #import "Overline.h"
 @interface NSDictionary_EnumerationTest : SenTestCase

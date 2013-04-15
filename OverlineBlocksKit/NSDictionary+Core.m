@@ -5,10 +5,10 @@
 //
 
 
-#import "NSDictionary+OverlineBlocksKit.h"
+#import "NSDictionary+Core.h"
 #import "NSDictionary+Enumeration.h"
 
-@implementation NSDictionary (OverlineBlocksKit)
+@implementation NSDictionary (Core)
 - (void)each:(void (^)(id, NSString *))block {
     [self enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
         block(obj, key);

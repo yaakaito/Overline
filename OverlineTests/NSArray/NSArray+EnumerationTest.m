@@ -10,7 +10,7 @@
 #import <OCHamcrest/OCHamcrest.h>
 
 #import "NSArray+Enumeration.h"
-#import "NSArray+OverlineBlocksKit.h"
+#import "NSArray+Core.h"
 
 @interface NSArray_Enumeration : SenTestCase
 {

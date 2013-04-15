@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSSet (OverlineBlocksKit)
+@interface NSSet (Core)
 - (void)each:(void (^)(id obj))block;
 - (NSSet *)map:(id (^)(id obj))block;
 - (NSSet *)filter:(BOOL (^)(id obj))block;

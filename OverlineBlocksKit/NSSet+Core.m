@@ -5,10 +5,10 @@
 //
 
 
-#import "NSSet+OverlineBlocksKit.h"
+#import "NSSet+Core.h"
 #import "NSSet+Enumeration.h"
 
-@implementation NSSet (OverlineBlocksKit)
+@implementation NSSet (Core)
 - (void)each:(void (^)(id))block {
     [self enumerateObjectsUsingBlock:^(id obj, BOOL *stop) {
         block(obj);

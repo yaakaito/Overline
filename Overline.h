@@ -46,6 +46,6 @@
 #import "NSNull+Natural.h"
 #endif
 
-#import "NSArray+OverlineBlocksKit.h"
-#import "NSDictionary+OverlineBlocksKit.h"
-#import "NSSet+OverlineBlocksKit.h"
+#import "NSArray+Core.h"
+#import "NSDictionary+Core.h"
+#import "NSSet+Core.h"
