@@ -7,7 +7,7 @@
 
 #import "NSDictionary+Path.h"
 #import "NSArray+SubArray.h"
-#import "Overline.h"
+#import "NSObject+Equals.h"
 
 
 @implementation NSDictionary (Path)

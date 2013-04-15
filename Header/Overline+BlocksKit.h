@@ -46,6 +46,3 @@
 #import "NSNull+Natural.h"
 #endif
 
-#import "NSArray+Core.h"
-#import "NSDictionary+Core.h"
-#import "NSSet+Core.h"

@@ -6,7 +6,6 @@
 
 
 #import "NSDictionary+Enumeration.h"
-#import "NSString+URLEncode.h"
 
 @implementation NSDictionary (Enumeration)
 

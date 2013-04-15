@@ -11,8 +11,9 @@
 
 #import "NSDictionary+Enumeration.h"
 #import "NSDictionary+Core.h"
+#import "NSString+RegularExpression.h"
 
-#import "Overline.h"
+
 @interface NSDictionary_EnumerationTest : SenTestCase
 {
     
