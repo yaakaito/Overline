@@ -288,6 +288,20 @@ id json = [JSONString jsonObject];
 #### NSURL+Components
 * `queryComponents`
 
+#### NSURL+Directories
+```objective-c
+NSURL *pdfURL = [NSURL URLForUserDirectoryWithAppendedPath:@"myDoc.pdf"];
+NSURL *userImageFolderURL = [NSURL URLForUserDirectoryWithAppendedPath:@"images"];
+```
+
+* `URLForDirectory:domainMask:`
+* `URLForApplicationSupportDataDirectory`
+* `URLForApplicationSupportWithAppendedPath:`
+* `URLForUserDirectory`
+* `URLForUserDirectoryWithAppendedPath:`
+* `URLForDocumentDirectory`;
+* `URLForDocumentDirectoryWithAppendedPath:`;
+
 ### NSBundle
 
 #### NSBundle+Shorthand
