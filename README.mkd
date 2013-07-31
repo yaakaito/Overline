@@ -364,9 +364,12 @@ NSDictionary *dic = @{
 #import "Overline.h"
 ```
 
-## For contributers
+## Credits
 
-Thanks contributes Overline.
+Be sure to thanks these contributors:
+
+* Kazuma Ukyo (http://yaakaito.org)
+* Hari Karam Singh (http://soundwandapp.com)
 
 ### Coding rules
 
