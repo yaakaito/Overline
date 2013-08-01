@@ -67,19 +67,19 @@
     return replaced;
 }
 
-- (NSString *)replace:(NSString *)regexpPattern template:(NSString *)template {
-    return [self stringByReplacingOccurrencesOfRegExpPattern:regexpPattern withTemplate:template];
+- (NSString *)replace:(NSString *)regexpPattern withTemplate:(NSString *)aTemplate {
+    return [self stringByReplacingOccurrencesOfRegExpPattern:regexpPattern withTemplate:aTemplate];
 }
 
-- (NSString *)stringByReplacingOccurrencesOfRegExpPattern:(NSString *)regexpPattern withTemplate:(NSString *)template {
-    return [self stringByReplacingOccurrencesOfRegExpPattern:regexpPattern withTemplate:template options:NSRegularExpressionSearch];
+- (NSString *)stringByReplacingOccurrencesOfRegExpPattern:(NSString *)regexpPattern withTemplate:(NSString *)aTemplate {
+    return [self stringByReplacingOccurrencesOfRegExpPattern:regexpPattern withTemplate:aTemplate options:NSRegularExpressionSearch];
 }
 
-- (NSString *)replace:(NSString *)regexpPattern template:(NSString *)template options:(NSRegularExpressionOptions)options {
-    return [self stringByReplacingOccurrencesOfRegExpPattern:regexpPattern withTemplate:template options:options];
+- (NSString *)replace:(NSString *)regexpPattern withTemplate:(NSString *)aTemplate options:(NSRegularExpressionOptions)options {
+    return [self stringByReplacingOccurrencesOfRegExpPattern:regexpPattern withTemplate:aTemplate options:options];
 }
 
-- (NSString *)stringByReplacingOccurrencesOfRegExpPattern:(NSString *)regexpPattern withTemplate:(NSString *)template options:(NSRegularExpressionOptions)options {
-    return [self stringByReplacingOccurrencesOfRegExpPattern:regexpPattern withString:template options:options];
+- (NSString *)stringByReplacingOccurrencesOfRegExpPattern:(NSString *)regexpPattern withTemplate:(NSString *)aTemplate options:(NSRegularExpressionOptions)options {
+    return [self stringByReplacingOccurrencesOfRegExpPattern:regexpPattern withString:aTemplate options:options];
 }
 @end

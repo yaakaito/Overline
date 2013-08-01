@@ -19,9 +19,9 @@
 - (NSString *)replace:(NSString *)regexpPattern newString:(NSString *)string options:(NSRegularExpressionOptions)options;
 - (NSString *)stringByReplacingOccurrencesOfRegExpPattern:(NSString *)regexpPattern withString:(NSString *)string;
 - (NSString *)stringByReplacingOccurrencesOfRegExpPattern:(NSString *)regexpPattern withString:(NSString *)string options:(NSRegularExpressionOptions)options;
-- (NSString *)replace:(NSString *)regexpPattern template:(NSString *)template;
-- (NSString *)replace:(NSString *)regexpPattern template:(NSString *)template options:(NSRegularExpressionOptions)options;
-- (NSString *)stringByReplacingOccurrencesOfRegExpPattern:(NSString *)regexpPattern withTemplate:(NSString *)template;
-- (NSString *)stringByReplacingOccurrencesOfRegExpPattern:(NSString *)regexpPattern withTemplate:(NSString *)template options:(NSRegularExpressionOptions)options;
+- (NSString *)replace:(NSString *)regexpPattern withTemplate:(NSString *)aTemplate;
+- (NSString *)replace:(NSString *)regexpPattern withTemplate:(NSString *)aTemplate options:(NSRegularExpressionOptions)options;
+- (NSString *)stringByReplacingOccurrencesOfRegExpPattern:(NSString *)regexpPattern withTemplate:(NSString *)aTemplate;
+- (NSString *)stringByReplacingOccurrencesOfRegExpPattern:(NSString *)regexpPattern withTemplate:(NSString *)aTemplate options:(NSRegularExpressionOptions)options;
 
 @end

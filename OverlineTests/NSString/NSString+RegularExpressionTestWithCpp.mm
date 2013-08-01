@@ -1,6 +1,6 @@
 //
-//  Overline - NSString+RegularExpressionTest.m
-//  Copyright 2012 __MyCompanyName__. All rights reserved.
+//  Overline - NSString+RegularExpressionTestWithCpp.m
+//  Copyright 2013 __MyCompanyName__. All rights reserved.
 //
 //  Created by: yaakaito
 //
@@ -10,15 +10,31 @@
 #import <OCHamcrest/OCHamcrest.h>
 #import "NSString+RegularExpression.h"
 
-@interface NSString_RegularExpressionTest : SenTestCase
+@interface NSString_RegularExpressionTestWithCpp : SenTestCase
 {
     
 }
 @end
 
-@implementation NSString_RegularExpressionTest
+@implementation NSString_RegularExpressionTestWithCpp
 
+namespace OverlineCpp {
+    template <class T>
+    class Test
+    {
+    public:
+        template void fn(T &x) {
+        }
+    };
+}
 
+- (void)setUp {
+    // Run before each test method
+}
+
+- (void)tearDown {
+    // Run after each test method
+}
 - (void)testRangeOfFirstMatchInString
 {
     NSRange range = [@"hoge" rangeOfFirstMatchInString:@"fuga-hoge-fuga"];
