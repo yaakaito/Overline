@@ -18,7 +18,7 @@
     return url;
 }
 
-/////////////////////////////////////////////////////////////////////////
+//---------------------------------------------------------------------
 
 + (NSURL *)URLForApplicationSupportDataDirectory
 {
@@ -33,21 +33,21 @@
         return nil;
 }
 
-/////////////////////////////////////////////////////////////////////////
+//---------------------------------------------------------------------
 
 + (NSURL *)URLForApplicationSupportWithAppendedPath:(NSString *)pathToAppend
 {
     return [[self URLForApplicationSupportDataDirectory] URLByAppendingPathComponent:pathToAppend];
 }
 
-/////////////////////////////////////////////////////////////////////////
+//---------------------------------------------------------------------
 
 + (NSURL *)URLForUserDirectory
 {
     return [self URLForDirectory:NSUserDirectory domainMask:NSUserDomainMask];
 }
 
-/////////////////////////////////////////////////////////////////////////
+//---------------------------------------------------------------------
 
 + (NSURL *)URLForUserDirectoryWithAppendedPath:(NSString *)pathToAppend
 {
@@ -55,14 +55,14 @@
     
 }
 
-/////////////////////////////////////////////////////////////////////////
+//---------------------------------------------------------------------
 
 + (NSURL *)URLForDocumentDirectory
 {
     return [self URLForDirectory:NSDocumentDirectory domainMask:NSUserDomainMask];
 }
 
-/////////////////////////////////////////////////////////////////////////
+//---------------------------------------------------------------------
 
 + (NSURL *)URLForDocumentDirectoryWithAppendedPath:(NSString *)pathToAppend
 {
@@ -71,4 +71,4 @@
 
 @end
 
-/// @}
+

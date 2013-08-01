@@ -288,6 +288,20 @@ id json = [JSONString jsonObject];
 #### NSURL+Components
 * `queryComponents`
 
+#### NSURL+Directories
+```objective-c
+NSURL *pdfURL = [NSURL URLForUserDirectoryWithAppendedPath:@"myDoc.pdf"];
+NSURL *userImageFolderURL = [NSURL URLForUserDirectoryWithAppendedPath:@"images"];
+```
+
+* `URLForDirectory:domainMask:`
+* `URLForApplicationSupportDataDirectory`
+* `URLForApplicationSupportWithAppendedPath:`
+* `URLForUserDirectory`
+* `URLForUserDirectoryWithAppendedPath:`
+* `URLForDocumentDirectory`;
+* `URLForDocumentDirectoryWithAppendedPath:`;
+
 ### NSBundle
 
 #### NSBundle+Shorthand
@@ -350,9 +364,12 @@ NSDictionary *dic = @{
 #import "Overline.h"
 ```
 
-## For contributers
+## Credits
 
-Thanks contributes Overline.
+Be sure to thanks these contributors:
+
+* Kazuma Ukyo (http://yaakaito.org)
+* Hari Karam Singh (http://soundwandapp.com)
 
 ### Coding rules
 
