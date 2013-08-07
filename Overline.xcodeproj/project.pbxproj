@@ -14,6 +14,8 @@
 		1C3D5BDFBF98915E1C83DDCC /* NSArray+InitializeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D57FABE27CD27B350BF01 /* NSArray+InitializeTest.m */; };
 		1C3D5F14013A290175157FDE /* NSObject+EqualsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D57AC4CB25E57ACD8F8A1 /* NSObject+EqualsTest.m */; };
 		1C3D5F80D8C652BB5F5DA930 /* NSArray+ReverseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D564AF68B0AF84B1D2AC9 /* NSArray+ReverseTest.m */; };
+		A62C44EA17B14FCA003B335B /* NSArray+Sorting.m in Sources */ = {isa = PBXBuildFile; fileRef = A62C44E917B14FCA003B335B /* NSArray+Sorting.m */; };
+		A62C44EB17B14FE7003B335B /* NSMutableArray+Sorting.m in Sources */ = {isa = PBXBuildFile; fileRef = A62C44E717B14FBD003B335B /* NSMutableArray+Sorting.m */; };
 		B9BEB6D41669B27100A1D26D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BEB6D31669B27100A1D26D /* Foundation.framework */; };
 		B9BEB6E31669B27100A1D26D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BEB6E21669B27100A1D26D /* SenTestingKit.framework */; };
 		B9BEB6E51669B27100A1D26D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BEB6E41669B27100A1D26D /* UIKit.framework */; };
@@ -202,6 +204,10 @@
 		1C3D57FABE27CD27B350BF01 /* NSArray+InitializeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+InitializeTest.m"; sourceTree = "<group>"; };
 		1C3D5ECFDDEF57613AB979D3 /* NSArray+ShorthandTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ShorthandTest.m"; sourceTree = "<group>"; };
 		776CEF8582F049128B505AAB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		A62C44E617B14FBD003B335B /* NSMutableArray+Sorting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Sorting.h"; sourceTree = "<group>"; };
+		A62C44E717B14FBD003B335B /* NSMutableArray+Sorting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Sorting.m"; sourceTree = "<group>"; };
+		A62C44E817B14FCA003B335B /* NSArray+Sorting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Sorting.h"; sourceTree = "<group>"; };
+		A62C44E917B14FCA003B335B /* NSArray+Sorting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Sorting.m"; sourceTree = "<group>"; };
 		B9BEB6D01669B27100A1D26D /* libOverline.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOverline.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9BEB6D31669B27100A1D26D /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B9BEB6D71669B27100A1D26D /* Overline-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Overline-Prefix.pch"; sourceTree = "<group>"; };
@@ -506,6 +512,8 @@
 		D042447C549C585476B62090 /* NSMutableArray */ = {
 			isa = PBXGroup;
 			children = (
+				A62C44E617B14FBD003B335B /* NSMutableArray+Sorting.h */,
+				A62C44E717B14FBD003B335B /* NSMutableArray+Sorting.m */,
 				D0424BEF37220624679EEEB3 /* NSMutableArray+Shorthand.m */,
 				D0424F4D0B6041530EBE1828 /* NSMutableArray+Shorthand.h */,
 			);
@@ -627,6 +635,8 @@
 		D0424C09C46A1F8BA6806DD7 /* NSArray */ = {
 			isa = PBXGroup;
 			children = (
+				A62C44E817B14FCA003B335B /* NSArray+Sorting.h */,
+				A62C44E917B14FCA003B335B /* NSArray+Sorting.m */,
 				D04243B92EA94F475DF9B361 /* NSArray+Selector.m */,
 				D0424AA1B3C494CAC4ECA6FC /* NSArray+Selector.h */,
 				D0424CF217C7DDFC4BE9E8F2 /* NSArray+Enumeration.m */,
@@ -815,6 +825,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A62C44EB17B14FE7003B335B /* NSMutableArray+Sorting.m in Sources */,
 				D0424286ECDE78329A9BCB43 /* NSArray+Core.m in Sources */,
 				D0424F1BB1F8D1D39FA79049 /* NSSet+Core.m in Sources */,
 				D04240458F4302971323546A /* NSDictionary+Core.m in Sources */,
@@ -826,6 +837,7 @@
 				D04244245F4071E57E29CBA5 /* NSObject+Equals.m in Sources */,
 				D04243009BD43CE60EE4E345 /* NSNull+Natural.m in Sources */,
 				D0424D64CEA7F052D03E15C6 /* NSString+Components.m in Sources */,
+				A62C44EA17B14FCA003B335B /* NSArray+Sorting.m in Sources */,
 				D0424B141888F8BEB7CE078F /* NSString+RegularExpression.m in Sources */,
 				D0424F4BA13A8684548F7187 /* NSString+Shorthand.m in Sources */,
 				D0424D8388677823D283FCF6 /* NSString+Hash.m in Sources */,

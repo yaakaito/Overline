@@ -10,10 +10,13 @@
 
 #import "NSArray+Shorthand.h"
 #import "NSMutableArray+Shorthand.h"
+#import "NSMutableArray+Sorting.h"
+
 #import "NSArray+Enumeration.h"
 #import "NSArray+Random.h"
 #import "NSArray+Selector.h"
 #import "NSArray+SubArray.h"
+#import "NSArray+Shorthand.h"
 #import "NSArray+Difference.h"
 #import "NSArray+Initialize.h"
 #import "NSArray+Reverse.h"

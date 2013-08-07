@@ -102,6 +102,13 @@ NSArray *reversed = [@[@1,@2,@3,@4,@5,@6] reversedArray];
 
 * `isEmpty`
 
+
+#### NSArray+Sorting
+
+* `arraySortedDescending:`
+* `arraySortedAsc`
+* `arraySortedDesc`
+
 ### NSMutableArray
 #### NSMutableArray+Shorthands
 
@@ -109,8 +116,14 @@ NSArray *reversed = [@[@1,@2,@3,@4,@5,@6] reversedArray];
 NSMutableArray *marray = [NSMutableArray arrayWithArray:@[@1,@2,@3]];
 [marray insertObjects:@[@4,@5,@6] atIndex:1];
 ```
-
 * `insertObjects:atIndex:`
+
+#### NSMutableArray+Sorting
+
+* `sortDescending:`
+* `sortAsc`
+* `sortDesc`
+
 
 
 ### NSDictionary
@@ -366,10 +379,10 @@ NSDictionary *dic = @{
 
 ## Credits
 
-Be sure to thanks these contributors:
+Be sure to thank these contributors:
 
-* Kazuma Ukyo (http://yaakaito.org)
-* Hari Karam Singh (http://soundwandapp.com)
+* Kazuma Ukyo (Creator, http://yaakaito.org)
+* Hari Karam Singh (Contributor, http://soundwandapp.com)
 
 ### Coding rules
 

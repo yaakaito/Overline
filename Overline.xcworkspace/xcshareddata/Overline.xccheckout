@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F3EEF0C7-4707-4AFB-B724-96F591B39224</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Overline</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B47E2A2C-302D-44A2-92F8-A1CEDB3E0BFB</key>
+		<string>https://bitbucket.org/harikaram/scottishpower.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ScottishPower/Vendor/Overline/Overline.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B47E2A2C-302D-44A2-92F8-A1CEDB3E0BFB</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/harikaram/scottishpower.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B47E2A2C-302D-44A2-92F8-A1CEDB3E0BFB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B47E2A2C-302D-44A2-92F8-A1CEDB3E0BFB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ScottishPower</string>
+		</dict>
+	</array>
+</dict>
+</plist>
