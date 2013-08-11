@@ -8,5 +8,10 @@
 #import <Foundation/Foundation.h>
 
 @interface NSString (Shorthand)
+
+/** Trims whitespace and newlines from the ends of the string */
 - (NSString *)trim;
+
+/** Trim the ends of the string with the characters in the provided string */
+- (NSString *)trim:(NSString *)characters;
 @end

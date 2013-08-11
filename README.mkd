@@ -273,6 +273,7 @@ NSSet *mapped = [set mappedSetUsingBlock:^id(id obj, NSUInteger idx) {
 
 #### NSString+Shorthand
 * `trim`
+* `trim:` - Trim character set in a given string
 
 #### NSString+JSON
 ```objective-c

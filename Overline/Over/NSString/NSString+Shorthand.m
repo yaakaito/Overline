@@ -13,4 +13,9 @@
 - (NSString *)trim {
     return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
+
+- (NSString *)trim:(NSString *)characters
+{
+    return [self stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:characters]];
+}
 @end

@@ -23,4 +23,9 @@
     assertThat([@"  hoge  " trim], equalTo(@"hoge"));
 }
 
+- (void)testTrimWithChars
+{
+    assertThat([@"[!@$howdy^%z " trim:@"!@$^%z"], equalTo(@"howdy"));
+}
+
 @end
