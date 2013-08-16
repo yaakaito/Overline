@@ -124,6 +124,33 @@ NSMutableArray *marray = [NSMutableArray arrayWithArray:@[@1,@2,@3]];
 * `sortAsc`
 * `sortDesc`
 
+### NSDate
+
+#### NSDate+Components
+
+##### Class Methods
+
+* `currentWeekday`
+* `currentHour`
+* `currentMinute`
+* `currentSecond`
+* `currentDay`
+* `currentMonth`
+* `currentYear`
+* `commonDateComponentsForNow`
+* `timeComponentsForNow`
+
+##### Instance Methods
+
+* `weekday`
+* `hour`
+* `minute`
+* `second`
+* `day`
+* `month`
+* `year`
+* `commonDateComponents`
+* `timeComponents`
 
 
 ### NSDictionary
