@@ -23,13 +23,13 @@
 - (void)testShuffle {
     NSArray *shuffled = [@[@1,@2,@3,@4,@5,@6] shuffle];
     assertThat(@([shuffled count]), equalTo(@6));
-    [SenTestLog testLogWithFormat:[NSString stringWithFormat:@"%@", shuffled]];
+    [SenTestLog testLogWithFormat:@"%@", shuffled];
 }
 
 - (void)testShuffledArray {
     NSArray *shuffled = [@[@1,@2,@3,@4,@5,@6] shuffledArray];
     assertThat(@([shuffled count]), equalTo(@6));
-    [SenTestLog testLogWithFormat:[NSString stringWithFormat:@"%@", shuffled]];
+    [SenTestLog testLogWithFormat:@"%@", shuffled];
 }
 
 - (void)testAnyObject {
@@ -40,4 +40,11 @@
     assertThatBool([array indexOfObject:[array anyObject]] != NSNotFound, equalToBool(YES));
     assertThatBool([array indexOfObject:[array anyObject]] != NSNotFound, equalToBool(YES));
 }
+
+- (void)testAnyObjectWithEmptyArray {
+  NSArray *array = @[];
+
+  assertThatBool([array anyObject] == nil, equalToBool(YES));
+}
+
 @end
