@@ -24,6 +24,9 @@
 }
 
 - (id)anyObject {
-    return [self objectAtIndex:arc4random() % [self count]];
+    return [self count] ?
+        [self objectAtIndex:arc4random() % [self count]] :
+        nil;
 }
+
 @end
