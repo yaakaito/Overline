@@ -8,5 +8,6 @@
 
 @interface NSArray (Selector)
 
+/** Returns first object in array or nil if none (unlike -objectAtIndex:0 which throws NSRangeException) */
 - (id)firstObject;
 @end
