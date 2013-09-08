@@ -9,7 +9,7 @@
 #define HC_SHORTHAND
 #import <OCHamcrest/OCHamcrest.h>
 
-#import "NSString+Hash.h"
+#import "NSString+OVHash.h"
 
 @interface NSString_HashTest : SenTestCase
 {

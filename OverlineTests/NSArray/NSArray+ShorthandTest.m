@@ -8,7 +8,7 @@
 #import <SenTestingKit/SenTestingKit.h>
 #define HC_SHORTHAND
 #import <OCHamcrest/OCHamcrest.h>
-#import "NSArray+Shorthand.h"
+#import "NSArray+OVShorthand.h"
 
 @interface NSArray_ShorthandTest : SenTestCase
 {

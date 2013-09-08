@@ -9,7 +9,7 @@
 #define HC_SHORTHAND
 #import <OCHamcrest/OCHamcrest.h>
 
-#import "NSDateFormatter+Shorthand.h"
+#import "NSDateFormatter+OVShorthand.h"
 
 @interface NSDateFormatter_ShorthandTest : SenTestCase
 {

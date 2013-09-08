@@ -9,7 +9,7 @@
 #define HC_SHORTHAND
 #import <OCHamcrest/OCHamcrest.h>
 
-#import "NSNumber+Equals.h"
+#import "NSNumber+OVEquals.h"
 
 @interface NSNumber_EqualsTest : SenTestCase
 {

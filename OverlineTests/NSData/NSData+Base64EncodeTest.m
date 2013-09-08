@@ -8,7 +8,7 @@
 #import <SenTestingKit/SenTestingKit.h>
 #define HC_SHORTHAND
 #import <OCHamcrest/OCHamcrest.h>
-#import "NSData+Base64Encode.h"
+#import "NSData+OVBase64Encode.h"
 
 
 @interface NSData_Base64EncodeTest : SenTestCase

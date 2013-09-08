@@ -8,42 +8,43 @@
 
 #import <Foundation/Foundation.h>
 
-#import "NSArray+Shorthand.h"
-#import "NSMutableArray+Shorthand.h"
-#import "NSMutableArray+Sorting.h"
+#import "NSArray+OVShorthand.h"
+#import "NSArray+OVEnumeration.h"
+#import "NSArray+OVRandom.h"
+#import "NSArray+OVSelector.h"
+#import "NSArray+OVSubArray.h"
+#import "NSArray+OVShorthand.h"
+#import "NSArray+OVDifference.h"
+#import "NSArray+OVInitialize.h"
+#import "NSArray+OVReverse.h"
 
-#import "NSArray+Enumeration.h"
-#import "NSArray+Random.h"
-#import "NSArray+Selector.h"
-#import "NSArray+SubArray.h"
-#import "NSArray+Shorthand.h"
-#import "NSArray+Difference.h"
-#import "NSArray+Initialize.h"
-#import "NSArray+Reverse.h"
+#import "NSMutableArray+OVShorthand.h"
+#import "NSMutableArray+OVSorting.h"
 
-#import "NSDate+Components.h"
+#import "NSDate+OVComponents.h"
 
-#import "NSDictionary+Enumeration.h"
-#import "NSDictionary+Path.h"
-#import "NSDictionary+Selector.h"
+#import "NSDictionary+OVEnumeration.h"
+#import "NSDictionary+OVPath.h"
+#import "NSDictionary+OVSelector.h"
 
-#import "NSString+Hash.h"
-#import "NSString+Shorthand.h"
-#import "NSString+Components.h"
-#import "NSString+RegularExpression.h"
-#import "NSString+URLEncode.h"
-#import "NSString+Base64Encode.h"
-#import "NSString+JSON.h"
+#import "NSString+OVHash.h"
+#import "NSString+OVShorthand.h"
+#import "NSString+OVComponents.h"
+#import "NSString+OVRegularExpression.h"
+#import "NSString+OVURLEncode.h"
+#import "NSString+OVBase64Encode.h"
+#import "NSString+OVJSON.h"
 
-#import "NSSet+Enumeration.h"
+#import "NSSet+OVEnumeration.h"
 
-#import "NSData+Base64Encode.h"
+#import "NSData+OVBase64Encode.h"
 
-#import "NSBundle+Shorthand.h"
+#import "NSBundle+OVShorthand.h"
 
-#import "NSURL+Components.h"
+#import "NSURL+OVComponents.h"
+#import "NSURL+OVDirectories.h"
 
-#import "NSNumber+Equals.h"
+#import "NSNumber+OVEquals.h"
 
 #import "NSObject+Equals.h"
 
@@ -51,6 +52,6 @@
 #import "NSNull+Natural.h"
 #endif
 
-#import "NSArray+Core.h"
-#import "NSDictionary+Core.h"
-#import "NSSet+Core.h"
+#import "NSArray+OVCore.h"
+#import "NSDictionary+OVCore.h"
+#import "NSSet+OVCore.h"

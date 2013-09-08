@@ -8,7 +8,7 @@
 #import <SenTestingKit/SenTestingKit.h>
 #define HC_SHORTHAND
 #import <OCHamcrest/OCHamcrest.h>
-#import "NSArray+Initialize.h"
+#import "NSArray+OVInitialize.h"
 
 @interface NSArray_InitializeTest : SenTestCase
 {

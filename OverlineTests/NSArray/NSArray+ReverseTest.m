@@ -8,7 +8,7 @@
 #import <SenTestingKit/SenTestingKit.h>
 #define HC_SHORTHAND
 #import <OCHamcrest/OCHamcrest.h>
-#import "NSArray+Reverse.h"
+#import "NSArray+OVReverse.h"
 
 @interface NSArray_ReverseTest : SenTestCase
 {

@@ -8,7 +8,7 @@
 #import <SenTestingKit/SenTestingKit.h>
 #define HC_SHORTHAND
 #import <OCHamcrest/OCHamcrest.h>
-#import "NSDictionary+Selector.h"
+#import "NSDictionary+OVSelector.h"
 
 @interface NSDictionary_SelectorTest : SenTestCase
 {

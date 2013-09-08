@@ -8,7 +8,7 @@
 #import <SenTestingKit/SenTestingKit.h>
 #define HC_SHORTHAND
 #import <OCHamcrest/OCHamcrest.h>
-#import "NSString+RegularExpression.h"
+#import "NSString+OVRegularExpression.h"
 
 @interface NSString_RegularExpressionTest : SenTestCase
 {

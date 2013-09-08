@@ -9,7 +9,7 @@
 #define HC_SHORTHAND
 #import <OCHamcrest/OCHamcrest.h>
 
-#import "NSString+JSON.h"
+#import "NSString+OVJSON.h"
 
 @interface NSString_JSONTest : SenTestCase
 {

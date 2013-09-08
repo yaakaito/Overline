@@ -9,7 +9,7 @@
 #define HC_SHORTHAND
 #import <OCHamcrest/OCHamcrest.h>
 
-#import "NSDictionary+Path.h"
+#import "NSDictionary+OVPath.h"
 
 @interface NSDictionary_PathTest : SenTestCase
 {

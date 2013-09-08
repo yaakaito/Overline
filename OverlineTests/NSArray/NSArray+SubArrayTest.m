@@ -9,7 +9,7 @@
 #define HC_SHORTHAND
 #import <OCHamcrest/OCHamcrest.h>
 
-#import "NSArray+SubArray.h"
+#import "NSArray+OVSubArray.h"
 
 @interface NSArray_SubArrayTest : SenTestCase
 {

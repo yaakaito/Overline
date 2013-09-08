@@ -8,7 +8,7 @@
 #import <SenTestingKit/SenTestingKit.h>
 #define HC_SHORTHAND
 #import <OCHamcrest/OCHamcrest.h>
-#import "NSArray+Difference.h"
+#import "NSArray+OVDifference.h"
 
 @interface NSArray_DifferenceTest : SenTestCase
 {

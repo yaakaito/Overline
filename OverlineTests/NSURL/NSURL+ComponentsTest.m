@@ -8,7 +8,7 @@
 #import <SenTestingKit/SenTestingKit.h>
 #define HC_SHORTHAND
 #import <OCHamcrest/OCHamcrest.h>
-#import "NSURL+Components.h"
+#import "NSURL+OVComponents.h"
 
 @interface NSURL_ComponentsTest : SenTestCase
 {

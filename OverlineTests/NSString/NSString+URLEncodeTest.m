@@ -9,7 +9,7 @@
 #define HC_SHORTHAND
 #import <OCHamcrest/OCHamcrest.h>
 
-#import "NSString+URLEncode.h"
+#import "NSString+OVURLEncode.h"
 
 @interface NSString_URLEncodeTest : SenTestCase
 {

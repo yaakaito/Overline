@@ -9,7 +9,7 @@
 #define HC_SHORTHAND
 #import <OCHamcrest/OCHamcrest.h>
 
-#import "NSArray+Random.h"
+#import "NSArray+OVRandom.h"
 
 @interface NSArray_RandomTest : SenTestCase
 {

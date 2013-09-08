@@ -9,7 +9,7 @@
 #define HC_SHORTHAND
 #import <OCHamcrest/OCHamcrest.h>
 
-#import "NSString+Base64Encode.h"
+#import "NSString+OVBase64Encode.h"
 
 @interface NSString_Base64EncodeTest : SenTestCase
 {

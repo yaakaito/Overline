@@ -9,9 +9,9 @@
 #define HC_SHORTHAND
 #import <OCHamcrest/OCHamcrest.h>
 
-#import "NSSet+Enumeration.h"
-#import "NSString+RegularExpression.h"
-#import "NSSet+Core.h"
+#import "NSSet+OVEnumeration.h"
+#import "NSString+OVRegularExpression.h"
+#import "NSSet+OVCore.h"
 
 @interface NSSet_EnumerationTest : SenTestCase
 {

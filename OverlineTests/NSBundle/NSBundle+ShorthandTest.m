@@ -9,7 +9,7 @@
 #define HC_SHORTHAND
 #import <OCHamcrest/OCHamcrest.h>
 
-#import "NSBundle+Shorthand.h"
+#import "NSBundle+OVShorthand.h"
 
 @interface NSBundle_ShorthandTest : SenTestCase
 {

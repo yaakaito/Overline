@@ -9,8 +9,8 @@
 #define HC_SHORTHAND
 #import <OCHamcrest/OCHamcrest.h>
 
-#import "NSArray+Enumeration.h"
-#import "NSArray+Core.h"
+#import "NSArray+OVEnumeration.h"
+#import "NSArray+OVCore.h"
 
 @interface NSArray_Enumeration : SenTestCase
 {

@@ -7,7 +7,7 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>samsa
-#import "NSArray+Selector.h"
+#import "NSArray+OVSelector.h"
 #define HC_SHORTHAND
 #import <OCHamcrest/OCHamcrest.h>
 

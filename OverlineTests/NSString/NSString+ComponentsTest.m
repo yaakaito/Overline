@@ -9,7 +9,7 @@
 #define HC_SHORTHAND
 #import <OCHamcrest/OCHamcrest.h>
 
-#import "NSString+Components.h"
+#import "NSString+OVComponents.h"
 
 @interface NSString_ComponentsTest : SenTestCase
 {

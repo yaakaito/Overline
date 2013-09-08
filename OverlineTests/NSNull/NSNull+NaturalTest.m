@@ -9,7 +9,7 @@
 #define HC_SHORTHAND
 #import <OCHamcrest/OCHamcrest.h>
 
-#import "NSNull+Natural.h"
+#import "NSNull+OVNatural.h"
 
 @interface NSNull_NaturalTest : SenTestCase
 {
