@@ -17,63 +17,63 @@
 
 + (NSInteger)currentWeekday
 {
-    return NSDate.date.weekday;
+    return [NSDate.date weekday];
 }
 
 //---------------------------------------------------------------------
 
 + (NSInteger)currentHour
 {
-    return NSDate.date.hour;
+    return [NSDate.date hour];
 }
 
 //---------------------------------------------------------------------
 
 + (NSInteger)currentMinute
 {
-    return NSDate.date.minute;
+    return [NSDate.date minute];
 }
 
 //---------------------------------------------------------------------
 
 + (NSInteger)currentSecond
 {
-    return NSDate.date.second;
+    return [NSDate.date second];
 }
 
 //---------------------------------------------------------------------
 
 + (NSInteger)currentYear
 {
-    return NSDate.date.year;
+    return [NSDate.date year];
 }
 
 //---------------------------------------------------------------------
 
 + (NSInteger)currentMonth
 {
-    return NSDate.date.month;
+    return [NSDate.date month];
 }
 
 //---------------------------------------------------------------------
 
 + (NSInteger)currentDay
 {
-    return NSDate.date.day;
+    return [NSDate.date day];
 }
 
 //---------------------------------------------------------------------
 
 + (NSDateComponents *)commonDateComponentsForNow
 {
-    return  NSDate.date.commonDateComponents;
+    return [NSDate.date commonDateComponents];
 }
 
 //---------------------------------------------------------------------
 
 + (NSDateComponents *)timeComponentsForNow
 {
-    return  NSDate.date.timeComponents;
+    return [NSDate.date timeComponents];
 }
 
 /////////////////////////////////////////////////////////////////////////
@@ -84,62 +84,62 @@
 
 - (NSInteger)weekday
 {
-    return [[NSCalendar currentCalendar] components:NSCalendarUnitWeekday fromDate:self].weekday;
+    return [[NSCalendar currentCalendar] components:NSWeekCalendarUnit fromDate:self].weekday;
 }
 
 //---------------------------------------------------------------------
 
 - (NSInteger)hour
 {
-    return [[NSCalendar currentCalendar] components:NSCalendarUnitHour fromDate:self].hour;
+    return [[NSCalendar currentCalendar] components:NSHourCalendarUnit fromDate:self].hour;
 }
 
 //---------------------------------------------------------------------
 
 - (NSInteger)minute
 {
-    return [[NSCalendar currentCalendar] components:NSCalendarUnitMinute fromDate:self].minute;
+    return [[NSCalendar currentCalendar] components:NSMinuteCalendarUnit fromDate:self].minute;
 }
 
 //---------------------------------------------------------------------
 
 - (NSInteger)second
 {
-    return [[NSCalendar currentCalendar] components:NSCalendarUnitSecond fromDate:self].second;
+    return [[NSCalendar currentCalendar] components:NSSecondCalendarUnit fromDate:self].second;
 }
 
 //---------------------------------------------------------------------
 
 - (NSInteger)day
 {
-    return [[NSCalendar currentCalendar] components:NSCalendarUnitDay fromDate:self].day;
+    return [[NSCalendar currentCalendar] components:NSDayCalendarUnit fromDate:self].day;
 }
 
 //---------------------------------------------------------------------
 
 - (NSInteger)month
 {
-    return [[NSCalendar currentCalendar] components:NSCalendarUnitMonth fromDate:self].month;
+    return [[NSCalendar currentCalendar] components:NSMonthCalendarUnit fromDate:self].month;
 }
 
 //---------------------------------------------------------------------
 
 - (NSInteger)year
 {
-    return [[NSCalendar currentCalendar] components:NSCalendarUnitYear fromDate:self].year;
+    return [[NSCalendar currentCalendar] components:NSYearCalendarUnit fromDate:self].year;
 }
 
 //---------------------------------------------------------------------
 
 - (NSDateComponents *)commonDateComponents
 {
-    return [[NSCalendar currentCalendar] components:NSCalendarUnitYear |
-                                                   NSCalendarUnitMonth |
-                                                   NSCalendarUnitDay |
-                                                   NSCalendarUnitWeekday |
-                                                   NSCalendarUnitHour |
-                                                   NSCalendarUnitMinute |
-                                                   NSCalendarUnitSecond
+    return [[NSCalendar currentCalendar] components:NSYearCalendarUnit |
+                                                   NSMonthCalendarUnit |
+                                                   NSDayCalendarUnit |
+                                                   NSWeekdayCalendarUnit |
+                                                   NSHourCalendarUnit |
+                                                   NSMinuteCalendarUnit |
+                                                   NSSecondCalendarUnit
                                            fromDate:self];
 }
 
@@ -147,9 +147,9 @@
 
 - (NSDateComponents *)timeComponents
 {
-    return [[NSCalendar currentCalendar] components:NSCalendarUnitHour |
-                                                    NSCalendarUnitMinute |
-                                                    NSCalendarUnitSecond
+    return [[NSCalendar currentCalendar] components:NSHourCalendarUnit |
+                                                    NSMinuteCalendarUnit |
+                                                    NSSecondCalendarUnit
                                            fromDate:self];
 }
 
