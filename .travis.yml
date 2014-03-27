@@ -1,0 +1,7 @@
+language: objective-c
+
+before_install: gem install cocoapods
+
+xcode_workspace: Overline.xcworkspace
+xcode_scheme: Jenkins
+xcode_sdk: iphonesimulator
