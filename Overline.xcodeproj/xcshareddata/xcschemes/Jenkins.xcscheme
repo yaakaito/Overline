@@ -31,6 +31,16 @@
       </Testables>
    </TestAction>
    <LaunchAction
+      buildConfiguration = "Debug"
       useCustomWorkingDirectory = "NO">
    </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release">
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release">
+   </ArchiveAction>
 </Scheme>
