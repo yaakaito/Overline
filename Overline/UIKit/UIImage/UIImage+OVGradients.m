@@ -40,7 +40,7 @@
                                             locations,
                                             count);
         
-        CGContextDrawLinearGradient(ctx, grad, startPoint, endPoint, 0);
+        CGContextDrawLinearGradient(ctx, grad, startPoint, endPoint, kCGGradientDrawsBeforeStartLocation |kCGGradientDrawsAfterEndLocation);
         CGGradientRelease(grad);
         free(components);
         free(locations);

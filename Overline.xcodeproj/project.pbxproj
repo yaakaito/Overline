@@ -16,6 +16,11 @@
 		1C3D5F80D8C652BB5F5DA930 /* NSArray+ReverseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D564AF68B0AF84B1D2AC9 /* NSArray+ReverseTest.m */; };
 		A62C44EA17B14FCA003B335B /* NSArray+OVSorting.m in Sources */ = {isa = PBXBuildFile; fileRef = A62C44E917B14FCA003B335B /* NSArray+OVSorting.m */; };
 		A62C44EB17B14FE7003B335B /* NSMutableArray+OVSorting.m in Sources */ = {isa = PBXBuildFile; fileRef = A62C44E717B14FBD003B335B /* NSMutableArray+OVSorting.m */; };
+		A64919E9193891F30075626D /* UIColor+OVColorAdjust.m in Sources */ = {isa = PBXBuildFile; fileRef = A64919DE193891F30075626D /* UIColor+OVColorAdjust.m */; };
+		A64919EA193891F30075626D /* UIImage+OVGradients.m in Sources */ = {isa = PBXBuildFile; fileRef = A64919E1193891F30075626D /* UIImage+OVGradients.m */; };
+		A64919EB193891F30075626D /* UIImage+OVTransforms.m in Sources */ = {isa = PBXBuildFile; fileRef = A64919E3193891F30075626D /* UIImage+OVTransforms.m */; };
+		A64919EC193891F30075626D /* UIView+OVPositioning.m in Sources */ = {isa = PBXBuildFile; fileRef = A64919E6193891F30075626D /* UIView+OVPositioning.m */; };
+		A64919ED193891F30075626D /* UIView+OVSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = A64919E8193891F30075626D /* UIView+OVSnapshot.m */; };
 		A6C45B9B17BE6673000F100F /* NSDate+OVComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C45B9A17BE6673000F100F /* NSDate+OVComponents.m */; };
 		B9BEB6D41669B27100A1D26D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BEB6D31669B27100A1D26D /* Foundation.framework */; };
 		B9BEB6E31669B27100A1D26D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BEB6E21669B27100A1D26D /* SenTestingKit.framework */; };
@@ -209,6 +214,16 @@
 		A62C44E717B14FBD003B335B /* NSMutableArray+OVSorting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+OVSorting.m"; sourceTree = "<group>"; };
 		A62C44E817B14FCA003B335B /* NSArray+OVSorting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+OVSorting.h"; sourceTree = "<group>"; };
 		A62C44E917B14FCA003B335B /* NSArray+OVSorting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+OVSorting.m"; sourceTree = "<group>"; };
+		A64919DD193891F30075626D /* UIColor+OVColorAdjust.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+OVColorAdjust.h"; sourceTree = "<group>"; };
+		A64919DE193891F30075626D /* UIColor+OVColorAdjust.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+OVColorAdjust.m"; sourceTree = "<group>"; };
+		A64919E0193891F30075626D /* UIImage+OVGradients.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OVGradients.h"; sourceTree = "<group>"; };
+		A64919E1193891F30075626D /* UIImage+OVGradients.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+OVGradients.m"; sourceTree = "<group>"; };
+		A64919E2193891F30075626D /* UIImage+OVTransforms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OVTransforms.h"; sourceTree = "<group>"; };
+		A64919E3193891F30075626D /* UIImage+OVTransforms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+OVTransforms.m"; sourceTree = "<group>"; };
+		A64919E5193891F30075626D /* UIView+OVPositioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+OVPositioning.h"; sourceTree = "<group>"; };
+		A64919E6193891F30075626D /* UIView+OVPositioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+OVPositioning.m"; sourceTree = "<group>"; };
+		A64919E7193891F30075626D /* UIView+OVSnapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+OVSnapshot.h"; sourceTree = "<group>"; };
+		A64919E8193891F30075626D /* UIView+OVSnapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+OVSnapshot.m"; sourceTree = "<group>"; };
 		A6C45B9917BE6673000F100F /* NSDate+OVComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+OVComponents.h"; path = "NSDate/NSDate+OVComponents.h"; sourceTree = "<group>"; };
 		A6C45B9A17BE6673000F100F /* NSDate+OVComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+OVComponents.m"; path = "NSDate/NSDate+OVComponents.m"; sourceTree = "<group>"; };
 		B9BEB6D01669B27100A1D26D /* libOverline.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOverline.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -367,6 +382,47 @@
 			path = NSNumber;
 			sourceTree = "<group>";
 		};
+		A64919DB193891F30075626D /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				A64919DC193891F30075626D /* UIColor */,
+				A64919DF193891F30075626D /* UIImage */,
+				A64919E4193891F30075626D /* UIView */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		A64919DC193891F30075626D /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				A64919DD193891F30075626D /* UIColor+OVColorAdjust.h */,
+				A64919DE193891F30075626D /* UIColor+OVColorAdjust.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		A64919DF193891F30075626D /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				A64919E0193891F30075626D /* UIImage+OVGradients.h */,
+				A64919E1193891F30075626D /* UIImage+OVGradients.m */,
+				A64919E2193891F30075626D /* UIImage+OVTransforms.h */,
+				A64919E3193891F30075626D /* UIImage+OVTransforms.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		A64919E4193891F30075626D /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				A64919E5193891F30075626D /* UIView+OVPositioning.h */,
+				A64919E6193891F30075626D /* UIView+OVPositioning.m */,
+				A64919E7193891F30075626D /* UIView+OVSnapshot.h */,
+				A64919E8193891F30075626D /* UIView+OVSnapshot.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
 		A6C45B9717BE6184000F100F /* NSDate */ = {
 			isa = PBXGroup;
 			children = (
@@ -414,6 +470,7 @@
 				B9BEB6D61669B27100A1D26D /* Supporting Files */,
 				D042488AFA4C65ECC6EAE677 /* Core */,
 				D0424135FA05915BECF1AD1A /* Over */,
+				A64919DB193891F30075626D /* UIKit */,
 			);
 			path = Overline;
 			sourceTree = "<group>";
@@ -844,6 +901,7 @@
 				D04240458F4302971323546A /* NSDictionary+OVCore.m in Sources */,
 				A6C45B9B17BE6673000F100F /* NSDate+OVComponents.m in Sources */,
 				D0424CF0053C60675B2DB2F4 /* NSDateFormatter+OVShorthand.m in Sources */,
+				A64919EC193891F30075626D /* UIView+OVPositioning.m in Sources */,
 				D04240602594BA2BD7EBE3D7 /* NSDictionary+OVEnumeration.m in Sources */,
 				D0424C792702266B3848E1A2 /* NSDictionary+OVPath.m in Sources */,
 				D0424FD7AB12D0164FF11C47 /* NSDictionary+OVSelector.m in Sources */,
@@ -852,9 +910,11 @@
 				D04243009BD43CE60EE4E345 /* NSNull+OVNatural.m in Sources */,
 				D0424D64CEA7F052D03E15C6 /* NSString+OVComponents.m in Sources */,
 				A62C44EA17B14FCA003B335B /* NSArray+OVSorting.m in Sources */,
+				A64919EA193891F30075626D /* UIImage+OVGradients.m in Sources */,
 				D0424B141888F8BEB7CE078F /* NSString+OVRegularExpression.m in Sources */,
 				D0424F4BA13A8684548F7187 /* NSString+OVShorthand.m in Sources */,
 				D0424D8388677823D283FCF6 /* NSString+OVHash.m in Sources */,
+				A64919E9193891F30075626D /* UIColor+OVColorAdjust.m in Sources */,
 				D0424489BD1E05FE459FB3D9 /* NSString+OVURLEncode.m in Sources */,
 				D04244041D5AD4484F99EA55 /* NSString+OVJSON.m in Sources */,
 				D0424829DFC36B940FB00E10 /* NSString+OVBase64Encode.m in Sources */,
@@ -866,7 +926,9 @@
 				D0424F783EC65563531D4F95 /* NSMutableArray+OVShorthand.m in Sources */,
 				D0424AA50EED21145E0BD0BC /* NSArray+OVSubArray.m in Sources */,
 				D042435B5DEF196FA65D5B68 /* NSArray+OVInitialize.m in Sources */,
+				A64919ED193891F30075626D /* UIView+OVSnapshot.m in Sources */,
 				D0424FDF7CABD139FFB6B50D /* NSArray+OVReverse.m in Sources */,
+				A64919EB193891F30075626D /* UIImage+OVTransforms.m in Sources */,
 				D04240967DAC37DA92E6F6B3 /* NSArray+OVShorthand.m in Sources */,
 				D0424394B37759469448C4AF /* NSArray+OVDifference.m in Sources */,
 				D0424E4CF30A9A3495BB82F9 /* NSURL+OVComponents.m in Sources */,
