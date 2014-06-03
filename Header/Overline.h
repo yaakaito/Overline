@@ -27,6 +27,8 @@
 #import "NSDictionary+OVPath.h"
 #import "NSDictionary+OVSelector.h"
 
+#import "NSMutableDictionary+OVShorthand.h"
+
 #import "NSString+OVHash.h"
 #import "NSString+OVShorthand.h"
 #import "NSString+OVComponents.h"
