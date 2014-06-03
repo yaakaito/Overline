@@ -16,5 +16,16 @@
 /** Convenience method for degree rotations.  See imageRotatedByRadians: */
 - (UIImage *)imageRotatedByDegrees:(CGFloat)degrees;
 
+/** Mirror image reflected horizontally (around the y-axis) */
+- (UIImage *)imageReflectedHorizontally;
+
+/** Mirror image reflected vertically (around the x-axis) */
+- (UIImage *)imageReflectedVertically;
+
+/** 
+ Programatically selectable reflection for none, one or both axes
+ */
+- (UIImage *)imageReflectedHorizontally:(BOOL)doHoriontal vertically:(BOOL)doVertical;
+
 
 @end

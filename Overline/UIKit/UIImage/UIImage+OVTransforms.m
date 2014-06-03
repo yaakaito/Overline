@@ -39,5 +39,43 @@
     return [self imageRotatedByRadians:degrees * (M_PI/180.0f)];
 }
 
+//---------------------------------------------------------------------
+
+- (UIImage *)imageReflectedHorizontally
+{
+    return [self imageReflectedHorizontally:YES vertically:NO];
+            
+}
+
+//---------------------------------------------------------------------
+
+- (UIImage *)imageReflectedVertically
+{
+    return [self imageReflectedHorizontally:NO vertically:YES];
+}
+
+//---------------------------------------------------------------------
+
+- (UIImage *)imageReflectedHorizontally:(BOOL)doHoriontal vertically:(BOOL)doVertical
+{
+    // Create the contedt with the correct scale
+    CGSize size = self.size;
+    UIGraphicsBeginImageContextWithOptions(size, NO, 0.0);
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    
+    // Rotate the context around the centre and draw in he image
+    CGContextScaleCTM(ctx,
+                      doHoriontal ? -1.0 : +1.0,
+                      doVertical ? -1.0 : +1.0);
+    [self drawAtPoint:CGPointMake(doHoriontal ? -size.width : 0,
+                                  doVertical ? -size.height: 0)];
+    
+    // Get the image to return and cleanup
+    UIImage *rtnImg = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return rtnImg;
+}
+
 
 @end
