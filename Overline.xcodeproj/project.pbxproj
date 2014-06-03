@@ -21,6 +21,7 @@
 		A64919EB193891F30075626D /* UIImage+OVTransforms.m in Sources */ = {isa = PBXBuildFile; fileRef = A64919E3193891F30075626D /* UIImage+OVTransforms.m */; };
 		A64919EC193891F30075626D /* UIView+OVPositioning.m in Sources */ = {isa = PBXBuildFile; fileRef = A64919E6193891F30075626D /* UIView+OVPositioning.m */; };
 		A64919ED193891F30075626D /* UIView+OVSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = A64919E8193891F30075626D /* UIView+OVSnapshot.m */; };
+		A6C0D05F193E8A8C00B57317 /* NSMutableDictionary+OVShorthand.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C0D05E193E8A8C00B57317 /* NSMutableDictionary+OVShorthand.m */; };
 		A6C45B9B17BE6673000F100F /* NSDate+OVComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C45B9A17BE6673000F100F /* NSDate+OVComponents.m */; };
 		B9BEB6D41669B27100A1D26D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BEB6D31669B27100A1D26D /* Foundation.framework */; };
 		B9BEB6E31669B27100A1D26D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BEB6E21669B27100A1D26D /* SenTestingKit.framework */; };
@@ -224,6 +225,8 @@
 		A64919E6193891F30075626D /* UIView+OVPositioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+OVPositioning.m"; sourceTree = "<group>"; };
 		A64919E7193891F30075626D /* UIView+OVSnapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+OVSnapshot.h"; sourceTree = "<group>"; };
 		A64919E8193891F30075626D /* UIView+OVSnapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+OVSnapshot.m"; sourceTree = "<group>"; };
+		A6C0D05D193E8A8C00B57317 /* NSMutableDictionary+OVShorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+OVShorthand.h"; sourceTree = "<group>"; };
+		A6C0D05E193E8A8C00B57317 /* NSMutableDictionary+OVShorthand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+OVShorthand.m"; sourceTree = "<group>"; };
 		A6C45B9917BE6673000F100F /* NSDate+OVComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+OVComponents.h"; path = "NSDate/NSDate+OVComponents.h"; sourceTree = "<group>"; };
 		A6C45B9A17BE6673000F100F /* NSDate+OVComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+OVComponents.m"; path = "NSDate/NSDate+OVComponents.m"; sourceTree = "<group>"; };
 		B9BEB6D01669B27100A1D26D /* libOverline.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOverline.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -423,6 +426,15 @@
 			path = UIView;
 			sourceTree = "<group>";
 		};
+		A6C0D05C193E8A8C00B57317 /* NSMutableDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				A6C0D05D193E8A8C00B57317 /* NSMutableDictionary+OVShorthand.h */,
+				A6C0D05E193E8A8C00B57317 /* NSMutableDictionary+OVShorthand.m */,
+			);
+			path = NSMutableDictionary;
+			sourceTree = "<group>";
+		};
 		A6C45B9717BE6184000F100F /* NSDate */ = {
 			isa = PBXGroup;
 			children = (
@@ -533,6 +545,7 @@
 				D04240A3C30644E2B6817409 /* NSDictionary */,
 				D0424380808EF2AEAE962B18 /* NSData */,
 				D042468A02DB47E33C9A9145 /* NSObject */,
+				A6C0D05C193E8A8C00B57317 /* NSMutableDictionary */,
 				D04248B14AA8C7A86C708A5F /* NSNull */,
 				D0424D833CD42777921E58B5 /* NSString */,
 				D04245B832B3DABA0A6B9B4C /* NSSet */,
@@ -918,6 +931,7 @@
 				D0424489BD1E05FE459FB3D9 /* NSString+OVURLEncode.m in Sources */,
 				D04244041D5AD4484F99EA55 /* NSString+OVJSON.m in Sources */,
 				D0424829DFC36B940FB00E10 /* NSString+OVBase64Encode.m in Sources */,
+				A6C0D05F193E8A8C00B57317 /* NSMutableDictionary+OVShorthand.m in Sources */,
 				D0424C9D1AB7E097E698ACCF /* NSSet+OVEnumeration.m in Sources */,
 				D0424A90D2DF6E2DEFD8FB63 /* NSBundle+OVShorthand.m in Sources */,
 				D042451A5297965AD08F7AFF /* NSArray+OVSelector.m in Sources */,
