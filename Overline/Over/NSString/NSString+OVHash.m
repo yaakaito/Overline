@@ -19,7 +19,7 @@
     NSData *keyData=[NSData dataWithBytes:s length:strlen(s)];
 
     uint8_t digest[CC_SHA256_DIGEST_LENGTH]={0};
-    CC_SHA256(keyData.bytes, keyData.length, digest);
+    CC_SHA256(keyData.bytes, (CC_LONG)keyData.length, digest);
     NSData *out =
             [NSData dataWithBytes:digest length:CC_SHA256_DIGEST_LENGTH];
     NSString *hash=[out description];
@@ -37,7 +37,7 @@
 - (NSString *)stringByHashingMD5 {
     const char *cStr = [self UTF8String];
     unsigned char result[16];
-    CC_MD5( cStr, strlen(cStr), result ); // This is the md5 call
+    CC_MD5( cStr, (CC_LONG)strlen(cStr), result ); // This is the md5 call
     return [NSString stringWithFormat:
             @"%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x",
             result[0], result[1], result[2], result[3],
