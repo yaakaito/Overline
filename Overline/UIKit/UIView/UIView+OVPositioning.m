@@ -195,7 +195,6 @@
 - (void)setMargins:(UIEdgeInsets)margins
 {
     if (!self.superview) [NSException raise:NSGenericException format:@"Superview must not be nil"];
-    CGPoint superOrigin = self.superview.frame.origin;
     CGSize superSize = self.superview.frame.size;
     self.frame = CGRectMake(margins.left,
                             margins.top,
