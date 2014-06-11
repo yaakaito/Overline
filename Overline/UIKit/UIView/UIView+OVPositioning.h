@@ -40,6 +40,20 @@
 #pragma mark - Additional setters
 /////////////////////////////////////////////////////////////////////////
 
+/** Centers view in superview.
+ @throws NSGenericException if superview = nil */
+- (void)alignCenterHorizontally;
+
+/** Centers view in superview.
+ @throws NSGenericException if superview = nil */
+- (void)alignCenterVertically;
+
+/** Centers view in superview.
+ @throws NSGenericException if superview = nil */
+- (void)alignCenter;
+
+
+
 /** Layout with respect to the superview. 
     @throws NSGenericException if superview = nil */
 - (void)setMargins:(UIEdgeInsets)margins;
