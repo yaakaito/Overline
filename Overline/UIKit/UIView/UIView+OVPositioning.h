@@ -52,7 +52,13 @@
  @throws NSGenericException if superview = nil */
 - (void)alignCenter;
 
+/** Aligns right edge to that of the superview.
+ @throws NSGenericException if superview = nil */
+- (void)alignRight;
 
+/** Aligns bottom edge to that of the superview.
+ @throws NSGenericException if superview = nil */
+- (void)alignBottom;
 
 /** Layout with respect to the superview. 
     @throws NSGenericException if superview = nil */
