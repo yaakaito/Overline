@@ -5,23 +5,23 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>6F44B4D3-DE45-403E-9871-695D6E02A096</string>
+	<string>4BCF3386-BA1D-4E2F-89BF-897CEF61E207</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Overline</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>29458A00-211E-4995-8440-5915DEBEBEBF</key>
-		<string>ssh://github.com/Club15CC/AC-Sabre-Lab.git</string>
-		<key>9E38393C-6303-4A25-BDB1-3986835A7DB4</key>
+		<key>5ECA48E4-2F22-44C0-A3CA-0A331F9AA989</key>
+		<string>ssh://github.com/Club15CC/SoundWandMIDI.git</string>
+		<key>AA744DBC-9670-4ED1-BBB9-8C3E9F900040</key>
 		<string>ssh://github.com/yaakaito/Overline.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Lab-VC-Transitions/Vendor/Overline/Overline.xcworkspace</string>
+	<string>Vendor/Overline/Overline.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>29458A00-211E-4995-8440-5915DEBEBEBF</key>
-		<string>../../../..</string>
-		<key>9E38393C-6303-4A25-BDB1-3986835A7DB4</key>
+		<key>5ECA48E4-2F22-44C0-A3CA-0A331F9AA989</key>
+		<string>../../..</string>
+		<key>AA744DBC-9670-4ED1-BBB9-8C3E9F900040</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -29,24 +29,24 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>29458A00-211E-4995-8440-5915DEBEBEBF</string>
+	<string>5ECA48E4-2F22-44C0-A3CA-0A331F9AA989</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>29458A00-211E-4995-8440-5915DEBEBEBF</string>
+			<string>AA744DBC-9670-4ED1-BBB9-8C3E9F900040</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Lab-VC-Transitions</string>
+			<string>Overline</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>9E38393C-6303-4A25-BDB1-3986835A7DB4</string>
+			<string>5ECA48E4-2F22-44C0-A3CA-0A331F9AA989</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Overline</string>
+			<string>SoundWand-Midi</string>
 		</dict>
 	</array>
 </dict>

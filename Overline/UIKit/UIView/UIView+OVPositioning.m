@@ -192,10 +192,61 @@
 #pragma mark - Additional setters
 /////////////////////////////////////////////////////////////////////////
 
+- (void)alignCenterHorizontally
+{
+    if (!self.superview) [NSException raise:NSGenericException format:@"Superview must not be nil"];
+    CGPoint center = self.center;
+    center.x = self.superview.frame.size.width * 0.5;
+    self.center = center;
+}
+
+//---------------------------------------------------------------------
+
+- (void)alignCenterVertically
+{
+    if (!self.superview) [NSException raise:NSGenericException format:@"Superview must not be nil"];
+    CGPoint center = self.center;
+    center.y = self.superview.frame.size.height * 0.5;
+    self.center = center;
+}
+
+//---------------------------------------------------------------------
+
+- (void)alignCenter
+{
+    if (!self.superview) [NSException raise:NSGenericException format:@"Superview must not be nil"];
+    CGPoint center = self.center;
+    center.x = self.superview.frame.size.width * 0.5;
+    center.y = self.superview.frame.size.height * 0.5;
+    self.center = center;    
+}
+
+//---------------------------------------------------------------------
+
+- (void)alignRight
+{
+    if (!self.superview) [NSException raise:NSGenericException format:@"Superview must not be nil"];
+    CGRect frame = self.frame;
+    frame.origin.x = self.superview.frame.size.width - frame.size.width;
+    self.frame = frame;
+}
+
+//---------------------------------------------------------------------
+
+- (void)alignBottom
+{
+    if (!self.superview) [NSException raise:NSGenericException format:@"Superview must not be nil"];
+    CGRect frame = self.frame;
+    frame.origin.y = self.superview.frame.size.height - frame.size.height;
+    self.frame = frame;
+}
+
+//---------------------------------------------------------------------
+
+
 - (void)setMargins:(UIEdgeInsets)margins
 {
     if (!self.superview) [NSException raise:NSGenericException format:@"Superview must not be nil"];
-    CGPoint superOrigin = self.superview.frame.origin;
     CGSize superSize = self.superview.frame.size;
     self.frame = CGRectMake(margins.left,
                             margins.top,
